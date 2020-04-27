@@ -5,6 +5,10 @@
   <meta charset="utf-8">
   <meta name="author" content="Joanne Saad">
   <title>Joanne Saad Designs UX/UI Designer</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700&family=Rajdhani:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+  <link rel="stylesheet" type="text/css" href="css/style.css"/>
   <link rel="icon" type="image/png" href="img/favicon/favicon.ico">
   <link rel="icon" type="image/png" href="img/favicon/favicon-32x32.png" sizes="32x32" />
   <link rel="icon" type="image/png" href="img/favicon/favicon-16x16.png" sizes="16x16" />
@@ -12,11 +16,11 @@
 
 <body>
   <header>
-    <div>
+    <div class="container">
       <a href="index.html"><img src="img/JS_logo_black.svg" alt="Joanne Saad Designs Logo"></a>
       <nav>
         <ul>
-          <li><a href="index.html#projects">Work</a></li>
+          <li><a href="index.html#work">Work</a></li>
           <li><a href="about.html">About</a></li>
           <li><a href="#contact">Contact</a></li>
         </ul>
@@ -24,8 +28,8 @@
     </div>
   </header>
   <main>
-    <div> <!--section block-->
-      <div> <!--hero section-->
+    <div class="section"> <!--section block-->
+      <div id="hero" class="container"> <!--hero section-->
         <h1>Hi, I'm Joanne. Welcome to my site.
           <span>I'm a UX/UI Designer hailing from London Town.</span>
         </h1>
@@ -36,18 +40,17 @@
       </div>
 
       <!--projects section-->
-      <div id="projects">
-        <div> <!--container wrapper-->
+      <div class="section">
+        <div id="work" class="container"> <!--container wrapper-->
           <h2>My Work</h2>
-          <div> <!--project 1-->
-            <div>   <!--column left-->
+          <div class="row"> <!--project 1-->
+            <div class="column">   <!--column left-->
               <picture>
                 <source srcset="img/monstapursuit/homepage_1@1x.jpg" media="(max-width:767px)">
-                <img src="img/monstapursuit/homepage_1@2x.jpg" alt="MonstaPursuit Image">
+                <img src="img/monstapursuit/homepage1@2x.jpg" alt="MonstaPursuit Image">
               </picture>
             </div>
-            <div>
-              <!--column right-->
+            <div class="column"> <!--column right-->
               <h3>MonstaPursuit</h3>
               <p>
                 Design of a native gamified running app from inception to final mock-ups.
@@ -55,17 +58,17 @@
               <p>
                 Skills used: User research; Information Architecture; Wireframing; Prototyping; User testing; Adobe XD; Adobe Illustrator; and more...
               </p>
-              <a href="project-monstapursuit.html">View case study</a>
+              <a href="project-monstapursuit.html" class="button">View case study</a>
             </div>
           </div>
-          <div> <!--project 2-->
-            <div> <!--column left-->
+          <div class="row"> <!--project 2-->
+            <div class="column"> <!--column left-->
               <picture>
                 <source srcset="img/deck_drills/homepage_2@1x.jpg" media="(max-width:767px)">
-                <img src="img/deck_drills/homepage_2@2x.jpg" alt="Deck Drills Image">
+                <img src="img/deck_drills/homepage2@2x.jpg" alt="Deck Drills Image">
               </picture>
             </div>
-            <div>
+            <div class="column">
               <!--column right-->
               <h3>Deck Drills</h3>
               <p>
@@ -74,7 +77,7 @@
               <p>
                 Skills used: User Intrviews; Information Architecture; Wireframing; Prototyping; User testing; Balsamiq; Sketch.
               </p>
-              <a href="#">View case study</a>
+              <a href="#" class="button">View case study</a>
             </div>
           </div>
         </div>
@@ -89,7 +92,7 @@
         Do you like my work and want to discuss opportunities? Let's talk!Just click on the link below to shoot me an email.
       </p>
       <div>
-        <a href="mailto:joanne.saad@gmail.com">Email me</a>
+        <a href="mailto:joanne.saad@gmail.com" class="button contact">Email me</a>
       </div>
       <div>
         <!--social media links-->
