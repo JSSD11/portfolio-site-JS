@@ -2,7 +2,7 @@
 Colours used:
 Home & About pages:
 Primary colour (text): #262626
-Background colour 1: #efefefe
+Background colour 1: #efefef
 Background colour 2: #d0d0d0
 Highlight/Accent colour: #11c793
 
@@ -12,14 +12,17 @@ Background colour 1: #ffffff
 Background colour 2: #fbfaf6
 Highlight/Accent colour 1: #f78433
 Highlight/Accent colour 2: #80899a
-
 */
+
+*{
+  box-sizing:border-box;
+}
 
 body{
   font-family: 'Rajdhani', sans-serif;
   font-size: 16px;
   font-weight: 400;
-  line-height: 1.6;
+  line-height: 1.4;
   color: #262626;
   background-color: #efefef;
 }
@@ -28,76 +31,83 @@ body.project-page.monstapursuit{
   background-color:#fbfaf6;
 }
 
-footer{
-  background-color: #d0d0d0;
-}
+
 h1, h2, h3, h4 {
   font-family: 'Montserrat', sans-serif;
   line-height: 1.4;
 }
+
 h1 {
-  font-size: 2.75em;
+  font-size: 2.2em;
   font-weight: 700;
 }
 
 h2 {
-  font-size: 2.25em;
+  font-size: 1.75em;
   font-weight: 700;
 }
 
 h3 {
-  font-size: 1.75em;
+  font-size: 1.25em;
   font-weight: 600;
 }
+
 h4 {
-  font-size: 1.35em;
+  font-size: 1.10em;
   font-weight: 600;
 }
 
 a {
   font-weight: 600;
-  text-decoration: none;
+  color: #11c793;
 }
+
 a:visited {
-  color: #0b8562;
+  color: #11c793;
 }
+
 a:hover,
 a:focus {
-  color: #9cc6b9
+  color: #258c6e;
 }
+
 a:active{
-  color:#11c793
+  color:#11c793;
 }
 
 .button{
   display:inline-block;
+  font-weight: 700;
   background-color: #11c793;
   color: #ffffff !important;
   padding: 15px 40px;
   border-radius: 4px;
   transition: 0.2s opacity;
+  text-decoration: none;
+  margin: 40px;
 }
-.button:hover{
+
+.button:hover,
+.button:focus{
   background-color:#0b8562;
 }
+
 .button:active{
   background-color:#0b8562;
 }
 
 .button.contact{
   background-color: transparent;
-  color: #262626 !important;
-  border: 3px solid #262626;
+  border: 3px solid #ffffff;
   border-radius: 50px;
   padding: 10px 60px;
+  font-size: 1.2em;
 }
-.button.contact:hover{
-  background-color:#262626;
-  color:#ffffff !important;
-}
+
+.button.contact:hover,
 .button.contact:active{
-  background-color:#262626;
-  color:#ffffff !important;
+  background-color:#ffffff;
+  color: #262626 !important;
 }
 
 .button.secondary{
@@ -109,6 +119,160 @@ a:active{
   opacity: 0.8;
   color: #ffffff !important;
 }
-.img{
+
+img{
   width:100%;
+}
+
+/* Layout styling */
+
+.container{
+  padding: 0 15px;
+  max-width: 1200px;
+}
+
+.row{
+  margin: 25px 0;
+}
+
+.logo{
+  max-width:40px;
+  padding-top: 10px;
+}
+
+header{
+  background-color:#efefef;
+  text-align: center;
+  padding: 10px 0;
+  -webkit-box-shadow: 0px 2px 4px 0px rgba(50, 50, 50, 0.5);
+  -moz-box-shadow:    0px 2px 4px 0px rgba(50, 50, 50, 0.5);
+  box-shadow:         0px 2px 4px 0px rgba(50, 50, 50, 0.5);
+  position: fixed;
+  width: 100%;
+}
+
+nav{
+  display: inline-block;
+  width: 100%;
+}
+
+nav > ul {
+  list-style-type: none;
+  padding: 0;
+  margin-bottom:0;
+}
+
+nav > ul > li {
+  display: inline-block;
+}
+
+nav > ul > li > a{
+  text-decoration: none;
+  padding: 0 15px;
+  font-family: 'Montserrat', sans-serif;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #262626
+}
+
+nav > ul > li > a:visited{
+    color: #262626;
+}
+
+nav > ul > li > a:hover{
+    color: #258c6e;
+}
+
+nav > ul > li > a:active{
+    color: #11c793;
+}
+
+#hero{
+  padding: 40px 15px;
+  display: inline-block;
+  width: 100%;
+}
+
+#hero h1,
+#mp-page h1{
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+#hero p{
+  text-align: center;
+  font-weight: 500;
+  font-size: 1.1em;
+}
+
+footer{
+  background-color: #262626;
+  color: #ffffff !important;
+  text-align: center;
+  padding-top: 40px;
+}
+
+footer h2{
+  padding-bottom: 40px;
+}
+
+footer p{
+  font-size: 1.2em;
+}
+
+.social-link{
+  max-width: 40px;
+  padding: 20px;
+}
+
+#copyright{
+  font-size: 0.8em;
+  font-weight: 300;
+  margin:0;
+  padding-top: 20px;
+  padding-bottom: 10px;
+}
+
+main {
+  padding-top: 100px;
+}
+
+#work{
+  padding-top: 40px;
+}
+
+#work h2{
+  text-align: center;
+}
+
+#work img{
+  margin-top: 40px;
+}
+
+#about{
+  text-align:center;
+  background-color:#11c793;
+}
+
+#about svg{
+  max-width:35px;
+  padding-top:40px;
+  margin: 0 auto;
+}
+
+#about p{
+  display: inline-block;
+  width: 100%;
+  margin-top: 0;
+}
+
+#about h2{
+  padding-top: 20px;
+}
+.section-top-padding{
+  padding-top:40px;
+}
+
+.section-bottom-padding{
+  padding-bottom:40px;
 }
