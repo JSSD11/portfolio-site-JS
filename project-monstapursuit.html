@@ -6,7 +6,7 @@
   <meta name="author" content="Joanne Saad">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>MonstaPursuit Project</title>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700&family=Rajdhani:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Rajdhani:wght@300;400;500;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
   <link rel="stylesheet" type="text/css" href="css/style.css"/>
   <link rel="icon" type="image/png" href="img/favicon/favicon.ico" />
@@ -16,7 +16,7 @@
 
 <body>
   <header>
-    <div class="container">
+    <div class="nav-container">
       <a href="index.html"><img src="img/JS_logo_black.svg" alt="Joanne Saad Designs Logo" class="logo"></a>
       <nav>
         <ul>
@@ -29,46 +29,46 @@
   </header>
   <main id="mp-page" class="project-page">
     <div class="section">
-      <div class="container">
-        <h1>MonstaPursuit Case Study</h1>
+      <div>
+        <h1>MonstaPursuit <br> Case Study</h1>
       </div>
     </div>
 
-    <div class="section"> <!--intro section-->
-      <div class="container">
-        <picture>
-          <source srcset="img/monstapursuit/MP_1@1x.jpg" media=(max-width:767px)>
-          <img src="img/monstapursuit/MP_1@1x.jpg" alt="monstapursuit running game app">
-        </picture>
-        <div> <!--overview section-->
-          <h2>OVERVIEW</h2>
-          <p>
-            MonstaPursuit is a mobile app that turns your run into a game, where you must find and battle virtual monsters with exercise along your route. The app provides a new way to bring variety and fun into running, as well as providing a social
-            platform to foster local fitness communities.
-          </p>
-          <div class="row"> <!--container for columns-->
-            <div class="column"> <!--left column-->
-              <h2>CONTEXT</h2>
-              <p>
-                I designed MonstaPursuit as part of CareerFoundry’s UX Design course, where I was tasked to design a scavenger hunt mobile app. I decided to expand the concept and use it to turn a one-dimensional, individual workout, such as
-                running,into a multi-dimensional, fun, and social experience.
-              </p>
-            </div>
-            <div class="column"> <!--right column-->
-              <h2>MY ROLE</h2>
-              <p>
-                I was responsible for all stages of the design process, from the initial concept and problem definition, to the implementation of the final user interface.
-              </p>
-              <h2>TOOLS</h2>
-              <p>
-                Sketchpad, pen & pencil, Balsamiq, Adobe XD, Adobe Illustrator, Adobe Photoshop, Prott, UsabilityHub, OptimalSort.
-              </p>
-            </div>
-          </div>
-        </div>
+    <div class="section mt-2-5"> <!--intro section-->
+      <picture>
+        <source srcset="img/monstapursuit/MP_1@1x.jpg" media=(max-width:767px)>
+        <img src="img/monstapursuit/MP_1@1x.jpg" alt="monstapursuit running game app">
+      </picture>
+      <div  class="s-overview-1">
+        <h2 class="mt-0">OVERVIEW</h2>
+        <p>
+          MonstaPursuit is a mobile app that turns your run into a game, where you must find and battle virtual monsters with exercise along your route. The app provides a new way to bring variety and fun into running, as well as providing a social
+          platform to foster local fitness communities.
+        </p>
+      </div>
+      <div class="container s-overview-2">
         <div class="row"> <!--container for columns-->
           <div class="column"> <!--left column-->
-            <h3>THE CHALLENGE</h3>
+            <h3>CONTEXT</h3>
+            <p>
+              I designed MonstaPursuit as part of CareerFoundry’s UX Design course, where I was tasked to design a scavenger hunt mobile app. I decided to expand the concept and use it to turn a one-dimensional, individual workout, such as
+              running,into a multi-dimensional, fun, and social experience.
+            </p>
+          </div>
+          <div class="column"> <!--right column-->
+            <h3>MY ROLE</h3>
+            <p>
+              I was responsible for all stages of the design process, from the initial concept and problem definition, to the implementation of the final user interface.
+            </p>
+            <h3>TOOLS</h3>
+            <p>
+              Sketchpad, pen & pencil, Balsamiq, Adobe XD, Adobe Illustrator, Adobe Photoshop, Prott, UsabilityHub, OptimalSort.
+            </p>
+          </div>
+        </div>
+        <div class="row box mt-3"> <!--container for columns-->
+          <div class="column"> <!--left column-->
+            <h4>THE CHALLENGE</h4>
             <ul>
               <li>Make running a fun and social activity.</li>
               <li>Provide a way to monitor and view progress.</li>
@@ -77,7 +77,7 @@
             </ul>
           </div>
           <div class="column"> <!--right column-->
-            <h3>THE SOLUTION</h3>
+            <h4>THE SOLUTION</h4>
             <ul>
               <li>A game where players earn points by battling virtual monsters with exercise along their run.</li>
               <li>Allow players to challenge each other and share their experience.</li>
@@ -89,13 +89,15 @@
       </div>
     </div>
 
-    <div class="section">
+    <div class="section s-process">
       <div class="container">
-        <h2>MY PROCESS</h2>
+        <h3>MY PROCESS</h3>
+        <div class="mt-2-5">
         <picture>
           <source srcset="img/monstapursuit/process@1x.png" media="(max-width:767px)">
           <img src="img/monstapursuit/process@2x.png" alt="my process diagram">
         </picture>
+      </div>
         <p>
           I implemented the design thinking process, starting with user research to gain an understanding of user needs and the problem space. This included, conducting competitive analyses, and facilitating user interviews and surveys. Next, I
           created user personas, task analyses, and user flows, which would become the foundation for the information architecture of the app. The ideation phase entailed the development of low- to mid-fidelity wireframes, which I used to turn into
@@ -106,7 +108,9 @@
     </div>
 
     <div class="section"> <!--research section-->
-      <h2>1| RESEARCH</h2>
+      <div class="banner">
+        <h2>1 | RESEARCH</h2>
+      </div>
       <div class="container">
         <div class="row">
           <div class="column">
@@ -116,7 +120,7 @@
               my app aimed to combine these two concepts. I was interested in how these apps build engagement and motivation through rewards and gamification, as well as how much emphasis they place on the social features.
             </p>
           </div>
-          <div class="column">
+          <div class="column mt-2-5">
             <picture>
               <source srcset="img/monstapursuit/competitive_landscape@1x.png" media="(max-min-width:767px)">
               <img src="img/monstapursuit/competitive_landscape@2x.png" alt="competititive landscape chart">
@@ -125,12 +129,29 @@
         </div>
         <div class="row">
           <div class="column">
-            <div>
-              <button id="open-analyses">View Analyses</button>
+            <h3>COMPETITIVE ANALYSIS</h3>
+            <p>
+              I performed in-depth analyses on 5 competitors to identify where they excel, weaknesses in their product, and potential gaps that fail to satisfy customer needs. This analysis was used to form assumptions and a hypothesis for testing.
+            </p>
+            <div class="highlight-text">
+              <p>
+                What are they selling?
+              </p>
+              <p>
+                What are they communicating through their product?
+              </p>
+              <p>
+                What are they missing in their messaging, product, or overall offering?
+              </p>
             </div>
-            <div> <!--lightbox container-->
-              <div> <!--modal content-->
-                <div>
+          </div>
+          <div class="column mt-1">
+            <div id="comp-analysis">
+              <a href="#" class="button mp center">View Analyses</a>
+            </div>
+        <!---<div> <!--lightbox container-->
+          <!--<div> <!--modal content-->
+            <!---<div>
                   <picture>
                       <source=srcset="img/monstapursuit/strava@1x.jpg" media="(max-min-width:767px)">
                       <img src="img/monstapursuit/strava@2x.jpg" alt="slide 1">
@@ -160,27 +181,11 @@
                       <img src="img/monstapursuit/geocaching@2x.jpg" alt="slide 5">
                   </picture>
                 </div>
-              </div>
-            </div>
-          </div>
-          <div class="column">
-            <h3>COMPETITIVE ANALYSIS</h3>
-            <p>
-              I performed in-depth analyses on 5 competitors to identify where they excel, weaknesses in their product, and potential gaps that fail to satisfy customer needs. This analysis was used to form assumptions and a hypothesis for testing.
-            </p>
-            <div>
-              <p>
-                What are they selling?
-              </p>
-              <p>
-                What are they communicating through their product?
-              </p>
-              <p>
-                What are they missing in their messaging, product, or overall offering?
-              </p>
-            </div>
+              </div> --->
           </div>
         </div>
+      </div>
+      <div class="container bg-white">
         <div class="row"> <!--interviews sub-section-->
           <div class="column">
             <h3>GETTING TO KNOW THE USER</h3>
@@ -188,14 +193,14 @@
           </div>
         </div>
         <div class="row">
-          <div class="column">
+          <div class="column mt-2-5">
             <picture>
               <source srcset="img/monstapursuit/interviews@1x.png" media="(max-width:767px)">
               <img src="img/monstapursuit/interviews@2x.png" alt="interviews">
             </picture>
           </div>
           <div class="column">
-            <p>
+            <p class="pt-2-5">
               My research goals were three-fold:
             </p>
             <ul>
@@ -203,16 +208,17 @@
               <li>Understand how respondents use technology while they exercise.</li>
               <li>Discover the respondents’ experience with scavenger hunts to determine how I could bring together these two concepts.</li>
             </ul>
-            <p>
+            <p class="pt-1-75">
               I recruited 5 people, living in major cities all over the world who enjoyed experimenting with new technology and were generally quite active or looking to build a more active lifestyle.
             </p>
           </div>
         </div>
       </div>
     </div>
+
     <div class="section"> <!---interview quotes sub-section--->
-      <div class="row"> <!--container/ wrapper-->
-        <div class="column"> <!--column 1-->
+      <div class="row bg-beige highlight-text mt-0"> <!--container/ wrapper-->
+        <div class="column quotes"> <!--column 1-->
           <p>I exercise to become a better version of myself.</p>
         </div>
         <div class="column"> <!--column 2-->
@@ -224,7 +230,7 @@
       </div>
     </div>
     <div class="section">
-      <div class= "container">
+      <div class= "container bg-white">
         <div class="row">
           <div class="column">
             <h3>KEY FINDINGS</h3>
@@ -240,9 +246,11 @@
     </div>
 
     <div class="section"> <!--define section-->
-      <h2>2| DEFINE</h2>
-      <div class="container">
-        <div cladd="row">
+      <div class="banner">
+        <h2>2 | DEFINE</h2>
+      </div>
+      <div class="container pb-1">
+        <div class="row">
           <div class="column">
             <h3>PROBLEM DEFINITION</h3>
             <p>
@@ -251,7 +259,7 @@
           </div>
         </div>
         <div>
-          <p>
+          <p class="box center mt-3 mb-3" style="padding:2.5em; font-weight:500;">
             People need a more engaging and exciting way to get fit in the outdoors, whilst also tracking key fitness stats, in order to keep themselves motivated and challenged during their workout and ultimately lead a healthier lifestyle.
           </p>
         </div>
@@ -262,31 +270,34 @@
               Taking the data from the interviews, I created an affinity map to reveal the needs and problems of users. I was then able to represent the various target groups identified by creating 3 personas. These personas helped to inform design
               decisions, ensuring the strategy remained aligned to their unique and individual needs. This was important to help avoid feature creep.
             </p>
-            <p>
+            <p class="pt-1-75">
               Meet Trevor, Adriana, and Rea.
             </p>
           </div>
         </div>
-        <div> <!--slideshow container-->
-          <div>   <!--slide 1-->
-            <picture>
-              <source=srcset="img/monstapursuit/persona_trevor@1x.jpg" media="(max-min-width:767px)">
-                <img src="img/monstapursuit/persona_trevor@2x.jpg" alt="persona trevor">
-            </picture>
-          </div>
-          <div> <!--slide 2-->
-            <picture>
-              <source=srcset="img/monstapursuit/persona_adriana@1x.jpg" media="(max-min-width:767px)">
-                <img src="img/monstapursuit/persona_adriana@2x.jpg" alt="persona adriana">
-            </picture>
-          </div>
-          <div> <!--slide 3-->
-            <picture>
-              <source=srcset="img/monstapursuit/persona_rea@1x.jpg" media="(max-min-width:767px)">
-                <img src="img/monstapursuit/persona_rea@2x.jpg" alt="persona rea">
-            </picture>
-          </div>
+      </div>
+      <div class="bg-beige pt-2-5 pb-2-5"> <!--slideshow container-->
+        <div>   <!--slide 1-->
+          <picture>
+            <source=srcset="img/monstapursuit/persona_trevor@1x.jpg" media="(max-min-width:767px)">
+              <img src="img/monstapursuit/persona_trevor@2x.jpg" alt="persona trevor">
+          </picture>
         </div>
+      <!--  <div> <!--slide 2-->
+      <!--    <picture>
+            <source=srcset="img/monstapursuit/persona_adriana@1x.jpg" media="(max-min-width:767px)">
+              <img src="img/monstapursuit/persona_adriana@2x.jpg" alt="persona adriana">
+          </picture>
+        </div>
+        <div> <!--slide 3-->
+        <!--  <picture>
+            <source=srcset="img/monstapursuit/persona_rea@1x.jpg" media="(max-min-width:767px)">
+              <img src="img/monstapursuit/persona_rea@2x.jpg" alt="persona rea">
+          </picture>
+        </div>
+      -->
+      </div>
+      <div class="container">
         <div class="row">
           <div class="column">
             <h3>ENHANCING THE NARRATIVE</h3>
@@ -296,25 +307,26 @@
             </p>
           </div>
         </div>
-        <div> <!--slideshow container-->
+        <div class="slideshow shadow-orange"> <!--slideshow container-->
           <div> <!--slide 1-->
             <picture>
               <source=srcset="img/monstapursuit/user_journey_trevor@1x.jpg" media="(max-min-width:767px)">
                 <img src="img/monstapursuit/user_journey_trevor@2x.jpg" alt="journey map trevor">
             </picture>
           </div>
-          <div> <!--slide 2-->
-            <picture>
+        <!--  <div> <!--slide 2-->
+        <!--    <picture>
               <source=srcset="img/monstapursuit/user_journey_adriana@1x.jpg" media="(max-min-width:767px)">
                 <img src="img/monstapursuit/user_journey_adriana@2x.jpg" alt="journey map adriana">
             </picture>
           </div>
           <div> <!--slide 3-->
-            <picture>
+        <!--  <picture>
               <source=srcset="img/monstapursuit/user_journey_rea@1x.jpg" media="(max-min-width:767px)">
                 <img src="img/monstapursuit/user_journey_rea@2x.jpg" alt="journey map rea">
             </picture>
           </div>
+        -->
         </div>
         <div class="row">
           <div class="column">
@@ -323,32 +335,35 @@
             </p>
           </div>
         </div>
-        <div> <!--slideshow container-->
+        <div class="slideshow user-flow shadow-grey"> <!--slideshow container-->
           <div> <!--slide 1-->
             <picture>
               <source=srcset="img/monstapursuit/user_flow_trevor@1x.png" media="(max-min-width:767px)">
                 <img src="img/monstapursuit/user_flow_trevor@2x.png" alt="user flow trevor">
             </picture>
           </div>
-          <div> <!--slide 2-->
-            <picture>
+        <!---  <div> <!--slide 2-->
+        <!--    <picture>
               <source=srcset="img/monstapursuit/user_flow_adriana@1x.png" media="(max-min-width:767px)">
                 <img src="img/monstapursuit/user_flow_adriana@2x.png" alt="user flow adriana">
             </picture>
           </div>
           <div> <!--slide 3-->
-            <picture>
+        <!--    <picture>
               <source=srcset="img/monstapursuit/user_flow_rea@1x.png" media="(max-min-width:767px)">
                 <img src="img/monstapursuit/user_flow_rea@2x.png" alt="user flow rea">
             </picture>
           </div>
+        -->
         </div>
       </div>
     </div>
 
     <div class="section"> <!--ideate section-->
-      <h2>3| IDEATE</h2>
-      <div class="container">
+      <div class="banner">
+        <h2>3 | IDEATE</h2>
+      </div>
+      <div class="container bg-white">
         <div class="row">
           <div class="column">
             <h3>CREATING THE BLUEPRINT</h3>
@@ -377,12 +392,14 @@
             </p>
           </div>
         </div>
-        <div>
+        <div class="shadow-grey mt-2-5 mb-1-5">
           <picture>
             <source=srcset="img/monstapursuit/site_map@1x.jpg" media="(max-min-width:767px)">
               <img src="img/monstapursuit/site_map@2x.jpg" alt="revised site map">
           </picture>
         </div>
+      </div>
+      <div class="container">
         <div class="row">
           <div class="column">
             <h3>PUTTING PEN TO PAPER</h3>
@@ -394,7 +411,7 @@
             </p>
           </div>
         </div>
-        <div>
+        <div class="shadow-orange mt-2-5 mb-2-5">
           <picture>
             <source=srcset="img/monstapursuit/wireframes@1x.jpg" media="(max-min-width:767px)">
               <img src="img/monstapursuit/wireframes@2x.jpg" alt="preliminary sketches">
@@ -408,7 +425,7 @@
             </p>
           </div>
         </div>
-        <div>
+        <div class="mt-2-5 mb-1">
           <picture>
             <source=srcset="img/monstapursuit/mid_fid_wires@1x.png" media="(max-min-width:767px)">
               <img src="img/monstapursuit/mid_fid_wires@2x.png" alt="mid fidelity wireframes">
@@ -418,8 +435,10 @@
     </div>
 
     <div class="section"> <!--prototyping section-->
-      <h2>4| PROTOTYPE</h2>
-      <div class="container">
+      <div class="banner">
+        <h2>4 | PROTOTYPE</h2>
+      </div>
+      <div class="container pb-1">
         <div class="row">
           <div class="column">
             <h3>MAKING IT INTERACTIVE</h3>
@@ -428,15 +447,19 @@
             </p>
           </div>
         </div>
-        <div>
-          <picture>
-            <source=srcset="img/monstapursuit/prototype@1x.png" media="(max-min-width:767px)">
-              <img src="img/monstapursuit/prototype@2x.png" alt="prototype task example">
-          </picture>
+      </div>
+      <div class="container bg-beige">
+        <div class="pt-2-5">
+          <a href="#">
+            <picture>
+              <source=srcset="img/monstapursuit/prototype@1x.png" media="(max-min-width:767px)">
+                <img src="img/monstapursuit/prototype@2x.png" alt="prototype task example">
+            </picture>
+          </a>
         </div>
-        <div> <!--lightbox container-->
-          <div> <!--modal content-->
-            <div>
+      <!--  <div> <!--lightbox container-->
+      <!--    <div> <!--modal content-->
+      <!--      <div>
               <picture>
                   <source=srcset="img/monstapursuit/prototype_1@1x.png" media="(max-min-width:767px)">
                   <img src="img/monstapursuit/prototype_1@2x.png" alt="prototype slide 1">
@@ -456,12 +479,15 @@
             </div>
           </div>
         </div>
+      -->
       </div>
     </div>
 
     <div class="section"> <!--testing section-->
-      <h2>5| TESTING</h2>
-      <div class="container">
+      <div class="banner">
+        <h2>5| TESTING</h2>
+      </div>
+      <div class="container bg-white">
         <div class="row">
           <div class="column">
             <h3>PUTTING IT TO THE TEST</h3>
@@ -481,6 +507,8 @@
             </p>
           </div>
         </div>
+      </div>
+      <div class="container">
         <div class="row">
           <div class="coulmn">
             <h3>AFFINITY MAP</h3>
@@ -489,7 +517,7 @@
             </p>
           </div>
         </div>
-        <div>
+        <div class="shadow-grey mt-2-5 mb-1-5">
           <picture>
               <source=srcset="img/monstapursuit/affinity_map@1x.jpg" media="(max-min-width:767px)">
               <img src="img/monstapursuit/affinity_map@2x.jpg" alt="affinity map">
@@ -519,8 +547,10 @@
     </div>
 
     <div class="section"> <!--iterate & refine section-->
-      <h2>6| ITEERATE & REEFINE</h2>
-      <div class="container">
+      <div class="banner">
+        <h2>6 | ITERATE & REFINE</h2>
+      </div>
+      <div class="container bg-white pb-1">
         <div class="row">
           <div class="column">
             <h3>VISUAL DESIGN</h3>
@@ -540,13 +570,19 @@
             </p>
           </div>
         </div>
-        <div>
+      </div>
+      <div class="container bg-dark">
+        <div class="pt-2-5">
           <picture>
               <source=srcset="img/monstapursuit/style_guide@1x.png" media="(max-min-width:767px)">
               <img src="img/monstapursuit/style_guide@2x.png" alt="style guide">
           </picture>
-          <a href="files/style_guide.pdf" target="_blank">Link to Style Guide</a>
+          <div class="pt-1-75 center">
+            <a href="files/style_guide.pdf" target="_blank" style="color:#ffffff;">Link to Style Guide</a>
+          </div>
         </div>
+      </div>
+      <div class="container">
         <div class="row">
           <div class="column">
             <h3>FINAL DESIGN</h3>
@@ -555,15 +591,17 @@
             </p>
           </div>
         </div>
-        <div>
-          <picture>
-              <source=srcset="img/monstapursuit/perspective_screens@1x.jpg" media="(max-min-width:767px)">
-              <img src="img/monstapursuit/perspective_screens@2x.jpg" alt="mockup screens">
-          </picture>
-        </div>
+      </div>
+      <div style="font-size:1px;">
+        <picture>
+            <source=srcset="img/monstapursuit/perspective_screens@1x.jpg" media="(max-min-width:767px)">
+            <img src="img/monstapursuit/perspective_screens@2x.jpg" alt="mockup screens">
+        </picture>
+      </div>
+      <div class="container">
         <div class= "row">
           <div class="column">
-            <p>
+            <p class="pt-2-5 pb-2-5">
               Below is a video showcasing the main features of the app. Feel free to click on the “View prototype” link below to explore the app yourself.
             </p>
           </div>
@@ -571,14 +609,18 @@
         <div>
           <video src="video/monstapursuit/app_clip.mp4" type="video/mp4">
           </video>
-          <a href="https://xd.adobe.com/view/67c97b9b-7ddf-46d8-7455-73e31f62d1d5-11f8/" target="_blank">Link to Prototype</a>
+          <div class="center pt-1">
+            <a href="https://xd.adobe.com/view/67c97b9b-7ddf-46d8-7455-73e31f62d1d5-11f8/" target="_blank">Link to Prototype</a>
+          </div>
         </div>
       </div>
     </div>
 
     <div class="section"> <!--conclusion-->
-      <h2>CONCLUSION</h2>
-      <div class="container">
+      <div class="banner">
+        <h2>CONCLUSION</h2>
+      </div>
+      <div class="container bg-white">
         <div class="row">
           <div class="column">
             <h3>NEXT STEPS</h3>
@@ -600,16 +642,22 @@
             <p>
               Finally, augmented reality features could be implemented to provide a more immersive user experience.
             </p>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="column">
             <h3>LEARNINGS</h3>
             <p>
               Working on this project allowed me to fully understand the importance of competitive analysis, comprehensive user research, and usability testing.
             </p>
             <ol>
-                <li>Competitive analysis ensures sound understanding of the market and existing solutions which helped me recognize successful practices, and, more importantly, areas with gaps in the market. I was able to focus on these as opportunities to develop a design further and hence provide an advantage for my users.</li>
-                <li> 2. Extensive user research provided me with valuable knowledge about my users - who they are and what are their needs - which was essential for delivering a high quality design speecificallly targeted for them.</li>
-                <li> 3. Usability testing prevented me from implementing inefficient solutions in thee final development stage, thereby saving time, effort, and resources put into future reworks.</li>
+                <li><span>Competitive analysis ensures sound understanding of the market and existing solutions which helped me recognize successful practices, and, more importantly, areas with gaps in the market. I was able to focus on these as opportunities to develop a design further and hence provide an advantage for my users.</span></li>
+                <li><span>Extensive user research provided me with valuable knowledge about my users - who they are and what are their needs - which was essential for delivering a high quality design speecificallly targeted for them.</span></li>
+                <li><span>Usability testing prevented me from implementing inefficient solutions in thee final development stage, thereby saving time, effort, and resources put into future reworks.</span></li>
             </ol>
-            <p>
+            <p class="pt-2-5">
               While the entire project was a learning experience, I particularly enjoyed listening and talking to users to connect with their motivations and needs to design solutions. It helped me to understand my strengths and weaknesses as a designer which I can now respectively hone and improve upon.
             </p>
           </div>
@@ -621,7 +669,7 @@
   <!---footer section--->
   <footer id="contact">
     <div class="container">
-      <h2>Get in touch</h2>
+      <h2 class="pb-1">Get in touch</h2>
       <p>
         Do you like my work and want to discuss opportunities? Let's talk!
       </p>
@@ -629,12 +677,12 @@
         Just click on the link below to shoot me an email.
       </p>
       <div>
-        <a href="mailto:joanne.saad@gmail.com" class="button contact">Email me</a>
+        <a href="mailto:joanne.saad@gmail.com" class="button contact mt-1 mb-1">Email me</a>
       </div>
       <div>
         <!--social media links-->
         <a href="https://www.linkedin.com/in/joannesaad" target="_blank" class="social-link">
-          <svg height="50px" id="Layer_1" style="enable-background:new 0 0 67 67;" version="1.1" viewBox="0 0 67 67" width="67px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+          <svg height="50px" id="Layer_1" style="enable-background:new 0 0 67 67;" version="1.1" viewBox="0 0 67 67" width="67px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" class="mt-1-25">
             <path
               d="M50.837,48.137V36.425c0-6.275-3.35-9.195-7.816-9.195  c-3.604,0-5.219,1.983-6.119,3.374V27.71h-6.79c0.09,1.917,0,20.427,0,20.427h6.79V36.729c0-0.609,0.044-1.219,0.224-1.655  c0.49-1.22,1.607-2.483,3.482-2.483c2.458,0,3.44,1.873,3.44,4.618v10.929H50.837z M22.959,24.922c2.367,0,3.842-1.57,3.842-3.531  c-0.044-2.003-1.475-3.528-3.797-3.528s-3.841,1.524-3.841,3.528c0,1.961,1.474,3.531,3.753,3.531H22.959z M34,64  C17.432,64,4,50.568,4,34C4,17.431,17.432,4,34,4s30,13.431,30,30C64,50.568,50.568,64,34,64z M26.354,48.137V27.71h-6.789v20.427  H26.354z"
               style="fill-rule:evenodd;clip-rule:evenodd;fill:#ffffff;" /></svg>

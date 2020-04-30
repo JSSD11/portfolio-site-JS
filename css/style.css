@@ -9,9 +9,9 @@ Highlight/Accent colour: #11c793
 MonstaPursuit page:
 Primary colour (text): #262626
 Background colour 1: #ffffff
-Background colour 2: #fbfaf6
+Background colour 2: #fbfaf6 / #f3f1ed
 Highlight/Accent colour 1: #f78433
-Highlight/Accent colour 2: #80899a
+Highlight/Accent colour 2: #80899a / #4b5161
 */
 
 *{
@@ -27,10 +27,6 @@ body{
   background-color: #efefef;
 }
 
-body.project-page.monstapursuit{
-  background-color:#fbfaf6;
-}
-
 
 h1, h2, h3, h4 {
   font-family: 'Montserrat', sans-serif;
@@ -38,7 +34,7 @@ h1, h2, h3, h4 {
 }
 
 h1 {
-  font-size: 2.2em;
+  font-size: 2.25em;
   font-weight: 700;
 }
 
@@ -50,20 +46,26 @@ h2 {
 h3 {
   font-size: 1.25em;
   font-weight: 600;
+  padding-top: 1.25em;
+  margin-top:0;
 }
 
 h4 {
-  font-size: 1.10em;
+  font-size: 1em;
   font-weight: 600;
+}
+
+p{
+  margin-bottom: 1.25em;
 }
 
 a {
-  font-weight: 600;
   color: #11c793;
+  font-weight: 500;
 }
 
 a:visited {
-  color: #11c793;
+  color: #898989;
 }
 
 a:hover,
@@ -72,7 +74,7 @@ a:focus {
 }
 
 a:active{
-  color:#11c793;
+  color:#898989;
 }
 
 .button{
@@ -84,14 +86,12 @@ a:active{
   border-radius: 4px;
   transition: 0.2s opacity;
   text-decoration: none;
-  margin: 40px;
+  width: 100%;
+  text-align: center;
 }
 
 .button:hover,
-.button:focus{
-  background-color:#0b8562;
-}
-
+.button:focus,
 .button:active{
   background-color:#0b8562;
 }
@@ -105,6 +105,7 @@ a:active{
 }
 
 .button.contact:hover,
+.button.contact:focus,
 .button.contact:active{
   background-color:#ffffff;
   color: #262626 !important;
@@ -115,6 +116,8 @@ a:active{
   color: #ffffff !important;
 }
 
+.button.secondary:hover,
+.button.secondary:focus,
 .button.secondary:active{
   opacity: 0.8;
   color: #ffffff !important;
@@ -124,26 +127,29 @@ img{
   width:100%;
 }
 
+video{
+  width: 100%;
+}
 /* Layout styling */
 
 .container{
-  padding: 0 15px;
+  padding: 0 1em 3.5em;
   max-width: 1200px;
 }
 
 .row{
-  margin: 25px 0;
+  margin-top: 1em;
+  /*padding: 2em 0;*/
 }
 
 .logo{
   max-width:40px;
-  padding-top: 10px;
 }
 
 header{
   background-color:#efefef;
   text-align: center;
-  padding: 10px 0;
+  padding: 0.8em 0;
   -webkit-box-shadow: 0px 2px 4px 0px rgba(50, 50, 50, 0.5);
   -moz-box-shadow:    0px 2px 4px 0px rgba(50, 50, 50, 0.5);
   box-shadow:         0px 2px 4px 0px rgba(50, 50, 50, 0.5);
@@ -168,7 +174,7 @@ nav > ul > li {
 
 nav > ul > li > a{
   text-decoration: none;
-  padding: 0 15px;
+  padding: 0 0.8em;
   font-family: 'Montserrat', sans-serif;
   text-transform: uppercase;
   font-weight: 700;
@@ -176,27 +182,26 @@ nav > ul > li > a{
 }
 
 nav > ul > li > a:visited{
-    color: #262626;
+  color: #262626;
 }
 
 nav > ul > li > a:hover{
-    color: #258c6e;
+  color: #258c6e;
 }
 
 nav > ul > li > a:active{
-    color: #11c793;
+  color: #11c793;
 }
 
 #hero{
-  padding: 40px 15px;
+  padding: 2.5em 1em;
   display: inline-block;
   width: 100%;
 }
 
-#hero h1,
-#mp-page h1{
+#hero h1,{
   text-align: center;
-  margin-bottom: 60px;
+  margin-bottom: 1.67em;
 }
 
 #hero p{
@@ -209,11 +214,7 @@ footer{
   background-color: #262626;
   color: #ffffff !important;
   text-align: center;
-  padding-top: 40px;
-}
-
-footer h2{
-  padding-bottom: 40px;
+  padding-top: 2.5em;
 }
 
 footer p{
@@ -221,24 +222,20 @@ footer p{
 }
 
 .social-link{
-  max-width: 40px;
-  padding: 20px;
+  max-width: 2.5em;
+  padding: 1.25em;
 }
 
 #copyright{
-  font-size: 0.8em;
+  font-size: 0.83em;
   font-weight: 300;
   margin:0;
-  padding-top: 20px;
-  padding-bottom: 10px;
+  padding-top: 1.25em;
+  padding-bottom: 0.83em;
 }
 
 main {
-  padding-top: 100px;
-}
-
-#work{
-  padding-top: 40px;
+  padding-top: 95px;
 }
 
 #work h2{
@@ -246,33 +243,340 @@ main {
 }
 
 #work img{
-  margin-top: 40px;
+  margin-top: 2.5em;
 }
 
-#about{
+#about-s1{
   text-align:center;
   background-color:#11c793;
 }
 
-#about svg{
+#about-s1 svg{
   max-width:35px;
-  padding-top:40px;
+  padding-top:2.5em;
   margin: 0 auto;
 }
 
-#about p{
+#about-s1 p{
   display: inline-block;
   width: 100%;
   margin-top: 0;
 }
 
-#about h2{
-  padding-top: 20px;
-}
-.section-top-padding{
-  padding-top:40px;
+#about-s1 h2{
+  padding-top: 1.5em;
 }
 
-.section-bottom-padding{
-  padding-bottom:40px;
+#about-s3{
+  background-color:#d0d0d0;
+  padding-left: 3em;
+  padding-right: 3em;
+}
+
+/* Margins and paddings*/
+
+.mt-1{
+  margin-top: 1em;
+}
+
+.mb-1{
+  margin-bottom: 1em;
+}
+
+.mt-1-25{
+  margin-top: 1.25em;
+}
+
+.mb-1-25{
+  margin-bottom: 1.25em;
+}
+
+.mt-1-5{
+  margin-top: 1.5em;
+}
+
+.mb-1-5{
+  margin-bottom: 1.5em;
+}
+
+.mt-2-5{
+  margin-top: 2.5em;
+}
+
+.mb-2-5{
+  margin-bottom: 2.5em;
+}
+
+.mt-3{
+  margin-top: 3em;
+}
+
+.mb-3{
+margin-bottom:3em;
+}
+
+.mt-0{
+  margin-top:0;
+}
+
+.pt-0{
+  padding-top:0;
+}
+
+.pb-0{
+  padding-bottom:0;
+}
+
+.pb-1{
+  padding-bottom: 1em;
+}
+
+.pt-1{
+  padding-top: 1em;
+}
+
+.pt-1-25{
+  padding-top: 1.25em;
+}
+
+.pb-1-25{
+  padding-bottom: 1.25em;
+}
+
+.pt-1-75{
+  padding-top: 1.75em;
+}
+
+.pb-1-75{
+  padding-bottom: 1.75m;
+}
+
+.pt-2-5{
+  padding-top: 2.5em;
+}
+
+.pb-2-5{
+  padding-bottom: 2.5em;
+}
+
+.center{
+  text-align: center;
+}
+
+#strip{
+  height: 15em;
+  background-image: url("../img/about_page/pattern@1x.jpg");
+  background-color: #11c793;
+  background-size: cover;
+}
+
+/* MonstaPursuit page styling */
+
+body #mp-page {
+  color: #4b5161;
+  background-color:#fbfaf6 !important;
+}
+
+#mp-page h1{
+  font-size: 1.75em;
+  color: #4b5161 !important;
+  text-align: center;
+  padding-top: 1em;
+}
+
+#mp-page h3{
+  color: #4b5161;
+}
+
+#mp-page h4 {
+  color: #f78433;
+}
+
+#mp-page a{
+color: #f78433;
+}
+
+#mp-page a:visited {
+  color: #4b5161;
+}
+
+#mp-page a:hover,
+#mp-page a:focus {
+  color: #c15b16;
+}
+
+#mp-page a:active{
+  color:#4b5161;
+}
+
+#mp-page .button{
+    background-color: #4b5161;
+    font-weight: 500;
+  }
+
+#mp-page .button:hover,
+#mp-page .button:focus,
+#mp-page .button:active{
+    opacity: 0.8;
+}
+
+.s-overview-1{
+  color: #ffffff;
+  background-color:#80899a;
+  margin-top: -10px;
+  padding: 40px 15px;
+}
+
+.s-overview-1 p{
+  font-weight: 500;
+  font-size: 1.125em;
+}
+
+#mp-page ul{
+  list-style: none;
+}
+
+#mp-page ul li::before {
+  content: "\2022";  /* Add content: \2022 is the CSS Code for a bullet*/
+  color: #f78433; /* Change the color*/
+  font-weight: bold;
+  font-size: 1.5em;
+  display: inline-block; /* Needed to add space between the bullet and the text */
+  width: 1em; /* Also needed for space */
+  margin-left: -1em; /* Also needed for space */
+}
+
+#mp-page ul{
+  margin-bottom: 2em;
+}
+
+#mp-page ol li{
+  color:#f78433;
+  font-weight: 500;
+  margin-bottom: 1em;
+}
+
+#mp-page ol li span{
+  color:#4b5161;
+  font-weight: 400;
+}
+
+.box h4{
+  padding-left: 1em;
+}
+
+.box{
+  border: 3px solid #f78433;
+  border-radius: 1.5em;
+  padding: 1em;
+  -webkit-box-shadow: 0px 0px 8px 0px rgba(75, 81, 97, 0.8);
+  -moz-box-shadow:    0px 0px 8px 0px rgba(75, 81, 97, 0.8);
+  box-shadow:         0px 0px 8px 0px rgba(75, 81, 97, 0.8);
+}
+
+/*.box > div > ul {
+  margin-bottom: 0 !important;
+}
+*/
+/*#mp-page img{
+  margin-top: 1.5em;
+}*/
+
+#mp-page .container{
+  padding-top: 1em;
+}
+
+.s-process{
+  background-color: #ffffff;
+}
+
+.banner{
+  background-color: #4b5161;
+  color: #ffffff;
+  text-align: center;
+}
+
+.banner h2{
+  padding: 1em 0;
+  margin:0;
+}
+
+.highlight-text{
+  color: #f78433;
+  font-family:'Montserrat', sans-serif;
+  text-align: center;
+  padding: 1.5em;
+}
+
+.button.mp{
+  width: auto;
+  padding: 1em;
+  position: absolute;
+  left: 25%;
+  bottom: 40%;
+}
+
+#comp-analysis{
+  background-image: url("../img/monstapursuit/competitive_analyses@1x.png");
+  background-color: #fbfaf6;
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 100%;
+  height: 0;
+  padding-top: 147.82%; /* (img-height / img-width * container-width) */
+                /* (4093 / 2769 * 100) */
+  position: relative;
+}
+
+.bg-white{
+  background-color: #ffffff;
+}
+
+.bg-beige{
+  background-color: #f3f1ed;
+}
+
+.bg-dark{
+  background-color: #80899a;
+}
+.s-quotes p{
+  margin-bottom: 2em;
+}
+
+.quotes::before{
+/*  content: "\0022	";
+  color: #f78433;
+  font-weight: bold;
+  font-size: 3em;
+  font-family: 'Montserrat', sans-serif;*/
+  content: url("../img/monstapursuit/quotation-marks.svg");
+  background-size: 3.5em 3.5em;
+  height: 3.5em;
+  width: 3.5em;
+  display: inline-block;
+  text-align: center;
+  margin: 1em 0;
+}
+
+.shadow-orange{
+  -webkit-box-shadow: 0px 0px 8px 0px rgba(247, 132, 51, 0.8);
+  -moz-box-shadow:    0px 0px 8px 0px rgba(247, 132, 51, 0.8);
+  box-shadow:         0px 0px 8px 0px rgba(247, 132, 51, 0.8);
+}
+
+.slideshow{
+  margin: 3.5em 0;
+}
+
+.shadow-grey{
+  -webkit-box-shadow: 0px 0px 8px 0px rgba(128, 137, 154, 0.8);
+  -moz-box-shadow:    0px 0px 8px 0px rgba(128, 137, 154, 0.8);
+  box-shadow:         0px 0px 8px 0px rgba(128, 137, 154, 0.8);
+}
+
+.slideshow.user-flow{
+  border-radius: 20px;
+  font-size: 1px;    /* to get rid of space betweeen the image and the slideshow containeer*/
+  margin-top: 56px;
+  margin-bottom: 40px;
 }

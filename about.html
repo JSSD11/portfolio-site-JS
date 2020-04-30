@@ -6,7 +6,7 @@
   <meta name="author" content="Joanne Saad">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>About Joanne Saad</title>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700&family=Rajdhani:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Rajdhani:wght@300;400;500;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
   <link rel="stylesheet" type="text/css" href="css/style.css"/>
   <link rel="icon" type="image/png" href="img/favicon/favicon.ico" />
@@ -16,7 +16,7 @@
 
 <body>
   <header>
-    <div class="container">
+    <div class="nav-container">
       <a href="index.html"><img src="img/JS_logo_black.svg" alt="Joanne Saad Designs Logo" class="logo"></a>
       <nav>
         <ul>
@@ -28,7 +28,7 @@
     </div>
   </header>
   <main>
-    <div id="about" class="section section-top-padding section-bottom-padding">
+    <div id="about-s1" class="section pt-2-5 pb-2-5">
       <div class="container">
         <h1>
           About Me
@@ -47,7 +47,7 @@
         <p> scroll down.</p>
       </div>
     </div>
-    <div class="section section-top-padding"> <!--container wrapper-->
+    <div class="section pt-2-5"> <!--container wrapper-->
       <div class="container"> <!--my story section-->
         <div class="row">
           <div class="column"> <!--right column-->
@@ -57,7 +57,7 @@
               </picture>
           </div>
           <div class="column"> <!--left column-->
-              <h2>My Story</h2>
+              <h2 class="center">My Story</h2>
               <p>
                 Hi I’m Joanne, a UX/UI designer currently based in London; but this has not always been the case. Over the years, my curious nature, along with my ability to learn and adapt quickly, have enabled me to cross both borders and
                 industries.
@@ -70,13 +70,15 @@
                 Through UX Design I am committed to improve and enrich how people interact with technology so they can work smarter and live happier. I love getting under the hood of problems and figuring out how best to connect the dots so that the
                 system (human + technology) works in harmony - only then can I achieve my goal of turning people’s stories into meaningful experiences.
               </p>
-              <a href="files/JS_resume.pdf" target="_blank" class= "button secondary">View Resume</a>
+              <a href="files/JS_resume.pdf" target="_blank" class= "button secondary mt-1-25">View Resume</a>
           </div>
         </div>
       </div>
     </div>
     <div class="section"> <!--skills and tools section-->
-      <div class="container">
+      <div id="strip">
+      </div>
+      <div id ="about-s3" class="container pt-1-25">
         <div class="row"> <!--container for columns-->
           <div class="column"> <!--column 1-->
             <h3>Why work with me?</h3>
@@ -120,11 +122,13 @@
         </div>
       </div>
     </div>
+    <div id="strip">
+    </div>
   </main>
   <!---footer section--->
   <footer id="contact">
     <div class="container">
-      <h2>Get in touch</h2>
+      <h2 class="pb-1">Get in touch</h2>
       <p>
         Do you like my work and want to discuss opportunities? Let's talk!
       </p>
@@ -132,12 +136,12 @@
         Just click on the link below to shoot me an email.
       </p>
       <div>
-        <a href="mailto:joanne.saad@gmail.com" class="button contact">Email me</a>
+        <a href="mailto:joanne.saad@gmail.com" class="button contact mt-1 mb-1">Email me</a>
       </div>
       <div>
         <!--social media links-->
         <a href="https://www.linkedin.com/in/joannesaad" target="_blank" class="social-link">
-          <svg height="50px" id="Layer_1" style="enable-background:new 0 0 67 67;" version="1.1" viewBox="0 0 67 67" width="67px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+          <svg height="50px" id="Layer_1" style="enable-background:new 0 0 67 67;" version="1.1" viewBox="0 0 67 67" width="67px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" class="mt-1-25">
             <path
               d="M50.837,48.137V36.425c0-6.275-3.35-9.195-7.816-9.195  c-3.604,0-5.219,1.983-6.119,3.374V27.71h-6.79c0.09,1.917,0,20.427,0,20.427h6.79V36.729c0-0.609,0.044-1.219,0.224-1.655  c0.49-1.22,1.607-2.483,3.482-2.483c2.458,0,3.44,1.873,3.44,4.618v10.929H50.837z M22.959,24.922c2.367,0,3.842-1.57,3.842-3.531  c-0.044-2.003-1.475-3.528-3.797-3.528s-3.841,1.524-3.841,3.528c0,1.961,1.474,3.531,3.753,3.531H22.959z M34,64  C17.432,64,4,50.568,4,34C4,17.431,17.432,4,34,4s30,13.431,30,30C64,50.568,50.568,64,34,64z M26.354,48.137V27.71h-6.789v20.427  H26.354z"
               style="fill-rule:evenodd;clip-rule:evenodd;fill:#ffffff;" /></svg>
