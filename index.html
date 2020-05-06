@@ -14,18 +14,26 @@
   <link rel="icon" type="image/png" href="img/favicon/favicon-16x16.png" sizes="16x16" />
 </head>
 
-<body>
+<body id="index">
   <header>
-    <div class="nav-container">
+    <div class="nav-container highlightTextIn">
       <a href="index.html"><img src="img/JS_logo_black.svg" alt="Joanne Saad Designs Logo" class="logo margin-top-1"></a>
       <nav>
         <ul>
-          <li><a href="index.html#work">Work</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="#contact">Contact</a></li>
+          <li><a  href="index.html#work" alt="Work">Work</a></li>
+          <li><a href="about.html" alt="About">About</a></li>
+          <li><a  href="#contact"alt="Contact">Contact</a></li>
         </ul>
       </nav>
     </div>
+      <!--<a href="index.html"><img src="img/JS_logo_black.svg" alt="Joanne Saad Designs Logo" class="logo margin-top-1"></a>
+      <nav>
+          <ul>
+            <li><a href="index.html#work">Work</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+      </nav>-->
   </header>
   <main>
     <div class="section"> <!--section block-->
@@ -42,33 +50,39 @@
       <!--projects section-->
       <div id="work" class="section">
         <div class="container pb-2-5"> <!--container wrapper-->
-          <h2>My Work</h2>
+          <h2 class="pt-2-5">My Work</h2>
           <div class="row pt-1-25"> <!--project 1-->
-            <div class="column">   <!--column left-->
-              <picture>
-                <source srcset="img/monstapursuit/homepage_1@1x.jpg" media="(max-width:767px)">
-                <img src="img/monstapursuit/homepage1@2x.jpg" alt="MonstaPursuit Image">
-              </picture>
+            <div>
+              <div class="column col-md-6 col-lg-7">   <!--column left-->
+                <picture>
+                  <source srcset="img/monstapursuit/homepage_1@1x.jpg" media="(max-width:639px)">
+                    <source srcset="img/monstapursuit/homepage1_portrait.jpg" media="(max-width:899px)">
+                  <img src="img/monstapursuit/homepage1@2x.jpg" alt="MonstaPursuit Image">
+                </picture>
+              </div>
             </div>
-            <div class="column"> <!--column right-->
-              <h3>MonstaPursuit</h3>
-              <p>
-                Design of a native gamified running app from inception to final mock-ups.
-              </p>
-              <p>
-                Skills used: User research; Information Architecture; Wireframing; Prototyping; User testing; Adobe XD; Adobe Illustrator; and more...
-              </p>
-              <a href="project-monstapursuit.html" class="button mt-1">View case study</a>
+            <div class="column col-md-6 colright-50 col-lg-5 colright-40"> <!--column right-->
+              <div>
+                <h3>MonstaPursuit</h3>
+                <p>
+                  Design of a native gamified running app from inception to final mock-ups.
+                </p>
+                <p>
+                  Skills used: User research; Information Architecture; Wireframing; Prototyping; User testing; Adobe XD; Adobe Illustrator; and more...
+                </p>
+                <a href="project-monstapursuit.html" class="button mt-1">View case study</a>
+              </div>
             </div>
           </div>
           <div class="row"> <!--project 2-->
-            <div class="column"> <!--column left-->
+            <div class="column col-md-6 col-lg-7"> <!--column left-->
               <picture>
-                <source srcset="img/deck_drills/homepage_2@1x.jpg" media="(max-width:767px)">
+                <source srcset="img/deck_drills/homepage2@1x.jpg" media="(max-width:639px)">
+                <source srcset="img/deck_drills/homepage2_portrait.jpg" media="(max-width:899px)">
                 <img src="img/deck_drills/homepage2@2x.jpg" alt="Deck Drills Image">
               </picture>
             </div>
-            <div class="column">
+            <div class="column col-md-6 colright-50 col-lg-5 colright-40">
               <!--column right-->
               <h3>Deck Drills</h3>
               <p>
@@ -77,7 +91,27 @@
               <p>
                 Skills used: User Intrviews; Information Architecture; Wireframing; Prototyping; User testing; Balsamiq; Sketch.
               </p>
-              <a href="#" class="button mt-1 mb-1">View case study</a>
+              <a href="#" class="button">View case study</a>
+            </div>
+          </div>
+          <div class="row"> <!--project 2-->
+            <div class="column col-md-6 col-lg-7"> <!--column left-->
+              <picture>
+                <source srcset="img/animation/homepage3@1x.jpg" media="(max-width:639px)">
+                <source srcset="img/animation/homepage3_portrait.jpg" media="(max-width:899px)">
+                <img src="img/animation/homepage3@2x.jpg" alt="Animation Image">
+              </picture>
+            </div>
+            <div class="column col-md-6 colright-50 col-lg-5 colright-40">
+              <!--column right-->
+              <h3>CSS Animation</h3>
+              <p>
+                  An example of an SVG animated using CSS keyframes.
+              </p>
+              <p>
+                Skills used: html5, CSS.
+              </p>
+              <a href="animation.html" class="button">View</a>
             </div>
           </div>
         </div>
@@ -100,10 +134,10 @@
       <div>
         <!--social media links-->
         <a href="https://www.linkedin.com/in/joannesaad" target="_blank" class="social-link">
-          <svg height="50px" id="Layer_1" style="enable-background:new 0 0 67 67;" version="1.1" viewBox="0 0 67 67" width="67px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" class="mt-1-25">
+          <svg height="50px" id="Layer_1" style="enable-background:new 0 0 67 67;" version="1.1" viewBox="0 0 67 67" width="67px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
             <path
               d="M50.837,48.137V36.425c0-6.275-3.35-9.195-7.816-9.195  c-3.604,0-5.219,1.983-6.119,3.374V27.71h-6.79c0.09,1.917,0,20.427,0,20.427h6.79V36.729c0-0.609,0.044-1.219,0.224-1.655  c0.49-1.22,1.607-2.483,3.482-2.483c2.458,0,3.44,1.873,3.44,4.618v10.929H50.837z M22.959,24.922c2.367,0,3.842-1.57,3.842-3.531  c-0.044-2.003-1.475-3.528-3.797-3.528s-3.841,1.524-3.841,3.528c0,1.961,1.474,3.531,3.753,3.531H22.959z M34,64  C17.432,64,4,50.568,4,34C4,17.431,17.432,4,34,4s30,13.431,30,30C64,50.568,50.568,64,34,64z M26.354,48.137V27.71h-6.789v20.427  H26.354z"
-              style="fill-rule:evenodd;clip-rule:evenodd;fill:#ffffff;" /></svg>
+              style="fill-rule:evenodd;clip-rule:evenodd;fill:#262626;" /></svg>
         </a>
       </div>
       <div id="copyright">
