@@ -16,47 +16,51 @@
 
 <body>
   <header>
-    <div class="nav-container">
-      <a href="index.html"><img src="img/JS_logo_black.svg" alt="Joanne Saad Designs Logo" class="logo"></a>
+    <div class="nav-container highlightTextIn">
+      <a href="index.html"><img src="img/JS_logo_black.svg" alt="Joanne Saad Designs Logo" class="logo margin-top-1"></a>
       <nav>
         <ul>
-          <li><a href="index.html#projects">Work</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="#contact">Contact</a></li>
+          <li><a  href="index.html#work" alt="Work">Work</a></li>
+          <li><a href="about.html" alt="About">About</a></li>
+          <li><a  href="#contact"alt="Contact">Contact</a></li>
         </ul>
       </nav>
     </div>
   </header>
-  <main>
-    <div id="about-s1" class="section pt-2-5 pb-2-5">
+  <main id="about">
+    <div id="about-s1" class="section pt-2-5">
       <div class="container">
-        <h1>
-          About Me
-        </h1>
-        <h2>
-          "To design an experience is to experience the design."
-        </h2>
-        <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-        	 viewBox="0 0 85 84.9" style="enable-background:new 0 0 85 84.9;" xml:space="preserve">
-        <style type="text/css">
-        	.st0{fill:#262626;}
-        </style>
-        <path class="st0" d="M47.2,0.1l-0.5,55.5L61,42.1l5.5,5.8L41.8,71.3L18.5,46.6l5.8-5.5l14.4,15.2L39.2,0C17.2,1.7,0,20,0,42.4
-        	c0,23.5,19,42.5,42.5,42.5C66,84.9,85,65.8,85,42.4C85,20.5,68.4,2.5,47.2,0.1z"/>
-        </svg>
-        <p> scroll down.</p>
+          <h1>
+            About Me
+          </h1>
+          <h2>
+            "To design an experience is to experience the design."
+          </h2>
+      </div>
+      <div class="container">
+        <div>
+          <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+          	 viewBox="0 0 85 84.9" style="enable-background:new 0 0 85 84.9;" xml:space="preserve">
+          <style type="text/css">
+          	.st0{fill:#262626;}
+          </style>
+          <path class="st0" d="M47.2,0.1l-0.5,55.5L61,42.1l5.5,5.8L41.8,71.3L18.5,46.6l5.8-5.5l14.4,15.2L39.2,0C17.2,1.7,0,20,0,42.4
+          	c0,23.5,19,42.5,42.5,42.5C66,84.9,85,65.8,85,42.4C85,20.5,68.4,2.5,47.2,0.1z"/>
+          </svg>
+          <p> scroll down</p>
+        </div>
       </div>
     </div>
-    <div class="section pt-2-5"> <!--container wrapper-->
+    <div class="section pt-2-5 md-p-0"> <!--container wrapper-->
       <div class="container"> <!--my story section-->
         <div class="row">
-          <div class="column"> <!--right column-->
+          <div class="column center col-md-6 mr-2 col-lg-7 colleft-60"> <!--right column-->
               <picture>
                 <source srcset="img/about_page/cartoon@1x.png" media="(max-width:767px)">
-                <img src="img/about_page/cartoon@2x.png" alt="joanne saad cartoon image">
+                <img src="img/about_page/cartoon@2x.png" alt="joanne saad cartoon image" id="img-cartoon">
               </picture>
           </div>
-          <div class="column"> <!--left column-->
+          <div class="column colr-lg-5"> <!--left column-->
               <h2 class="center">My Story</h2>
               <p>
                 Hi I’m Joanne, a UX/UI designer currently based in London; but this has not always been the case. Over the years, my curious nature, along with my ability to learn and adapt quickly, have enabled me to cross both borders and
@@ -70,32 +74,40 @@
                 Through UX Design I am committed to improve and enrich how people interact with technology so they can work smarter and live happier. I love getting under the hood of problems and figuring out how best to connect the dots so that the
                 system (human + technology) works in harmony - only then can I achieve my goal of turning people’s stories into meaningful experiences.
               </p>
-              <a href="files/JS_resume.pdf" target="_blank" class= "button secondary mt-1-25">View Resume</a>
+              <div class="center mt-1">
+                <a href="files/JS_resume.pdf" target="_blank" class= "button secondary mt-1-25">View Resume</a>
+              </div>
           </div>
         </div>
       </div>
     </div>
-    <div class="section"> <!--skills and tools section-->
+    <div id="about-s3" class="section"> <!--skills and tools section-->
       <div id="strip">
       </div>
-      <div id ="about-s3" class="container pt-1-25">
+      <div class="container center pt-1-25">
         <div class="row"> <!--container for columns-->
-          <div class="column"> <!--column 1-->
-            <h3>Why work with me?</h3>
+          <div class="column col-lg-6"> <!--column 1-->
+            <div class="lg-width-80">
+              <h3>Why work with me?</h3>
+                <p>
+                  I'm personable, down-to-earth and patient. I do coffee dates and real conversation. I love working closely with clients and building long-lasting relationships. I make sure to give each project the care and attention it needs to
+                  ensure I deliver high-quality work that delights in both its function and aesthetic.
+                </p>
+              </div>
+          </div>
+          <div class="column col-lg-6"> <!--column 2-->
+            <div class="lg-width-80">
+              <h3>I love what I do.</h3>
               <p>
-                I'm personable, down-to-earth and patient. I do coffee dates and real conversation. I love working closely with clients and building long-lasting relationships. I make sure to give each project the care and attention it needs to
-                ensure I deliver high-quality work that delights in both its function and aesthetic.
+                I mostly enjoy the process of crafting solutions to problems that ultimately deliver business value. I believe that, through in-depth user research and exploration, the right solution will present itself. I love using multiple tools
+                and testing various iterations until I have developed . It’s about reaching that “AhA!” moment, where the user not only understands the product, but also can see how it will improve their lives.
               </p>
+            </div>
           </div>
-          <div class="column"> <!--column 2-->
-            <h3>I love what I do.</h3>
-            <p>
-              I mostly enjoy the process of crafting solutions to problems that ultimately deliver business value. I believe that, through in-depth user research and exploration, the right solution will present itself. I love using multiple tools
-              and testing various iterations until I have developed . It’s about reaching that “AhA!” moment, where the user not only understands the product, but also can see how it will improve their lives.
-            </p>
-          </div>
-          <div class="column"> <!--column 3-->
-            <h3>My skills and toolset.</h3>
+        </div>
+        <div class="row">
+          <h3>My skills and toolset.</h3>
+          <div class="column col-md-6">
             <ul>
               <li>Research</li>
               <li>Prototyping</li>
@@ -109,7 +121,9 @@
               <li>CSS</li>
               <li>JavaScript</li>
             </ul>
-            <ul>
+          </div>
+          <div class="column col-md-6">
+            <ul class="pt-1-75">
               <li>Sketch</li>
               <li>Adobe XD</li>
               <li>Balsamiq</li>
@@ -141,10 +155,10 @@
       <div>
         <!--social media links-->
         <a href="https://www.linkedin.com/in/joannesaad" target="_blank" class="social-link">
-          <svg height="50px" id="Layer_1" style="enable-background:new 0 0 67 67;" version="1.1" viewBox="0 0 67 67" width="67px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" class="mt-1-25">
+          <svg height="50px" id="Layer_1" style="enable-background:new 0 0 67 67;" version="1.1" viewBox="0 0 67 67" width="67px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
             <path
               d="M50.837,48.137V36.425c0-6.275-3.35-9.195-7.816-9.195  c-3.604,0-5.219,1.983-6.119,3.374V27.71h-6.79c0.09,1.917,0,20.427,0,20.427h6.79V36.729c0-0.609,0.044-1.219,0.224-1.655  c0.49-1.22,1.607-2.483,3.482-2.483c2.458,0,3.44,1.873,3.44,4.618v10.929H50.837z M22.959,24.922c2.367,0,3.842-1.57,3.842-3.531  c-0.044-2.003-1.475-3.528-3.797-3.528s-3.841,1.524-3.841,3.528c0,1.961,1.474,3.531,3.753,3.531H22.959z M34,64  C17.432,64,4,50.568,4,34C4,17.431,17.432,4,34,4s30,13.431,30,30C64,50.568,50.568,64,34,64z M26.354,48.137V27.71h-6.789v20.427  H26.354z"
-              style="fill-rule:evenodd;clip-rule:evenodd;fill:#ffffff;" /></svg>
+              style="fill-rule:evenodd;clip-rule:evenodd;fill:#262626;" /></svg>
         </a>
       </div>
       <div id="copyright">
