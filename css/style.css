@@ -216,7 +216,7 @@ color: #fff;
 
 #hero h1{
   text-align: center;
-  margin: 1.67em 0;
+  margin: 0 0 1.67em;
 }
 
 #hero p{
@@ -280,6 +280,7 @@ main {
 #about-s1 {
   text-align:center;
   background-color:#11c793;
+  padding-top: 12.5vw;
 }
 
 #about-s1 .container{
@@ -420,6 +421,10 @@ margin-bottom:3em;
   display: inline-block; /* Needed to add space between the bullet and the text */
   width: 1em; /* Also needed for space */
   margin-left: -1em; /* Also needed for space */
+}
+
+.tools{
+  padding-top: 8.75vw;
 }
 
 /* MonstaPursuit page styling */
@@ -657,6 +662,12 @@ color: #f78433;
   padding-top: 2em;
 }
 
+@media only screen and (min-width: 450px) {
+  #img-cartoon {
+    width: 80%;
+  }
+}
+
 /* ==============================
 Medium devices (640px and larger)
 ================================= */
@@ -727,9 +738,14 @@ footer svg{
   padding-top: 1.25em;
 }
 
-.pt-2-5{
+.tools{
+  padding-top: 0;
+}
+
+/*.pt-2-5{
   padding-top: 6em;
 }
+*/
 
 .col-md-6{
   width: 50%;
@@ -737,6 +753,7 @@ footer svg{
 
 .colr-md-6{
   width: 50%;
+  float: right;
 }
 
 .col-md-7{
@@ -745,6 +762,7 @@ footer svg{
 
 .colr-md-7{
   width: 60%;
+  float: right;
 }
 
 .col-md-8{
@@ -755,15 +773,14 @@ footer svg{
   float: left;
 }
 
-[class*="colr-"] {
+/*[class*="colr-"] {
   float: right;
-}
+}*/
 
 .row::after {
   content: "";
   clear: both;
   display: table;
-  /*padding-bottom: 2em;*/
 }
 
 #work img {
@@ -787,7 +804,7 @@ footer svg{
 
 .colright-50{
   position: absolute;
-  padding-left: 1em;
+  padding-left: 2em;
   top: 50%;
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
@@ -823,6 +840,10 @@ p {
    margin: 1em 0;
  }
 
+#about-s1{
+padding-top: 1em;
+}
+
 #about-s1 h2{
   padding-top: 3em;
 }
@@ -840,6 +861,7 @@ p {
 }
 
 #img-cartoon{
+  width: 100%;
   margin-top:6em;
   margin-bottom: 1em;
 }
@@ -1010,6 +1032,10 @@ Large devices (1024px or larger)
 ================================= */
 @media only screen and (min-width: 1024px) {
 
+  #index h2{
+    margin-bottom:0;
+  }
+
 .col-lg-7{
   width: 60%;
 }
@@ -1020,7 +1046,7 @@ Large devices (1024px or larger)
 
 .colright-40{
   position: absolute;
-  padding-left: 1em;
+  padding-left: 2em;
   top: 50%;
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
@@ -1043,7 +1069,7 @@ Large devices (1024px or larger)
 
 .colleft-60{
   position: absolute;
-  padding-left: 1em;
+  padding-left: 2em;
   top: 50%;
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
