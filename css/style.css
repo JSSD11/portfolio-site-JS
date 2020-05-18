@@ -1013,6 +1013,25 @@ h5{
   display:none;
 }
 
+.curve-section{
+  position: relative;
+  height: 0;
+}
+
+.curve-image{
+  position:absolute;
+  top: -120px;
+  background-image: url("../img/monstapursuit/curve_1@2x_v2.png");
+  background-position: center center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  text-align:center;
+  margin:auto;
+  padding:0;
+  width: 100%;
+  height: 200px;
+}
+
 /* =============================================================================
    Medium devices (640px and larger)
 ==============================================================================*/
@@ -1309,7 +1328,7 @@ padding-top: 1em;
 }
 
 .s-overview-1{
-  padding: 6em 6em;
+  padding: 6em 6em 8em;
   margin-left: auto;
   margin-right: auto;
 }
@@ -1415,6 +1434,20 @@ div.highlightTextIn a:before{
 
 #mp-page .slick-dots li button:before{
     font-size: 8px;
+}
+
+.curve-image{
+  position:absolute;
+  top: -130px;
+  background-image: url("../img/monstapursuit/curve_1@2x_v2.png");
+  background-position: center center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  text-align:center;
+  margin:auto;
+  padding:0;
+  width: 100%;
+  height: 200px;
 }
 
 }
