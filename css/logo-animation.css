@@ -1,0 +1,307 @@
+
+/*#logo-animation{
+  width: 1000px;
+  height: 1000px;
+}*/
+
+#J-copy,
+#d-white,
+#letter-S{
+  visibility:hidden;
+}
+
+@keyframes hide-name{
+  0%{
+    transform: translate(1000px, 0);
+  }
+  100%{
+    transform: translate(1000px, 0);
+  }
+}
+
+#surname-copy,
+#first-name-copy{
+animation: hide-name 4.6s linear forwards;
+}
+
+@keyframes unhide{
+  0%{opacity:0;
+    transform: scale(1);
+}
+71%{
+  opacity:0;
+  transform: scale(1);
+}
+72%{
+  opacity:1;
+  transform: scale(1);
+}
+90%{
+  opacity:1;
+  transform: scale(1);
+}
+100%{
+  opacity:1;
+  transform: scale(0);
+}
+}
+
+.animate #s-copy{
+  opacity:0;
+  transform-origin: center;
+  animation: unhide 4.6s ease-out forwards;
+}
+/*@keyframes dash{
+  from {
+    stroke-dashoffset: 800;
+  }
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+#letter-J{
+  stroke-dasharray: 800;
+  stroke-dashoffset: 0;
+  animation: dash 1.3s ease-out forwards;
+}*/
+
+@keyframes dashJ{
+  0% {
+    stroke-dashoffset: 800;
+      transform: scale(1);
+  }
+  30% {
+    stroke-dashoffset: 0;
+    transform: scale(1);
+  }
+  90%{
+    stroke-dashoffset: 0;
+    transform: scale(1);
+  }
+  100%{
+    stroke-dashoffset: 0;
+    transform: scale(0);
+  }
+}
+
+.animate #letter-J{
+  transform-origin: center;
+  stroke-dasharray: 800;
+  stroke-dashoffset: 0;
+  animation: dashJ 4.6s ease-out forwards;
+}
+
+
+@keyframes enter-s{
+  0%{
+    transform: translate(700px, 0);
+    opacity:1;
+  }
+  18.292%{
+    transform: translate(700px, 0);
+    opacity:1;
+  }
+  30.732%{
+    transform: translate(5px, 0);
+    opacity:1;
+  }
+  31.098%{
+    transform: translate(0, 0);
+    opacity:1;
+  }
+  32.927%{
+    transform: scaleX(0.4);
+    opacity:1;
+  }
+  36.585%{
+    transform: translate(0, 0);
+    opacity:1;
+    visibility:visible;
+  }
+  98%{
+    transform: translate(0, 0);
+    opacity:1;
+    visibility:visible;
+  }
+  100%{
+    visibility:hidden;
+  }
+}
+
+.animate #letter-S{
+  opacity:0;
+  transform-origin: center;
+  animation: enter-s 4.1s 0s ease-in forwards;
+}
+
+@keyframes bounce{
+  0%{
+    transform: translate(600px, -500px);
+  opacity:1;
+    }
+  31.707%{
+      transform: translate(600px, -500px);
+    opacity:1;
+  }
+  42.683%{
+    transform: translate(300px, 20px);
+    opacity:1;
+  }
+  46.341%{
+    transform: translate(125px, -150px);
+    opacity:1;
+  }
+  51.829%{
+    transform: translateY(20);
+  opacity:1;
+  fill: #262626;
+  }
+  55.488%{
+    transform: translate(0, 0) rotate(283deg);
+    opacity:1;
+    fill:grey;
+  }
+  68.293%{
+    transform: translate(0, 0) rotate(283deg);
+    opacity:1;
+    fill:#11c793;
+  }
+  98%{
+    transform: translate(0, 0) rotate(283deg);
+    opacity:1;
+    fill:#11c793;
+    visibility: visible;
+  }
+  100%{
+    transform: translate(0, 0) rotate(283deg);
+    opacity:1;
+    fill:#11c793;
+    visibility: hidden;
+  }
+}
+
+.animate #d-white{
+  opacity:0;
+  transform-origin: center;
+  transform-box: fill-box;
+  animation: bounce 4.1s 0s ease-in forwards;
+}
+
+/*@keyframes reveal-name{
+  0%{
+    transform: translateX(0);
+  }
+    100%{
+      transform: translateX(800px);
+    }
+
+    .animate #first-name_x5F_hide{
+      animation: reveal-name 0.5s 2.3s linear forwards;
+    }
+
+    .animate #surname_x5F_hide{
+      animation: reveal-name 0.5s 2.4s linear forwards;
+    }
+
+}*/
+
+@keyframes reveal-firstname{
+  0%{
+    transform: translateX(0);
+    opacity:1;
+  }
+  55%{
+    transform: translateX(0);
+    opacity:1;
+  }
+    65%{
+      transform: translateX(800px);
+      opacity:1;
+    }
+    100%{
+      transform: translateX(800px);
+      opacity:1;
+    }
+}
+
+ .animate #first-name_x5F_hide{
+  animation: reveal-firstname 4.6s linear forwards;
+}
+
+@keyframes reveal-surname{
+  0%{
+    transform: translateX(0);
+    opacity:1;
+  }
+  57%{
+    transform: translateX(0);
+    opacity:1;
+  }
+    66%{
+      transform: translateX(800px);
+      opacity:1;
+    }
+    100%{
+      transform: translateX(800px);
+      opacity:1;
+    }
+}
+
+.animate #surname_x5F_hide{
+  animation: reveal-surname 4.6s linear forwards;
+}
+
+
+
+@keyframes appear-leave-designs{
+  0%{
+    transform: translateY(200px);
+  }
+  60%{
+    transform: translateY(200px);
+  }
+  70%{
+    transform: translateY(0px);
+    opacity:1;
+  }
+  90%{
+    transform: translateY(0px);
+    opacity:1;
+  }
+  100%{
+    transform: translateY(-800px);
+    opacity:1;
+  }
+}
+
+.animate #designs{
+  opacity:0;
+  animation: appear-leave-designs 4.4s 0s ease-out forwards;
+}
+
+@keyframes leave-firstname{
+  0%{
+    transform: translateX(0);
+  }
+  100%{
+    transform: translateX(-800px);
+  }
+}
+
+.animate #first-name{
+  animation: leave-firstname 0.4s 3.5s linear forwards;
+}
+
+@keyframes leave-surname{
+  0%{
+    transform: translateX(0);
+  }
+  100%{
+    transform: translateX(700px);
+  }
+}
+
+.animate #surname{
+  animation: leave-surname 0.4s 3.6s linear forwards;
+}

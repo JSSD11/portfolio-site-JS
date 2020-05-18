@@ -18,17 +18,25 @@
 <body>
   <header>
     <div class="nav-container highlightTextIn">
-      <a href="index.html"><img src="img/JS_logo_black.svg" alt="Joanne Saad Designs Logo" class="logo margin-top-1"></a>
-      <nav>
-        <ul>
-          <li><a  href="index.html#work" alt="Work">Work</a></li>
-          <li><a href="about.html" alt="About">About</a></li>
-          <li><a  href="#contact"alt="Contact">Contact</a></li>
-        </ul>
-      </nav>
+      <a href="index.html"><img src="img/JS_logo_black.svg" alt="Joanne Saad Designs Logo" class="logo"></a>
+        <nav class="nav-main">
+          <a id="hamburger" href="javascript:void(0)" class="icon" onclick="menuToggle()"><span></span></a>
+          <ul id="nav-md-lg">
+            <li><a  href="index.html#work-anchor" alt="Work">Work</a></li>
+            <li><a href="about.html" alt="About">About</a></li>
+            <li><a  href="#contact-anchor"alt="Contact">Contact</a></li>
+          </ul>
+          <div id="mobile-nav" class="nav-overlay">
+            <div class="overlay-content">
+              <a  href="index.html#work-anchor" alt="Work" onclick="menuToggle()">Work</a>
+              <a href="about.html" alt="About">About</a>
+              <a  href="#contact-anchor"alt="Contact" onclick="menuToggle()">Contact</a>
+            </div>
+          </div>
+        </nav>
     </div>
   </header>
-  <main id="animation" class="project-page">
+  <main id="animation-cairo-london" class="project-page">
     <div class="section">
       <h1>CSS Animation</h1>
       <div class="container mt-2-5">
@@ -1666,7 +1674,7 @@
   </main>
 
   <!---footer section--->
-  <footer id="contact">
+  <footer id="contact"><span id="contact-anchor"></span>
     <div class="container">
       <h2 class="pb-1">Get in touch</h2>
       <p>
@@ -1695,6 +1703,7 @@
     </div>
   </footer>
 
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="js/scripts.js"></script>
 
 </body>

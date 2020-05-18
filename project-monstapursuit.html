@@ -8,26 +8,52 @@
   <title>MonstaPursuit Project</title>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Rajdhani:wght@300;400;500;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
-  <link rel="stylesheet" type="text/css" href="css/style.css"/>
   <link rel="icon" type="image/png" href="img/favicon/favicon.ico" />
   <link rel="icon" type="image/png" href="img/favicon/favicon-32x32.png" sizes="32x32" />
   <link rel="icon" type="image/png" href="img/favicon/favicon-16x16.png" sizes="16x16" />
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css"/>
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css"/>
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.2/photoswipe.min.css"/>
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.2/default-skin/default-skin.min.css"/>
+  <link rel="stylesheet" type="text/css" href="css/style.css"/>
 </head>
 
 <body>
   <header>
     <div class="nav-container highlightTextIn">
-      <a href="index.html"><img src="img/JS_logo_black.svg" alt="Joanne Saad Designs Logo" class="logo margin-top-1"></a>
-      <nav>
-        <ul>
-          <li><a  href="index.html#work" alt="Work">Work</a></li>
-          <li><a href="about.html" alt="About">About</a></li>
-          <li><a  href="#contact"alt="Contact">Contact</a></li>
-        </ul>
-      </nav>
+      <a href="index.html"><img src="img/JS_logo_black.svg" alt="Joanne Saad Designs Logo" class="logo"></a>
+        <nav class="nav-main">
+          <a id="hamburger" href="javascript:void(0)" class="icon" onclick="menuToggle()"><span></span></a>
+          <ul id="nav-md-lg">
+            <li><a  href="index.html#work" alt="Work">Work</a></li>
+            <li><a href="about.html" alt="About">About</a></li>
+            <li><a  href="#contact"alt="Contact">Contact</a></li>
+          </ul>
+          <div id="mobile-nav" class="nav-overlay">
+            <div class="overlay-content">
+              <a  href="index.html#work" alt="Work" onclick="menuToggle()">Work</a>
+              <a href="about.html" alt="About">About</a>
+              <a  href="#contact"alt="Contact" onclick="menuToggle()">Contact</a>
+            </div>
+          </div>
+        </nav>
     </div>
   </header>
   <main id="mp-page" class="project-page">
+    <div id="anchor-nav">
+        <ul class="dotnav dotnav-vertical dotnav-right nav">
+            <li class="tooltip"><span class="tooltiptext">Introduction</span><a href="#section01"></a></li>
+            <li class="tooltip"><span class="tooltiptext">Research</span><a href="#section02"></a></li>
+            <li class="tooltip"><span class="tooltiptext">Define</span><a href="#section03"></a></li>
+            <li class="tooltip"><span class="tooltiptext">Ideate</span><a href="#section04"></a></li>
+            <li class="tooltip"><span class="tooltiptext">Prototype</span><a href="#section05"></a></li>
+            <li class="tooltip"><span class="tooltiptext">Test</span><a href="#section06"></a></li>
+            <li class="tooltip"><span class="tooltiptext">Refine</span><a href="#section07"></a></li>
+            <li class="tooltip"><span class="tooltiptext">Conclusion</span><a href="#section08"></a></li>
+        </ul>
+    </div>
+    <div id="section01" class="anchor"></div>
+
     <div class="section">
       <div>
         <h1>MonstaPursuit <br> Case Study</h1>
@@ -35,9 +61,9 @@
     </div>
 
     <div class="section mt-2-5"> <!--intro section-->
-      <div class="center mw-1200">
+      <div class="center mw-1000">
         <picture>
-          <source srcset="img/monstapursuit/MP_1@1x.jpg" media=(max-width:767px)>
+          <source srcset="img/monstapursuit/MP_1@1x.jpg" media=(max-width:639px)>
           <img src="img/monstapursuit/MP_1@2x.jpg" alt="monstapursuit running game app">
         </picture>
       </div>
@@ -50,47 +76,50 @@
           </p>
         </div>
       </div>
-      <div class="container s-overview-2">
-        <div class="row"> <!--container for columns-->
-          <div class="column col-md-6 pr-2"> <!--left column-->
-            <h3>CONTEXT</h3>
-            <p>
-              I designed MonstaPursuit as part of CareerFoundry’s UX Design course, where I was tasked to design a scavenger hunt mobile app. I decided to expand the concept and use it to turn a one-dimensional, individual workout, such as
-              running,into a multi-dimensional, fun, and social experience.
-            </p>
+      <div class="outer-container">
+        <h5 id="vt-intro" class="vertical-txt">Introduction</h5>
+        <div class="container">
+          <div class="row"> <!--container for columns-->
+            <div class="column col-md-6 pr-2"> <!--left column-->
+              <h3>CONTEXT</h3>
+              <p>
+                I designed MonstaPursuit as part of CareerFoundry’s UX Design course, where I was tasked to design a scavenger hunt mobile app. I decided to expand the concept and use it to turn a one-dimensional, individual workout, such as
+                running,into a multi-dimensional, fun, and social experience.
+              </p>
+            </div>
+            <div class="column col-md-6"> <!--right column-->
+              <h3>MY ROLE</h3>
+              <p>
+                I was responsible for all stages of the design process, from the initial concept and problem definition, to the implementation of the final user interface.
+              </p>
+              <h3>TOOLS</h3>
+              <p>
+                Sketchpad, pen & pencil, Balsamiq, Adobe XD, Adobe Illustrator, Adobe Photoshop, Prott, UsabilityHub, OptimalSort.
+              </p>
+            </div>
           </div>
-          <div class="column col-md-6"> <!--right column-->
-            <h3>MY ROLE</h3>
-            <p>
-              I was responsible for all stages of the design process, from the initial concept and problem definition, to the implementation of the final user interface.
-            </p>
-            <h3>TOOLS</h3>
-            <p>
-              Sketchpad, pen & pencil, Balsamiq, Adobe XD, Adobe Illustrator, Adobe Photoshop, Prott, UsabilityHub, OptimalSort.
-            </p>
-          </div>
-        </div>
-        <div class="row box mt-3"> <!--container for columns-->
-          <div class="column col-md-6 pr-1"> <!--left column-->
-            <div class="md-width-80">
-              <h4>THE CHALLENGE</h4>
-              <ul>
-                <li>Make running a fun and social activity.</li>
-                <li>Provide a way to monitor and view progress.</li>
-                <li>Provide a motivation system that encourages people to reach their goals.</li>
-                <li>Motivate people to be develop healthy habits and exercise regularly.</li>
-              </ul>
-          </div>
-          </div>
-          <div class="column col-md-6"> <!--right column-->
-            <div class="md-width-80">
-              <h4>THE SOLUTION</h4>
-              <ul>
-                <li>A game where players earn points by battling virtual monsters with exercise along their run.</li>
-                <li>Allow players to challenge each other and share their experience.</li>
-                <li>Players can easily view and analyse their stats.</li>
-                <li>Reward players with points that can be exchanged for real rewards.</li>
-              </ul>
+          <div class="row box mt-3 bullets"> <!--container for columns-->
+            <div class="column col-md-6 pr-1"> <!--left column-->
+              <div class="md-width-80">
+                <h4>THE CHALLENGE</h4>
+                <ul>
+                  <li>Make running a fun and social activity.</li>
+                  <li>Provide a way to monitor and view progress.</li>
+                  <li>Provide a motivation system that encourages people to reach their goals.</li>
+                  <li>Motivate people to be develop healthy habits and exercise regularly.</li>
+                </ul>
+            </div>
+            </div>
+            <div class="column col-md-6"> <!--right column-->
+              <div class="md-width-80">
+                <h4>THE SOLUTION</h4>
+                <ul>
+                  <li>A game where players earn points by battling virtual monsters with exercise along their run.</li>
+                  <li>Allow players to challenge each other and share their experience.</li>
+                  <li>Players can easily view and analyse their stats.</li>
+                  <li>Reward players with points that can be exchanged for real rewards.</li>
+                </ul>
+              </div>
             </div>
           </div>
         </div>
@@ -98,137 +127,118 @@
     </div>
 
     <div class="section bg-white">
-      <div class="container">
-        <h3>MY PROCESS</h3>
-        <div class="mt-2-5">
-          <picture>
-            <source srcset="img/monstapursuit/process@1x.png" media="(max-width:767px)">
-            <img src="img/monstapursuit/process@2x.png" alt="my process diagram">
-          </picture>
-        </div>
-        <div class="row">
-          <div class="column col-md-8">
-            <p>
-              I implemented the design thinking process, starting with user research to gain an understanding of user needs and the problem space. This included, conducting competitive analyses, and facilitating user interviews and surveys. Next, I
-              created user personas, task analyses, and user flows, which would become the foundation for the information architecture of the app. The ideation phase entailed the development of low- to mid-fidelity wireframes, which I used to turn into
-              a clickable prototype. These were created using various design software, including Balsamiq, Sketch, and AdobeXD. With the interactive prototype ready, I then conducted usability tests to obtain feedback from potential users. Their
-              feedback was essential in helping me make adjustments to the design and flow of the. I also consulted with colleagues regarding the visual design, whose suggestions were incorporated in the design.
-            </p>
+      <div class="outer-container">
+        <h5 id="vt-approach" class="vertical-txt">Approach</h5>
+        <div class="container container-pb0">
+          <h3>MY PROCESS</h3>
+          <div class="mt-2-5">
+            <picture>
+              <source srcset="img/monstapursuit/process@1x.png" media="(max-width:767px)">
+              <img src="img/monstapursuit/process@2x.png" alt="my process diagram">
+            </picture>
+          </div>
+          <div class="row">
+            <div class="column col-md-8">
+              <p>
+                I implemented the design thinking process, starting with user research to gain an understanding of user needs and the problem space. This included, conducting competitive analyses, and facilitating user interviews and surveys. Next, I
+                created user personas, task analyses, and user flows, which would become the foundation for the information architecture of the app. The ideation phase entailed the development of low- to mid-fidelity wireframes, which I used to turn into
+                a clickable prototype. These were created using various design software, including Balsamiq, Sketch, and AdobeXD. With the interactive prototype ready, I then conducted usability tests to obtain feedback from potential users. Their
+                feedback was essential in helping me make adjustments to the design and flow of the. I also consulted with colleagues regarding the visual design, whose suggestions were incorporated in the design.
+              </p>
+            </div>
           </div>
         </div>
       </div>
     </div>
+
+    <div id="section02" class="anchor bg-white"></div>
 
     <div class="section"> <!--research section-->
       <div class="banner">
         <h2>1 | RESEARCH</h2>
       </div>
-      <div class="container">
-        <div class="row">
-          <div class="column col-md-7">
-            <h3>EXPLORING THE PROBLEM SPACE</h3>
-            <p>
-              I first needed to better understand the market in order to make more informed decisions about my strategy and initial minimum viable product (MVP). I started by looking at existing solutions of both fitness and scavenger hunt apps, since
-              my app aimed to combine these two concepts. I was interested in how these apps build engagement and motivation through rewards and gamification, as well as how much emphasis they place on the social features.
-            </p>
-          </div>
-          <div class="column mt-2-5">
-            <picture>
-              <source srcset="img/monstapursuit/competitive_landscape@1x.png" media="(max-min-width:767px)">
-              <img src="img/monstapursuit/competitive_landscape@2x.png" alt="competititive landscape chart" id="comp-landscape" class="md-width-80">
-            </picture>
-          </div>
-        </div>
-        <div class="row md-p-0">
-          <div class="column colr-md-6">
-            <h3>COMPETITIVE ANALYSIS</h3>
-            <p>
-              I performed in-depth analyses on 5 competitors to identify where they excel, weaknesses in their product, and potential gaps that fail to satisfy customer needs. This analysis was used to form assumptions and a hypothesis for testing.
-            </p>
-          </div>
-        </div>
-        <div class="row">
-          <div class="column colr-md-6 colright-50">
-            <div class="highlight-text plr-1">
+      <div class="outer-container">
+        <h5 class="counter">01 / 06</h5>
+        <h5 id="vt-comp-analysis" class="vertical-txt"><span>Research |</span> Competitive Analysis</h5>
+        <div class="container">
+          <div class="row">
+            <div class="column col-md-7">
+              <h3>EXPLORING THE PROBLEM SPACE</h3>
               <p>
-                What are they selling?
+                I first needed to better understand the market in order to make more informed decisions about my strategy and initial minimum viable product (MVP). I started by looking at existing solutions of both fitness and scavenger hunt apps, since
+                my app aimed to combine these two concepts. I was interested in how these apps build engagement and motivation through rewards and gamification, as well as how much emphasis they place on the social features.
               </p>
+            </div>
+            <div class="column mt-2-5">
+              <picture>
+                <source srcset="img/monstapursuit/competitive_landscape@1x.png" media="(max-min-width:767px)">
+                <img src="img/monstapursuit/competitive_landscape@2x.png" alt="competititive landscape chart" id="comp-landscape" class="md-width-80">
+              </picture>
+            </div>
+          </div>
+          <div class="row md-p-0">
+            <div class="column colr-md-6">
+              <h3>COMPETITIVE ANALYSIS</h3>
               <p>
-                What are they communicating through their product?
-              </p>
-              <p>
-                What are they missing in their messaging, product, or overall offering?
+                I performed in-depth analyses on 5 competitors to identify where they excel, weaknesses in their product, and potential gaps that fail to satisfy customer needs. This analysis was used to form assumptions and a hypothesis for testing.
               </p>
             </div>
           </div>
-          <div class="column mt-1 col-md-6">
-            <div id="comp-analysis">
-              <a href="#" class="button mp center">View Analyses</a>
+          <div class="row">
+            <div class="column colr-md-6 colright-50">
+              <div class="highlight-text plr-1">
+                <p>
+                  What are they selling?
+                </p>
+                <p>
+                  What are they communicating through their product?
+                </p>
+                <p>
+                  What are they missing in their messaging, product, or overall offering?
+                </p>
+              </div>
             </div>
-        <!---<div> <!--lightbox container-->
-          <!--<div> <!--modal content-->
-            <!---<div>
-                  <picture>
-                      <source=srcset="img/monstapursuit/strava@1x.jpg" media="(max-min-width:767px)">
-                      <img src="img/monstapursuit/strava@2x.jpg" alt="slide 1">
-                  </picture>
-                </div>
-                <div>
-                  <picture>
-                    <source=srcset="img/monstapursuit/endomondo@1x.jpg" media="(max-min-width:767px)">
-                      <img src="img/monstapursuit/endomondo@2x.jpg" alt="slide 2">
-                  </picture>
-                </div>
-                <div>
-                  <picture>
-                    <source=srcset="img/monstapursuit/zombiesrun@1x.jpg" media="(max-min-width:767px)">
-                      <img src="img/monstapursuit/zombiesrun@2x.jpg" alt="slide 3">
-                  </picture>
-                </div>
-                <div>
-                  <picture>
-                    <source=srcset="img/monstapursuit/goosechase@1x.jpg" media="(max-min-width:767px)">
-                      <img src="img/monstapursuit/goosechase@2x.jpg" alt="slide 4">
-                  </picture>
-                </div>
-                <div>
-                  <picture>
-                    <source=srcset="img/monstapursuit/geocaching@1x.jpg" media="(max-min-width:767px)">
-                      <img src="img/monstapursuit/geocaching@2x.jpg" alt="slide 5">
-                  </picture>
-                </div>
-              </div> --->
+            <div class="column mt-1 col-md-6">
+              <div id="comp-analysis">
+                <a href="javascript:void(0)" class="button mp center" id="analysis">View Analyses</a>
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </div>
+
     <div class="section bg-white">
-      <div class="container">
-        <div class="row"> <!--interviews sub-section-->
-          <div class="column col-md-7">
-            <h3>GETTING TO KNOW THE USER</h3>
-            <p>In order to better understand users’ attitudes towards exercise and scavenger hunts, I conducted in-depth interviews where I used the 5 Why’s technique to discover the needs and frustrations faced by the interviewees. </p>
+      <div class="outer-container">
+        <h5 class="counter">01/06</h5>
+        <h5 id="vt-usr-interviews" class="vertical-txt"><span>Research |</span> User Interviews</h5>
+        <div class="container">
+          <div class="row"> <!--interviews sub-section-->
+            <div class="column col-md-7">
+              <h3>GETTING TO KNOW THE USER</h3>
+              <p>In order to better understand users’ attitudes towards exercise and scavenger hunts, I conducted in-depth interviews where I used the 5 Why’s technique to discover the needs and frustrations faced by the interviewees. </p>
+            </div>
           </div>
-        </div>
-        <div class="row md-p-0">
-          <div class="column col-md-6 colright-50">
-            <picture>
-              <source srcset="img/monstapursuit/interviews@1x.png" media="(max-width:767px)">
-              <img src="img/monstapursuit/interviews@2x.png" alt="interviews">
-            </picture>
-          </div>
-          <div class="column col-md-6 goals">
-            <p>
-              My research goals were three-fold:
-            </p>
-            <ul>
-              <li>Understand why people exercise, what motivates them and what aspects they find challenging in making exercise a regular part of their lifestyle.</li>
-              <li>Understand how respondents use technology while they exercise.</li>
-              <li>Discover the respondents’ experience with scavenger hunts to determine how I could bring together these two concepts.</li>
-            </ul>
-            <p class="pt-1-75 md-p-0">
-              I recruited 5 people, living in major cities all over the world who enjoyed experimenting with new technology and were generally quite active or looking to build a more active lifestyle.
-            </p>
+          <div class="row md-p-0">
+            <div class="column col-md-6 colright-50">
+              <picture>
+                <source srcset="img/monstapursuit/interviews@1x.png" media="(max-width:767px)">
+                <img src="img/monstapursuit/interviews@2x.png" alt="interviews">
+              </picture>
+            </div>
+            <div class="column col-md-6 goals bullets">
+              <p>
+                My research goals were three-fold:
+              </p>
+              <ul>
+                <li>Understand why people exercise, what motivates them and what aspects they find challenging in making exercise a regular part of their lifestyle.</li>
+                <li>Understand how respondents use technology while they exercise.</li>
+                <li>Discover the respondents’ experience with scavenger hunts to determine how I could bring together these two concepts.</li>
+              </ul>
+              <p class="pt-1-75 md-p-0">
+                I recruited 5 people, living in major cities all over the world who enjoyed experimenting with new technology and were generally quite active or looking to build a more active lifestyle.
+              </p>
+            </div>
           </div>
         </div>
       </div>
@@ -236,8 +246,8 @@
 
     <div class="section"> <!---interview quotes sub-section--->
       <div class="row bg-beige highlight-text mt-0"> <!--container/ wrapper-->
-        <div class="mw-1200">
-          <div class="column quotes colhalf"> <!--column 1-->
+        <div class="mw-1000">
+          <div class="column quotes"> <!--column 1-->
             <p>I exercise to become a better version of myself.</p>
           </div>
           <div class="column col4th"> <!--column 2-->
@@ -250,8 +260,8 @@
       </div>
     </div>
     <div class="section bg-white">
-      <div class= "container">
-        <div class="row">
+      <div class= "container container-pb0">
+        <div class="row bullets">
           <div class="column col-md-8">
             <h3>KEY FINDINGS</h3>
             <ul>
@@ -265,165 +275,197 @@
       </div>
     </div>
 
-    <div class="section"> <!--define section-->
+    <div id="section03" class="anchor bg-white"></div> <!--define section-->
+
+    <div class="section">
       <div class="banner">
         <h2>2 | DEFINE</h2>
       </div>
-      <div class="container pb-1">
-        <div class="row">
-          <div class="column col-md-7">
-            <h3>PROBLEM DEFINITION</h3>
-            <p>
-              Upon completing domain research, competitive analysis, and user interviews, I was able to define the problem.
-            </p>
-          </div>
-        </div>
-        <div class="md-width-80">
-          <p class="box center mt-3 mb-3" style="padding:2.5em; font-weight:500;">
-            People need a more engaging and exciting way to get fit in the outdoors, whilst also tracking key fitness stats, in order to keep themselves motivated and challenged during their workout and ultimately lead a healthier lifestyle.
-          </p>
-        </div>
-        <div class="row">
-          <div class="column col-md-7">
-          <h3>BRINGING THE DATA TO LIFE</h3>
-            <p>
-              Taking the data from the interviews, I created an affinity map to reveal the needs and problems of users. I was then able to represent the various target groups identified by creating 3 personas. These personas helped to inform design
-              decisions, ensuring the strategy remained aligned to their unique and individual needs. This was important to help avoid feature creep.
-            </p>
-            <p class="pt-1-75">
-              <span style="font-weight: 600;">Meet Trevor, Adriana, and Rea.</span>
-            </p>
-          </div>
-        </div>
-      </div>
-      <div class="bg-beige pt-2-5"> <!--slideshow container-->
-        <div class="container">
-          <div> <!--slide 1-->
-            <picture>
-              <source=srcset="img/monstapursuit/persona_trevor@1x.jpg" media="(max-min-width:767px)">
-                <img src="img/monstapursuit/persona_trevor@2x.jpg" alt="persona trevor">
-            </picture>
-          </div>
-      <!--  <div> <!--slide 2-->
-      <!--    <picture>
-            <source=srcset="img/monstapursuit/persona_adriana@1x.jpg" media="(max-min-width:767px)">
-              <img src="img/monstapursuit/persona_adriana@2x.jpg" alt="persona adriana">
-          </picture>
-        </div>
-        <div> <!--slide 3-->
-        <!--  <picture>
-            <source=srcset="img/monstapursuit/persona_rea@1x.jpg" media="(max-min-width:767px)">
-              <img src="img/monstapursuit/persona_rea@2x.jpg" alt="persona rea">
-          </picture>
-        </div>
-      -->
-      </div>
-    </div>
-      <div class="container">
-        <div class="row">
-          <div class="column col-md-7">
-            <h3>ENHANCING THE NARRATIVE</h3>
-            <p>
-              With my ideal users defined, I explored their needs further by creating journey maps depicting the process and thoughts of each persona towards achieving a specific goal. These helped me to empathize more deeply with the personas,
-              exposing their highs, lows, and pain points along their journey.
-            </p>
-          </div>
-        </div>
-        <div class="slideshow shadow-orange"> <!--slideshow container-->
-          <div> <!--slide 1-->
-            <picture>
-              <source=srcset="img/monstapursuit/user_journey_trevor@1x.jpg" media="(max-min-width:767px)">
-                <img src="img/monstapursuit/user_journey_trevor@2x.jpg" alt="journey map trevor">
-            </picture>
-          </div>
-        <!--  <div> <!--slide 2-->
-        <!--    <picture>
-              <source=srcset="img/monstapursuit/user_journey_adriana@1x.jpg" media="(max-min-width:767px)">
-                <img src="img/monstapursuit/user_journey_adriana@2x.jpg" alt="journey map adriana">
-            </picture>
-          </div>
-          <div> <!--slide 3-->
-        <!--  <picture>
-              <source=srcset="img/monstapursuit/user_journey_rea@1x.jpg" media="(max-min-width:767px)">
-                <img src="img/monstapursuit/user_journey_rea@2x.jpg" alt="journey map rea">
-            </picture>
-          </div>
-        -->
-        </div>
-        <div class="row">
-          <div class="column colr-md-7">
-            <p>
-              Journey maps were followed by user flows, which allowed me to visualize how each persona would progress through the app in order to achieve their goals.
-            </p>
-          </div>
-        </div>
-        <div class="slideshow user-flow shadow-grey"> <!--slideshow container-->
-          <div> <!--slide 1-->
-            <picture>
-              <source=srcset="img/monstapursuit/user_flow_trevor@1x.png" media="(max-min-width:767px)">
-                <img src="img/monstapursuit/user_flow_trevor@2x.png" alt="user flow trevor">
-            </picture>
-          </div>
-        <!---  <div> <!--slide 2-->
-        <!--    <picture>
-              <source=srcset="img/monstapursuit/user_flow_adriana@1x.png" media="(max-min-width:767px)">
-                <img src="img/monstapursuit/user_flow_adriana@2x.png" alt="user flow adriana">
-            </picture>
-          </div>
-          <div> <!--slide 3-->
-        <!--    <picture>
-              <source=srcset="img/monstapursuit/user_flow_rea@1x.png" media="(max-min-width:767px)">
-                <img src="img/monstapursuit/user_flow_rea@2x.png" alt="user flow rea">
-            </picture>
-          </div>
-        -->
-        </div>
-      </div>
-    </div>
-
-    <div class="section bg-white"> <!--ideate section-->
-      <div class="banner">
-        <h2>3 | IDEATE</h2>
-      </div>
-      <div class="container">
-        <div class="row">
-          <div class="column col-md-7">
-            <h3>CREATING THE BLUEPRINT</h3>
-            <p>
-              After having determined the core features of the app, it was time to move on to the Information Architecure of the app and deetrmine how best to organize the app's content. To ensure the app is intuitive and easy to use, I conducted an online open card sorting exercise using optimal sort with 8 testers to help me understand how users conceptualize the content of the app so that I could ensure that the content was organized to match their mental models.
-            </p>
-          </div>
-        </div>
-        <div clas="row">
-          <div class="column colr-md-7">
-            <h3>CART SORT FINDINGS</h3>
-            <p>
-              The results of the card sort revealed the following key points:
-            </p>
-            <ul>
-              <li>The 5 distinct categories established by the participants did not diverge too much from my original classifications.</li>
-              <li>A novel concept (such as the running game app) makes grouping topics less instinctive , due to lack of familiarity, which leads to increased diversity in the results.</li>
-              <li>Sample size is relatively small, thus results are not very strong.</li>
-            </ul>
-          </div>
-        </div>
-        <div class="row">
+      <div class="outer-container">
+        <h5 class="counter">02/06</h5>
+        <h5 id="vt-prblm-def" class="vertical-txt"><span>Define |</span> Problem Definition</h5>
+        <div class="container pb-1 pb-2">
+          <div class="row">
             <div class="column col-md-7">
-            <p>
-              The findings from the card sort were used  to update the preliminary site map.
+              <h3>PROBLEM DEFINITION</h3>
+              <p>
+                Upon completing domain research, competitive analysis, and user interviews, I was able to define the problem.
+              </p>
+            </div>
+          </div>
+          <div class="md-width-80">
+            <p class="box center mt-3 mb-3" style="padding:2.5em; font-weight:500;">
+              People need a more engaging and exciting way to get fit in the outdoors, whilst also tracking key fitness stats, in order to keep themselves motivated and challenged during their workout and ultimately lead a healthier lifestyle.
             </p>
           </div>
-        </div>
-        <div class="shadow-grey mt-2-5 mb-1-5">
-          <picture>
-            <source=srcset="img/monstapursuit/site_map@1x.jpg" media="(max-min-width:767px)">
-              <img src="img/monstapursuit/site_map@2x.jpg" alt="revised site map">
-          </picture>
         </div>
       </div>
     </div>
     <div class="section">
-      <div class="container">
+      <div class="outer-container">
+        <h5 class="counter">02/06</h5>
+        <h5 id="vt-personas" class="vertical-txt"><span>Define |</span> Personas</h5>
+        <div class="container pb-1-75 pt-0 container-pb0">
+          <div class="row">
+            <div class="column col-md-7">
+            <h3>BRINGING THE DATA TO LIFE</h3>
+              <p>
+                Taking the data from the interviews, I created an affinity map to reveal the needs and problems of users. I was then able to represent the various target groups identified by creating 3 personas. These personas helped to inform design
+                decisions, ensuring the strategy remained aligned to their unique and individual needs. This was important to help avoid feature creep.
+              </p>
+              <p class="pt-1-75">
+                <span style="font-weight: 600;">Meet Trevor, Adriana, and Rea.</span>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="section bg-beige"> <!--slideshow container-->
+      <div class="container container-slider">
+        <div class="slideshow slider">
+          <div><!--slide 1-->
+            <picture>
+              <source=srcset="img/monstapursuit/persona_trevor@1x.jpg" media="(max-width:767px)">
+                <img src="img/monstapursuit/persona_trevor@2x.jpg" alt="persona trevor">
+            </picture>
+          </div>
+          <div> <!--slide 2-->
+            <picture>
+            <source=srcset="img/monstapursuit/persona_adriana@1x.jpg" media="(max-min-width:767px)">
+              <img src="img/monstapursuit/persona_adriana@2x.jpg" alt="persona adriana">
+            </picture>
+          </div>
+          <div> <!--slide 3-->
+            <picture>
+              <source=srcset="img/monstapursuit/persona_rea@1x.jpg" media="(max-min-width:767px)">
+                <img src="img/monstapursuit/persona_rea@2x.jpg" alt="persona rea">
+            </picture>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="section">
+      <div class="outer-container">
+        <h5 class="counter">02/06</h5>
+        <h5 id="vt-flows" class="vertical-txt"><span>Define |</span> User Journeys & Flows</h5>
+        <div class="container container-pb0">
+          <div class="row">
+            <div class="column col-md-7">
+              <h3>ENHANCING THE NARRATIVE</h3>
+              <p>
+                With my ideal users defined, I explored their needs further by creating journey maps depicting the process and thoughts of each persona towards achieving a specific goal. These helped me to empathize more deeply with the personas,
+                exposing their highs, lows, and pain points along their journey.
+              </p>
+            </div>
+          </div>
+          <div class="slideshow shadow-orange"> <!--slideshow container-->
+            <div class="slider">
+              <div> <!--slide 1-->
+                <picture>
+                  <source=srcset="img/monstapursuit/user_journey_trevor@1x.jpg" media="(max-min-width:767px)">
+                    <img src="img/monstapursuit/user_journey_trevor@2x.jpg" alt="journey map trevor">
+                </picture>
+              </div>
+              <div> <!--slide 2-->
+                <picture>
+                <source=srcset="img/monstapursuit/user_journey_adriana@1x.jpg" media="(max-min-width:767px)">
+                  <img src="img/monstapursuit/user_journey_adriana@2x.jpg" alt="journey map adriana">
+                </picture>
+              </div>
+              <div> <!--slide 3-->
+              <picture>
+                  <source=srcset="img/monstapursuit/user_journey_rea@1x.jpg" media="(max-min-width:767px)">
+                    <img src="img/monstapursuit/user_journey_rea@2x.jpg" alt="journey map rea">
+                </picture>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="column colr-md-7">
+              <p>
+                Journey maps were followed by user flows, which allowed me to visualize how each persona would progress through the app in order to achieve their goals.
+              </p>
+            </div>
+          </div>
+          <div class="slideshow user-flow shadow-grey"> <!--slideshow container-->
+            <div class="slider">
+              <div> <!--slide 1-->
+                <picture>
+                  <source=srcset="img/monstapursuit/user_flow_trevor@1x.png" media="(max-min-width:767px)">
+                    <img src="img/monstapursuit/user_flow_trevor@2x.png" alt="user flow trevor">
+                </picture>
+              </div>
+              <div> <!--slide 2-->
+               <picture>
+                  <source=srcset="img/monstapursuit/user_flow_adriana@1x.png" media="(max-min-width:767px)">
+                    <img src="img/monstapursuit/user_flow_adriana@2x.png" alt="user flow adriana">
+                </picture>
+              </div>
+              <div> <!--slide 3-->
+                <picture>
+                <source=srcset="img/monstapursuit/user_flow_rea@1x.png" media="(max-min-width:767px)">
+                  <img src="img/monstapursuit/user_flow_rea@2x.png" alt="user flow rea">
+                </picture>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <div id="section04" class="anchor"></div> <!--ideate section-->
+
+    <div class="section bg-white">
+      <div class="banner">
+        <h2>3 | IDEATE</h2>
+      </div>
+      <div class="outer-container">
+        <h5 class="counter">03/06</h5>
+        <h5 id="vt-IA" class="vertical-txt"><span>Ideate |</span> Information Architecture</h5>
+        <div class="container">
+          <div class="row">
+            <div class="column col-md-7">
+              <h3>CREATING THE BLUEPRINT</h3>
+              <p>
+                After having determined the core features of the app, it was time to move on to the Information Architecure of the app and deetrmine how best to organize the app's content. To ensure the app is intuitive and easy to use, I conducted an online open card sorting exercise using optimal sort with 8 testers to help me understand how users conceptualize the content of the app so that I could ensure that the content was organized to match their mental models.
+              </p>
+            </div>
+          </div>
+          <div clas="row">
+            <div class="column colr-md-7 bullets">
+              <h3>CART SORT FINDINGS</h3>
+              <p>
+                The results of the card sort revealed the following key points:
+              </p>
+              <ul>
+                <li>The 5 distinct categories established by the participants did not diverge too much from my original classifications.</li>
+                <li>A novel concept (such as the running game app) makes grouping topics less instinctive , due to lack of familiarity, which leads to increased diversity in the results.</li>
+                <li>Sample size is relatively small, thus results are not very strong.</li>
+              </ul>
+            </div>
+          </div>
+          <div class="row">
+              <div class="column col-md-7">
+              <p>
+                The findings from the card sort were used  to update the preliminary site map.
+              </p>
+            </div>
+          </div>
+          <div class="shadow-grey mt-2-5 mb-1-5">
+            <picture>
+              <source=srcset="img/monstapursuit/site_map@1x.jpg" media="(max-min-width:767px)">
+                <img src="img/monstapursuit/site_map@2x.jpg" alt="revised site map">
+            </picture>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="outer-container">
+      <h5 class="counter">03/06</h5>
+      <h5 id="vt-wireframes" class="vertical-txt"><span>Ideate |</span> Paper Wireframes</h5>
+      <div class="container container-pb0">
         <div class="row">
           <div class="column col-md-7">
             <h3>PUTTING PEN TO PAPER</h3>
@@ -441,6 +483,12 @@
               <img src="img/monstapursuit/wireframes@2x.jpg" alt="preliminary sketches">
           </picture>
         </div>
+      </div>
+    </div>
+    <div class="outer-container">
+      <h5 class="counter">03/06</h5>
+      <h5 id="vt-midfid" class="vertical-txt"><span>Ideate |</span> Mid-Fidelity Wireframes</h5>
+      <div class="container">
         <div class="row">
           <div class="column col-md-7">
             <h3>LEVELLING UP</h3>
@@ -458,144 +506,146 @@
       </div>
     </div>
 
-    <div class="section"> <!--prototyping section-->
+
+  <div id="section05" class="anchor"></div> <!--prototyping section-->
+
+    <div class="section">
       <div class="banner">
         <h2>4 | PROTOTYPE</h2>
       </div>
-      <div class="container pb-1">
-        <div class="row">
-          <div class="column col-md-7">
-            <h3>MAKING IT INTERACTIVE</h3>
-            <p>
-              I refined the wireframes further to a higher-level version created using Adobe XD, paying attention to spacing, sizing of elements, and copy. With a set of polished, grayscale screens, I was able to put them together with click events and animation, making it interactive. I now had a clickable high-fidelity prototype of the app’s core features, ready for user testing.
-            </p>
+      <div class="outer-container">
+        <h5 class="counter">04/06</h5>
+        <h5 id="vt-proto" class="vertical-txt"><span>Prototype |</span> High-Fidelity Prototype</h5>
+        <div class="container pb-1">
+          <div class="row">
+            <div class="column col-md-7">
+              <h3>MAKING IT INTERACTIVE</h3>
+              <p>
+                I refined the wireframes further to a higher-level version created using Adobe XD, paying attention to spacing, sizing of elements, and copy. With a set of polished, grayscale screens, I was able to put them together with click events and animation, making it interactive. I now had a clickable high-fidelity prototype of the app’s core features, ready for user testing.
+              </p>
+            </div>
           </div>
         </div>
       </div>
     </div>
-    <div class="section bg-beige ">
-      <div class="container">
+    <div class="section bg-beige">
+      <div class="container container-pb0">
         <div class="pt-2-5">
-          <a href="#">
-            <picture>
+          <div id="proto-lbox">
+            <a href="javascript:void(0)">
+            <picture id="prototype">
               <source=srcset="img/monstapursuit/prototype@1x.png" media="(max-min-width:767px)">
                 <img src="img/monstapursuit/prototype@2x.png" alt="prototype task example">
             </picture>
           </a>
         </div>
-      <!--  <div> <!--lightbox container-->
-      <!--    <div> <!--modal content-->
-      <!--      <div>
-              <picture>
-                  <source=srcset="img/monstapursuit/prototype_1@1x.png" media="(max-min-width:767px)">
-                  <img src="img/monstapursuit/prototype_1@2x.png" alt="prototype slide 1">
-              </picture>
-            </div>
-            <div>
-              <picture>
-                  <source=srcset="img/monstapursuit/prototype_2@1x.png" media="(max-min-width:767px)">
-                  <img src="img/monstapursuit/prototype_2@2x.png" alt="prototype slide 2">
-              </picture>
-            </div>
-            <div>
-              <picture>
-                  <source=srcset="img/monstapursuit/prototype_3@1x.png" media="(max-min-width:767px)">
-                  <img src="img/monstapursuit/prototype_3@2x.png" alt="prototype slide 3">
-              </picture>
-            </div>
-          </div>
-        </div>
-      -->
+      </div>
       </div>
     </div>
 
-    <div class="section bg-white"> <!--testing section-->
+    <div id="section06" class="anchor bg-beige"></div> <!--testing section-->
+
+    <div id="section06" class="section bg-white">
       <div class="banner">
         <h2>5| TESTING</h2>
       </div>
-      <div class="container">
-        <div class="row">
-          <div class="column col-md-7">
-            <h3>PUTTING IT TO THE TEST</h3>
-            <p>
-              It was finally time to test the concept of the app and assess how well users understood its value proposition. I also wanted to examine the ease of use of the app’s core features in order to optimize IA and improve the overall user experience.
-            </p>
+      <div class="outer-container">
+        <h5 class="counter">05/06</h5>
+        <h5 id="vt-test" class="vertical-txt"><span>Testing |</span> Usability Tests</h5>
+        <div class="container">
+          <div class="row">
+            <div class="column col-md-7">
+              <h3>PUTTING IT TO THE TEST</h3>
+              <p>
+                It was finally time to test the concept of the app and assess how well users understood its value proposition. I also wanted to examine the ease of use of the app’s core features in order to optimize IA and improve the overall user experience.
+              </p>
+            </div>
           </div>
-        </div>
-        <div class="row">
-          <div class="column colr-md-7">
-            <h3>USABILITY TEST</h3>
-            <p>
-              I conducted moderated usability tests, 2 in person and 4 online, in which participants were asked to complete a set of scenario tasks. Each of the participants had some experience with running outdoors and using an app to track their runs. They had varied level of experience and fitness as I wanted to test the app on my target group. So my participants included committed runners with a regular training schedule, those who exercise as a social activity, and those new to running.
-            </p>
-            <p>
-              The tests were recorded and points of frustrations, comments, and observations were noted.
-            </p>
+          <div class="row">
+            <div class="column colr-md-7">
+              <h3>TEST PARTICIPANTS</h3>
+              <p>
+                I conducted moderated usability tests, 2 in person and 4 online, in which participants were asked to complete a set of scenario tasks. Each of the participants had some experience with running outdoors and using an app to track their runs. They had varied level of experience and fitness as I wanted to test the app on my target group. So my participants included committed runners with a regular training schedule, those who exercise as a social activity, and those new to running.
+              </p>
+              <p>
+                The tests were recorded and points of frustrations, comments, and observations were noted.
+              </p>
+            </div>
           </div>
         </div>
       </div>
     </div>
     <div class="section">
-      <div class="container">
-        <div class="row">
-          <div class="coulmn col-md-7">
-            <h3>AFFINITY MAP</h3>
-            <p>
-              The feedback received from the usability tests was used to create an Affinity Map, with the findings categorized into observations, positive quotes, negative quotes, and errors. These were then collated into a “rainbow spreadsheet” to gauge importance and level of severity according to Jacob Nielsen’s error scale.
-            </p>
+      <div class="outer-container">
+        <h5 class="counter">05/06</h5>
+        <h5 id="vt-affinity" class="vertical-txt"><span>Testing |</span> Affinity Map</h5>
+        <div class="container container-pb0">
+          <div class="row">
+            <div class="coulmn col-md-7">
+              <h3>AFFINITY MAP</h3>
+              <p>
+                The feedback received from the usability tests was used to create an Affinity Map, with the findings categorized into observations, positive quotes, negative quotes, and errors. These were then collated into a “rainbow spreadsheet” to gauge importance and level of severity according to Jacob Nielsen’s error scale.
+              </p>
+            </div>
           </div>
-        </div>
-        <div class="shadow-grey mt-2-5 mb-1-5">
-          <picture>
-              <source=srcset="img/monstapursuit/affinity_map@1x.jpg" media="(max-min-width:767px)">
-              <img src="img/monstapursuit/affinity_map@2x.jpg" alt="affinity map">
-          </picture>
-        </div>
-        <div class="row">
-          <div class="column col-md-8">
-            <h3>KEY FINDINGS</h3>
-            <p>
-              The usability tests uncovered several pain points, which I prioritized in order of importance and addressed in a new iteration of the prototype.
-            </p>
-            <p>
-              Key findings and observations are summarized below.
-            </p>
-            <ul>
-              <li>The concept was well received and all participants were able to correctly describe the purpose of the app.</li>
-              <li>Language choices are key. Copy needs to be clear and to the point.</li>
-              <li>Use familiar design patterns wherever possible.</li>
-              <li>Most of the confusion related to the task of creating a new Mission, due to  lack of familiarity with this process. However users noted that after doing it once, the next time it would be easier, signifying good learnability. </li>
-              <li>Work needs to be done on navigation and discoverability.</li>
-              <li>Testers all had similar issues and questions. </li>
-              <li>Simplify, simplify, simplify!</li>
-            </ul>
+          <div class="shadow-grey mt-2-5 mb-1-5">
+            <picture>
+                <source=srcset="img/monstapursuit/affinity_map@1x.jpg" media="(max-min-width:767px)">
+                <img src="img/monstapursuit/affinity_map@2x.jpg" alt="affinity map">
+            </picture>
+          </div>
+          <div class="row">
+            <div class="column col-md-8 bullets">
+              <h3>KEY FINDINGS</h3>
+              <p>
+                The usability tests uncovered several pain points, which I prioritized in order of importance and addressed in a new iteration of the prototype.
+              </p>
+              <p>
+                Key findings and observations are summarized below.
+              </p>
+              <ul>
+                <li>The concept was well received and all participants were able to correctly describe the purpose of the app.</li>
+                <li>Language choices are key. Copy needs to be clear and to the point.</li>
+                <li>Use familiar design patterns wherever possible.</li>
+                <li>Most of the confusion related to the task of creating a new Mission, due to  lack of familiarity with this process. However users noted that after doing it once, the next time it would be easier, signifying good learnability. </li>
+                <li>Work needs to be done on navigation and discoverability.</li>
+                <li>Testers all had similar issues and questions. </li>
+                <li>Simplify, simplify, simplify!</li>
+              </ul>
+            </div>
           </div>
         </div>
       </div>
     </div>
 
-    <div class="section bg-white"> <!--iterate & refine section-->
+    <div id="section07" class="anchor"></div> <!--iterate & refine section-->
+
+    <div class="section bg-white">
       <div class="banner">
         <h2>6 | ITERATE & REFINE</h2>
       </div>
-      <div class="container pb-1">
-        <div class="row">
-          <div class="column col-md-7">
-            <h3>VISUAL DESIGN</h3>
-            <p>
-              Following the usability tests, my focus shifted to polishing the visual design. It was important that I developed a vibrant and friendly visual language to activate the visceral experience level of emotional design.
-            </p>
-            <p>
-              I incorporated the recommendations laid out in Human Interface Guidelines and chose colours and fonts considering psychology of colour and type. I also designed fun illustrations and incorporated animations to help boost engagement through positive stimuli. While shaping the app’s visual design I ensured adherence to WCAG, in particular with regards to colour contrast, font size, form fields, and icons and buttons.
-            </p>
+      <div class="outer-container">
+        <h5 class="counter">06/06</h5>
+        <h5 id="vt-visual" class="vertical-txt"><span>Iterate & Refine |</span> Visual Design</h5>
+        <div class="container pb-1">
+          <div class="row">
+            <div class="column col-md-7">
+              <h3>ALL ABOUT THE VISUALS</h3>
+              <p>
+                Following the usability tests, my focus shifted to polishing the visual design. It was important that I developed a vibrant and friendly visual language to activate the visceral experience level of emotional design.
+              </p>
+              <p>
+                I incorporated the recommendations laid out in Human Interface Guidelines and chose colours and fonts considering psychology of colour and type. I also designed fun illustrations and incorporated animations to help boost engagement through positive stimuli. While shaping the app’s visual design I ensured adherence to WCAG, in particular with regards to colour contrast, font size, form fields, and icons and buttons.
+              </p>
+            </div>
           </div>
-        </div>
-        <div class="row">
-          <div class="column colr-md-7">
-            <h3>STYLE GUIDE</h3>
-            <p>
-              I created a style guide to ensure consistency of design during further development. The rules and standards included cover aspects such as colour palette, typography, UI elements, tone of voice, accessibility, and imagery and illustration. The full style guide can be downloaded below.
-            </p>
+          <div class="row">
+            <div class="column colr-md-7">
+              <h3>STYLE GUIDE</h3>
+              <p>
+                I created a style guide to ensure consistency of design during further development. The rules and standards included cover aspects such as colour palette, typography, UI elements, tone of voice, accessibility, and imagery and illustration. The full style guide can be downloaded below.
+              </p>
+            </div>
           </div>
         </div>
       </div>
@@ -607,8 +657,8 @@
               <source=srcset="img/monstapursuit/style_guide@1x.png" media="(max-min-width:767px)">
               <img src="img/monstapursuit/style_guide@2x.png" alt="style guide">
           </picture>
-          <div class="pt-1-75 center">
-            <a href="files/style_guide.pdf" target="_blank" style="color:#ffffff;">Link to Style Guide</a>
+          <div class="center">
+            <a id="style-guide-lbox" href="javascript:void(0)" style="color:#ffffff;">View Style Guide</a>
           </div>
         </div>
       </div>
@@ -638,7 +688,7 @@
       </div>
     </div>
     <div class="section">
-      <div class="container">
+      <div class="container container-pb0">
         <div style="font-size:1px;">
           <picture>
               <source=srcset="img/monstapursuit/perspective_screens@1x.jpg" media="(max-min-width:767px)">
@@ -648,7 +698,9 @@
       </div>
     </div>
 
-    <div class="section bg-white"> <!--conclusion-->
+    <div id="section08" class="anchor"></div> <!--conclusion-->
+
+    <div class="section bg-white">
       <div class="banner">
         <h2>CONCLUSION</h2>
       </div>
@@ -703,7 +755,7 @@
 
   </main>
   <!---footer section--->
-  <footer id="contact">
+  <footer id="contact"><span id="contact-anchor"></span>
     <div class="container">
       <h2 class="pb-1">Get in touch</h2>
       <p>
@@ -732,7 +784,83 @@
     </div>
   </footer>
 
+  <!-- Root element of PhotoSwipe. Must have class pswp. -->
+  <div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+      <!-- Background of PhotoSwipe.
+           It's a separate element as animating opacity is faster than rgba(). -->
+      <div class="pswp__bg"></div>
+
+      <!-- Slides wrapper with overflow:hidden. -->
+      <div class="pswp__scroll-wrap">
+
+          <!-- Container that holds slides.
+              PhotoSwipe keeps only 3 of them in the DOM to save memory.
+              Don't modify these 3 pswp__item elements, data is added later on. -->
+          <div class="pswp__container">
+              <div class="pswp__item"></div>
+              <div class="pswp__item"></div>
+              <div class="pswp__item"></div>
+          </div>
+
+          <!-- Default (PhotoSwipeUI_Default) interface on top of sliding area. Can be changed. -->
+          <div class="pswp__ui pswp__ui--hidden">
+
+              <div class="pswp__top-bar">
+
+                  <!--  Controls are self-explanatory. Order can be changed. -->
+
+                  <div class="pswp__counter"></div>
+
+                  <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+
+                  <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+
+                  <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+
+                  <!-- Preloader demo https://codepen.io/dimsemenov/pen/yyBWoR -->
+                  <!-- element will get class pswp__preloader--active when preloader is running -->
+                  <div class="pswp__preloader">
+                      <div class="pswp__preloader__icn">
+                        <div class="pswp__preloader__cut">
+                          <div class="pswp__preloader__donut"></div>
+                        </div>
+                      </div>
+                  </div>
+              </div>
+
+              <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                  <div class="pswp__share-tooltip"></div>
+              </div>
+
+              <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+              </button>
+
+              <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+              </button>
+
+              <div class="pswp__caption">
+                  <div class="pswp__caption__center"></div>
+              </div>
+          </div>
+      </div>
+  </div>
+
+
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.2/photoswipe.min.js"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.2/photoswipe-ui-default.min.js"></script>
+  <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
   <script src="js/scripts.js"></script>
+  <script type="text/javascript" src="js/scripts-mp.js"></script>
+
+  <script>
+   $('body').scrollspy({
+     target: '#anchor-nav',
+     offset: 200
+   });
+</script>
 
 </body>
 

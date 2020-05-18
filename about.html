@@ -17,37 +17,47 @@
 <body>
   <header>
     <div class="nav-container highlightTextIn">
-      <a href="index.html"><img src="img/JS_logo_black.svg" alt="Joanne Saad Designs Logo" class="logo margin-top-1"></a>
-      <nav>
-        <ul>
-          <li><a  href="index.html#work" alt="Work">Work</a></li>
-          <li><a href="about.html" alt="About">About</a></li>
-          <li><a  href="#contact"alt="Contact">Contact</a></li>
-        </ul>
-      </nav>
+      <a href="index.html"><img src="img/JS_logo_black.svg" alt="Joanne Saad Designs Logo" class="logo"></a>
+        <nav class="nav-main">
+          <a id="hamburger" href="javascript:void(0)" class="icon" onclick="menuToggle()"><span></span></a>
+          <ul id="nav-md-lg">
+            <li><a  href="index.html#work-anchor" alt="Work">Work</a></li>
+            <li><a href="about.html" alt="About">About</a></li>
+            <li><a  href="#contact-anchor"alt="Contact">Contact</a></li>
+          </ul>
+          <div id="mobile-nav" class="nav-overlay">
+            <div class="overlay-content">
+              <a  href="index.html#work-anchor" alt="Work" onclick="menuToggle()">Work</a>
+              <a href="about.html" alt="About">About</a>
+              <a  href="#contact-anchor"alt="Contact" onclick="menuToggle()">Contact</a>
+            </div>
+          </div>
+        </nav>
     </div>
   </header>
   <main id="about">
-    <div id="about-s1" class="section">
-      <div class="container">
-          <h1>
-            About Me
-          </h1>
-          <h2>
-            "To design an experience is to experience the design."
-          </h2>
-      </div>
-      <div class="container">
-        <div>
-          <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-          	 viewBox="0 0 85 84.9" style="enable-background:new 0 0 85 84.9;" xml:space="preserve">
-          <style type="text/css">
-          	.st0{fill:#262626;}
-          </style>
-          <path class="st0" d="M47.2,0.1l-0.5,55.5L61,42.1l5.5,5.8L41.8,71.3L18.5,46.6l5.8-5.5l14.4,15.2L39.2,0C17.2,1.7,0,20,0,42.4
-          	c0,23.5,19,42.5,42.5,42.5C66,84.9,85,65.8,85,42.4C85,20.5,68.4,2.5,47.2,0.1z"/>
-          </svg>
-          <p> scroll down</p>
+    <div id="hero-about" class="section">
+      <div id="about-s1" class="section">
+        <div class="container">
+            <h1>
+              About Me
+            </h1>
+            <h2>
+              "To design an experience is to experience the design."
+            </h2>
+        </div>
+        <div id="scroll-down" class="center">
+          <div >
+            <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+            	 viewBox="0 0 85 84.9" style="enable-background:new 0 0 85 84.9;" xml:space="preserve">
+            <style type="text/css">
+            	.st0{fill:#262626;}
+            </style>
+            <path class="st0" d="M47.2,0.1l-0.5,55.5L61,42.1l5.5,5.8L41.8,71.3L18.5,46.6l5.8-5.5l14.4,15.2L39.2,0C17.2,1.7,0,20,0,42.4
+            	c0,23.5,19,42.5,42.5,42.5C66,84.9,85,65.8,85,42.4C85,20.5,68.4,2.5,47.2,0.1z"/>
+            </svg>
+            <p> scroll down</p>
+          </div>
         </div>
       </div>
     </div>
@@ -82,7 +92,7 @@
       </div>
     </div>
     <div id="about-s3" class="section"> <!--skills and tools section-->
-      <div id="strip">
+      <div id="strip" class="parallax">
       </div>
       <div class="container center pt-1-25">
         <div class="row"> <!--container for columns-->
@@ -136,11 +146,11 @@
         </div>
       </div>
     </div>
-    <div id="strip">
+    <div id="strip" class="parallax">
     </div>
   </main>
   <!---footer section--->
-  <footer id="contact">
+  <footer id="contact"><span id="contact-anchor"></span>
     <div class="container">
       <h2 class="pb-1">Get in touch</h2>
       <p>
@@ -169,7 +179,20 @@
     </div>
   </footer>
 
-<script src="js/scripts.js"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="js/scripts.js"></script>
+
+  <script>
+  if (window.matchMedia("(min-width: 768px)").matches) {
+    var headerBg = document.getElementById("about-s1");
+    window.onscroll=function(){
+      headerBg.style.opacity = 1 - +window.pageYOffset/550+'';
+      headerBg.style.top = +window.pageYOffset+ 'px';
+      headerBg.style.backgroundPositionY = - +window.pageYOffset/2+'px';
+    }
+  } else{
+  }
+  </script>
 
 </body>
 </html>
