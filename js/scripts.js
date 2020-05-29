@@ -63,4 +63,28 @@ $('a[href*="#"]')
     }
   });
 
-  
+
+//if (window.matchMedia("(max-width: 1024px)").matches) {
+  //var prevScrollpos = window.pageYOffset;
+//  var headerHeight = document.getElementById("header").offsetHeight;
+//  var documentTitle= document.title;
+//  console.log(documentTitle);
+
+
+//  window.onscroll = function() {
+//    var currentScrollPos = window.pageYOffset;
+//    if (prevScrollpos > currentScrollPos) {
+//      document.getElementById("header").style.top = "0";
+//      if (documentTitle=="Deck Drills Project"){
+//        console.log("deck drills page");
+  //      document.getElementById("horiz-anchor-nav").style.top = headerHeight + "px";
+//      }
+//  } else {
+//    document.getElementById("header").style.top = - headerHeight - 5 + "px";
+//    if (documentTitle=="Deck Drills Project"){
+//      document.getElementById("horiz-anchor-nav").style.top = "0";
+//    }
+//    prevScrollpos = currentScrollPos;
+//  }
+//}
+//}

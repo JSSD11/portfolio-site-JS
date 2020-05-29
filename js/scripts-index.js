@@ -1,3 +1,27 @@
+if(('ontouchstart' in window) || (navigator.MaxTouchPoints > 0) || (navigator.msMaxTouchPoints > 0)) {
+    console.log("your device IS a touch device");
+}else {
+  var overlay = document.getElementById('logo-container').getElementsByClassName('overlay')[0];
+  overlay.classList.add('not-touch');
+  var overlay = document.getElementById('anime-container').getElementsByClassName('overlay')[0];
+  overlay.classList.add('not-touch');
+  var projectCardArray=document.getElementsByClassName('card-overlay');
+  console.log(projectCardArray.length);
+  for(var i=0; i<projectCardArray.length; i++){
+    var projectCardOverlay=projectCardArray[i].getElementsByClassName('overlay')[0];
+    projectCardOverlay.classList.add('not-touch');
+  }
+  var gridItemArray=document.getElementsByClassName('grid-item');
+  console.log(gridItemArray.length);
+  for(var i=0; i<gridItemArray.length; i++){
+    var gridItem=gridItemArray[i];
+    gridItem.classList.add('not-touch');
+    gridItem.getElementsByClassName('title')[0].classList.add('not-touch');
+  }
+
+  console.log("your device is NOT a touch device");
+}
+
   var LogoAnimation = function() {
 
     const logo = document.getElementById('logo-animation'),
