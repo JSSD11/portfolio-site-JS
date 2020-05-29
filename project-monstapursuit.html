@@ -6,7 +6,7 @@
   <meta name="author" content="Joanne Saad">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>MonstaPursuit Project</title>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Rajdhani:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Rajdhani:wght@300;400;500;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
   <link rel="icon" type="image/png" href="img/favicon/favicon.ico" />
   <link rel="icon" type="image/png" href="img/favicon/favicon-32x32.png" sizes="32x32" />
@@ -18,16 +18,16 @@
   <link rel="stylesheet" type="text/css" href="css/style.css"/>
 </head>
 
-<body>
-  <header>
+<body class="project-page">
+  <header id="header" class="nav-down">
     <div class="nav-container highlightTextIn">
       <a href="index.html"><img src="img/JS_logo_black.svg" alt="Joanne Saad Designs Logo" class="logo"></a>
         <nav class="nav-main">
           <a id="hamburger" href="javascript:void(0)" class="icon" onclick="menuToggle()"><span></span></a>
           <ul id="nav-md-lg">
-            <li><a  href="index.html#work" alt="Work">Work</a></li>
-            <li><a href="about.html" alt="About">About</a></li>
-            <li><a  href="#contact"alt="Contact">Contact</a></li>
+            <li><a  href="index.html#work" alt="Work">Work.</a></li>
+            <li><a href="about.html" alt="About">About.</a></li>
+            <li><a  href="#contact"alt="Contact">Contact.</a></li>
           </ul>
           <div id="mobile-nav" class="nav-overlay">
             <div class="overlay-content">
@@ -39,7 +39,7 @@
         </nav>
     </div>
   </header>
-  <main id="mp-page" class="project-page">
+  <main id="mp-page">
     <div id="anchor-nav">
         <ul class="dotnav dotnav-vertical dotnav-right nav">
             <li class="tooltip"><span class="tooltiptext">Introduction</span><a href="#section01"></a></li>
@@ -56,11 +56,11 @@
 
     <div class="section">
       <div>
-        <h1>MonstaPursuit <br> Case Study</h1>
+        <h1 class="mb-2">MonstaPursuit <br> Case Study</h1>
       </div>
     </div>
 
-    <div class="section mt-2-5"> <!--intro section-->
+    <div class="section"> <!--intro section-->
       <div class="center mw-1000">
         <picture>
           <source srcset="img/monstapursuit/MP_1@1x.jpg" media=(max-width:639px)>
@@ -77,12 +77,12 @@
         </div>
       </div>
       <div class="curve-section">
-        <div class="curve curve-image">
+        <div id="curve-image1" class="curve">
         </div>
       </div>
       <div class="outer-container">
         <h5 id="vt-intro" class="vertical-txt">Introduction</h5>
-        <div class="container">
+        <div class="container intro">
           <div class="row"> <!--container for columns-->
             <div class="column col-md-6 pr-2"> <!--left column-->
               <h3>CONTEXT</h3>
@@ -102,7 +102,9 @@
               </p>
             </div>
           </div>
-          <div class="row box mt-3 bullets"> <!--container for columns-->
+        </div>
+        <div class="container chal-sol">
+          <div  class="row box bullets"> <!--container for columns-->
             <div class="column col-md-6 pr-1"> <!--left column-->
               <div class="md-width-80">
                 <h4>THE CHALLENGE</h4>
@@ -130,10 +132,63 @@
       </div>
     </div>
 
+    <div class="curve-section">
+      <div id="curve-image2" class="curve">
+      </div>
+    </div>
+    <div class="section bg-beige">
+      <div class="container sol-01-02">
+        <div class="row solution-section center">
+          <div class="column col-md-6">
+            <picture>
+              <source srcset="img/monstapursuit/solution_1@1x.png" media="(max-width:767px)">
+              <img src="img/monstapursuit/solution_1@2x.png" alt="Play">
+            </picture>
+          </div>
+          <div class="column center colright-50 desc">
+            <h4>PLAY</h4>
+            <p>Have fun being active in the outdoors. Play against yourself or, for added competition, challenge a friend.</p>
+          </div>
+        </div>
+        <div class="row solution-section center">
+          <div class="column colr-md-6">
+            <picture>
+              <source srcset="img/monstapursuit/solution_2@1x.png" media="(max-width:767px)">
+              <img src="img/monstapursuit/solution_2@2x.png" alt="Analyse">
+            </picture>
+          </div>
+          <div class="column center colleft-50 desc">
+            <h4>ANALYSE</h4>
+            <p>Make the most out of your workouts by setting goals and analysing your stats. Seeing results will motivate you to keep moving.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="section sol-03">
+      <div class="container">
+        <div class="row solution-section center" style="z-index:3;">
+          <div class="column col-md-6">
+            <picture>
+              <source srcset="img/monstapursuit/solution_3@1x.png" media="(max-width:767px)">
+              <img src="img/monstapursuit/solution_3@2x.png" alt="Reward">
+            </picture>
+          </div>
+          <div class="column center colright-50">
+            <h4>REWARD</h4>
+            <p>Swap points for special deals from health- and fitness-related goods and services. Treat yourself, you’ve earned it!</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="curve-section">
+      <div id="curve-image3" class="curve">
+      </div>
+    </div>
     <div class="section bg-white">
       <div class="outer-container">
         <h5 id="vt-approach" class="vertical-txt">Approach</h5>
-        <div class="container container-pb0">
+        <div class="container process container-pb0">
           <h3>MY PROCESS</h3>
           <div class="mt-2-5">
             <picture>
@@ -170,10 +225,10 @@
               <h3>EXPLORING THE PROBLEM SPACE</h3>
               <p>
                 I first needed to better understand the market in order to make more informed decisions about my strategy and initial minimum viable product (MVP). I started by looking at existing solutions of both fitness and scavenger hunt apps, since
-                my app aimed to combine these two concepts. I was interested in how these apps build engagement and motivation through rewards and gamification, as well as how much emphasis they place on the social features.
+                my app aimed to combine these two concepts. I was interested in how these apps <strong>build engagement</strong> and motivation through <strong>rewards and gamification,</strong> as well as how much emphasis they place on the social features.
               </p>
             </div>
-            <div class="column mt-2-5">
+            <div class="column">
               <picture>
                 <source srcset="img/monstapursuit/competitive_landscape@1x.png" media="(max-min-width:767px)">
                 <img src="img/monstapursuit/competitive_landscape@2x.png" alt="competititive landscape chart" id="comp-landscape" class="md-width-80">
@@ -184,7 +239,7 @@
             <div class="column colr-md-6">
               <h3>COMPETITIVE ANALYSIS</h3>
               <p>
-                I performed in-depth analyses on 5 competitors to identify where they excel, weaknesses in their product, and potential gaps that fail to satisfy customer needs. This analysis was used to form assumptions and a hypothesis for testing.
+                I performed in-depth analyses on 5 competitors to identify where they excel, weaknesses in their product, and <strong>potential gaps that fail to satisfy customer needs.</strong> This analysis was used to form assumptions and a <strong>hypothesis for testing.</strong>
               </p>
             </div>
           </div>
@@ -208,23 +263,120 @@
               </div>
             </div>
           </div>
+          <div class="row">
+            <div class="column colr-md-6">
+              <div class="v1"></div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="column colr-md-6">
+              <h3>MINIMUM VIABLE PRODUCT</h3>
+              <ul class="no-bullets">
+                <li>Map run with exercise challenges along route</li>
+                <li>Track performance</li>
+                <li>Exchange points for rewards</li>
+                <li>Challenge friends</li>
+                <li>Socialize with community</li>
+              </ul>
+              <div class="end-block"></div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
 
-    <div class="section bg-white">
+    <div class="section bg-beige">
+      <div class="outer-container">
+        <h5 class="counter-surveys">01/06</h5>
+        <h5 id="vt-usr-surveys" class="vertical-txt"><span>Research |</span> User Surveys</h5>
+        <div class="container surveys-lg" style="padding-bottom:0;">
+          <div class="surveys-container shadow-orange" style="background-color:#fbfaf6;">
+            <div class="row">
+              <div class="column col-md-8">
+                <h3>THE PROOF IS IN THE DATA</h3>
+                <p class="mb-1-5">
+                  It was important to test the hypothesis early on to prove or disprove assumptions and hence validate core features of the MVP. I therefore conducted a survey on a diverse range of people within the target group to glean insights into their experience with exercise.
+                </p>
+              </div>
+            </div>
+            <div class="row">
+              <div class="column col-md-6">
+                <picture>
+                  <source srcset="img/monstapursuit/chart_1@1x.png" media="(max-min-width:767px)">
+                  <img src="img/monstapursuit/chart_1@2x.png" alt="chart 1">
+                </picture>
+              </div>
+              <div class="column colr-md-6">
+                <picture>
+                  <source srcset="img/monstapursuit/chart_2@1x.png" media="(max-min-width:767px)">
+                  <img src="img/monstapursuit/chart_2@2x.png" alt="chart 2">
+                </picture>
+              </div>
+            </div>
+            <div class="row">
+              <div class="column col-md-6">
+                <picture>
+                  <source srcset="img/monstapursuit/chart_3@1x.png" media="(max-min-width:767px)">
+                  <img src="img/monstapursuit/chart_3@2x.png" alt="chart 3">
+                </picture>
+              </div>
+              <div class="column colr-md-6">
+                <picture>
+                  <source srcset="img/monstapursuit/chart_4@1x.png" media="(max-min-width:767px)">
+                  <img src="img/monstapursuit/chart_4@2x.png" alt="chart 4">
+                </picture>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="section">
+        <div class="container" style="padding-top:0; padding-bottom: 1em;">
+          <div class="surveys-container-grey">
+            <div class="row">
+              <div class="column col-md-8 survey-highlight">
+                <h3 style="color:#fff;">FINDING THE HIGHER PURPOSE</h3>
+                <h4 class="pt-1-25" style="color:#fff; font-weight:400;">
+                  THE MAJORITY OF RESPONDENTS EXERCISE TO RELIEVE STRESS:
+                </h4>
+                <h4 class="center data">68%</h4>
+              </div>
+            </div>
+            <div class="row">
+              <div class="column colr-md-7 survey-insights">
+                <p>
+                  Although people do exercise for fitness, very few exercise just for that reason.
+                </p>
+                <p>
+                  A primary purpose for exercise is its mental benefit.
+                </p>
+                <p>
+                  54% of respondents are motivated by progress and improvement.
+                </p>
+                <div class="end-block-white"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    <div class="section">
       <div class="outer-container">
         <h5 class="counter">01/06</h5>
         <h5 id="vt-usr-interviews" class="vertical-txt"><span>Research |</span> User Interviews</h5>
-        <div class="container">
+        <div class="container" style="padding-bottom:0;">
           <div class="row"> <!--interviews sub-section-->
             <div class="column col-md-7">
               <h3>GETTING TO KNOW THE USER</h3>
-              <p>In order to better understand users’ attitudes towards exercise and scavenger hunts, I conducted in-depth interviews where I used the 5 Why’s technique to discover the needs and frustrations faced by the interviewees. </p>
+              <p>
+                The survey provided important initial insights, but I wanted to get to know more about users’ attitudes towards exercise and scavenger hunts, to help <strong>define the problem statement.</strong> I did this through in-depth interviews where I used the <strong>5 Why’s technique</strong> to better understand the needs and frustrations faced by the interviewees.
+              </p>
             </div>
           </div>
           <div class="row md-p-0">
-            <div class="column col-md-6 colright-50">
+            <div class="column col-md-6 colright-50 sm-pt-2">
               <picture>
                 <source srcset="img/monstapursuit/interviews@1x.png" media="(max-width:767px)">
                 <img src="img/monstapursuit/interviews@2x.png" alt="interviews">
@@ -235,9 +387,9 @@
                 My research goals were three-fold:
               </p>
               <ul>
-                <li>Understand why people exercise, what motivates them and what aspects they find challenging in making exercise a regular part of their lifestyle.</li>
-                <li>Understand how respondents use technology while they exercise.</li>
-                <li>Discover the respondents’ experience with scavenger hunts to determine how I could bring together these two concepts.</li>
+                <li><strong>Understand why</strong> people exercise, <strong>what motivates</strong> them and what aspects they find challenging in making exercise a regular part of their lifestyle.</li>
+                <li><strong>Understand</strong> how respondents use technology while they exercise.</li>
+                <li><strong>Discover the respondents’ experience</strong> with scavenger hunts to determine how I could bring together these two concepts.</li>
               </ul>
               <p class="pt-1-75 md-p-0">
                 I recruited 5 people, living in major cities all over the world who enjoyed experimenting with new technology and were generally quite active or looking to build a more active lifestyle.
@@ -249,7 +401,7 @@
     </div>
 
     <div class="section"> <!---interview quotes sub-section--->
-      <div class="row bg-beige highlight-text mt-0"> <!--container/ wrapper-->
+      <div class="row highlight-text mt-0 pb-0"> <!--container/ wrapper-->
         <div class="mw-1000">
           <div class="column quotes"> <!--column 1-->
             <p>I exercise to become a better version of myself.</p>
@@ -262,11 +414,10 @@
           </div>
         </div>
       </div>
-    </div>
-    <div class="section bg-white">
       <div class= "container container-pb0">
         <div class="row bullets">
           <div class="column col-md-8">
+            <div class="v1"></div>
             <h3>KEY FINDINGS</h3>
             <ul>
               <li>Respondents had mixed impressions on the competitive nature of fitness apps; some are motivated by competing with themselves and friends, while others find it demoralizing.</li>
@@ -274,12 +425,16 @@
               <li>Social features play an important role in motivation (e.g. connecting with like-minded people, peer-recognition, finding inspiration & new ideas), but not all respondents were keen to share their own results.</li>
               <li>What makes exercise a habit: routine; planning ahead; sense of accomplishment; seeing progress; goal setting; variety to prevent boredom and fitness plateau; the feel-good feeling after exercise.</li>
             </ul>
+            <div class="end-block"></div>
           </div>
         </div>
       </div>
     </div>
+    <div class="section bg-white">
 
-    <div id="section03" class="anchor bg-white"></div> <!--define section-->
+    </div>
+
+    <div id="section03" class="anchor"></div> <!--define section-->
 
     <div class="section">
       <div class="banner">
@@ -288,7 +443,7 @@
       <div class="outer-container">
         <h5 class="counter">02/06</h5>
         <h5 id="vt-prblm-def" class="vertical-txt"><span>Define |</span> Problem Definition</h5>
-        <div class="container pb-1 pb-2">
+        <div class="container problem-def">
           <div class="row">
             <div class="column col-md-7">
               <h3>PROBLEM DEFINITION</h3>
@@ -298,7 +453,7 @@
             </div>
           </div>
           <div class="md-width-80">
-            <p class="box center mt-3 mb-3" style="padding:2.5em; font-weight:500;">
+            <p class="box center mt-3" style="padding:2.5em; font-weight:500;">
               People need a more engaging and exciting way to get fit in the outdoors, whilst also tracking key fitness stats, in order to keep themselves motivated and challenged during their workout and ultimately lead a healthier lifestyle.
             </p>
           </div>
@@ -314,8 +469,8 @@
             <div class="column col-md-7">
             <h3>BRINGING THE DATA TO LIFE</h3>
               <p>
-                Taking the data from the interviews, I created an affinity map to reveal the needs and problems of users. I was then able to represent the various target groups identified by creating 3 personas. These personas helped to inform design
-                decisions, ensuring the strategy remained aligned to their unique and individual needs. This was important to help avoid feature creep.
+                Taking the data from the interviews, I created an affinity map to reveal the needs and problems of users. I was then able to represent the various <strong>target groups</strong> identified by creating 3 personas. These personas helped to <strong>inform design
+                decisions,</strong> ensuring the strategy remained aligned to their unique and individual needs. This was important to help </strong>avoid feature creep.</strong>
               </p>
               <p class="pt-1-75">
                 <span style="font-weight: 600;">Meet Trevor, Adriana, and Rea.</span>
@@ -358,7 +513,7 @@
             <div class="column col-md-7">
               <h3>ENHANCING THE NARRATIVE</h3>
               <p>
-                With my ideal users defined, I explored their needs further by creating journey maps depicting the process and thoughts of each persona towards achieving a specific goal. These helped me to empathize more deeply with the personas,
+                With my ideal users defined, I explored their needs further by creating journey maps depicting the <strong>process and thoughts of each persona towards achieving a specific goal.</strong> These helped me to empathize more deeply with the personas,
                 exposing their highs, lows, and pain points along their journey.
               </p>
             </div>
@@ -388,7 +543,7 @@
           <div class="row">
             <div class="column colr-md-7">
               <p>
-                Journey maps were followed by user flows, which allowed me to visualize how each persona would progress through the app in order to achieve their goals.
+                Journey maps were followed by user flows, which allowed me to <strong>visualize how each persona would progress through the app</strong> in order to achieve their goals.
               </p>
             </div>
           </div>
@@ -433,12 +588,27 @@
             <div class="column col-md-7">
               <h3>CREATING THE BLUEPRINT</h3>
               <p>
-                After having determined the core features of the app, it was time to move on to the Information Architecure of the app and deetrmine how best to organize the app's content. To ensure the app is intuitive and easy to use, I conducted an online open card sorting exercise using optimal sort with 8 testers to help me understand how users conceptualize the content of the app so that I could ensure that the content was organized to match their mental models.
+                After having determined the core features of the app, it was time to figure out how to organize the information. To ensure the app is intuitive and easy to use, it was essential that content was structured in a way that best <strong>matched users’ mental models.</strong>  Therefore, I conducted an online <strong>open card sorting</strong> exercise with 8 testers in order to gather insight into how users conceptualize the content of the app using a tool called Optimal Sort. I would then use the results to revise the preliminary site map so that the content is categorized in such a way that matches users’ mental models.
               </p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="column pt-1-75 col-md-6">
+              <picture>
+              <source=srcset="img/monstapursuit/similarity_matrix@1x.jpg" media="(max-min-width:767px)">
+                <img src="img/monstapursuit/similarity_matrix@2x.jpg" alt="similarity matrix">
+              </picture>
+            </div>
+            <div class="column pt-1-75 colr-md-6">
+              <picture>
+              <source=srcset="img/monstapursuit/dendrogram@1x.jpg" media="(max-min-width:767px)">
+                <img src="img/monstapursuit/dendrogram@2x.jpg" alt="dendrogram">
+              </picture>
             </div>
           </div>
           <div clas="row">
             <div class="column colr-md-7 bullets">
+              <div class="v2"></div>
               <h3>CART SORT FINDINGS</h3>
               <p>
                 The results of the card sort revealed the following key points:
@@ -463,21 +633,22 @@
                 <img src="img/monstapursuit/site_map@2x.jpg" alt="revised site map">
             </picture>
           </div>
+          <div class="end-block" style="margin-bottom:0;"></div>
         </div>
       </div>
     </div>
     <div class="outer-container">
       <h5 class="counter">03/06</h5>
       <h5 id="vt-wireframes" class="vertical-txt"><span>Ideate |</span> Paper Wireframes</h5>
-      <div class="container container-pb0">
+      <div class="container" style="padding-bottom:0;">
         <div class="row">
           <div class="column col-md-7">
             <h3>PUTTING PEN TO PAPER</h3>
             <p>
-              With the foundations hatched out, the next step was to draft out the core structure and navigation of the app. To do this efficiently and under time contraints, I used brainstorming techniques, such as 6-8-5 method (or crazy 8’s) to generate 6-8 ideas in 5 minutes. This allowed me to iterate through many design options quickly.
+              With the foundations hatched out, the next step was to draft out the core structure and navigation of the app. To do this efficiently and under time contraints, I used <strong>brainstorming techniques</strong>, such as <strong>6-8-5 method (or crazy 8’s)</strong> to generate 6-8 ideas in 5 minutes. This allowed me to iterate through many design options quickly.
             </p>
             <p>
-              The paper wireframes progressed from showing only basic content to displaying more detail in order to better understand the high-level functionality of the app.
+              The paper wireframes progressed from showing only basic content to displaying more detail in order to better understand the <strong>high-level functionality of the app</strong>.
             </p>
           </div>
         </div>
@@ -487,17 +658,63 @@
               <img src="img/monstapursuit/wireframes@2x.jpg" alt="preliminary sketches">
           </picture>
         </div>
+        <p style="font-weight:300; font-size:0.8em; margin-top:-20px">
+          Paper wireframes of the Missions (now named Challenges), Planner, Play, Feed (now named Social), and Progress screens
+        </p>
+        <div class="row">
+          <div class="column colr-md-7">
+            <div class="v1" style="margin-top:50px;"></div>
+            <h3>THESE SKETCHES HELPED ME TO:</h3>
+            <p>
+              Map out the shell of the interface and basic information architecture;
+            </p>
+            <p>
+              Test my ideas early on without focusing on visual elements;
+            </p>
+            <p>
+              Save time and resources.
+            </p>
+            <div class="end-block"></div>
+          </div>
+        </div>
       </div>
     </div>
     <div class="outer-container">
-      <h5 class="counter">03/06</h5>
-      <h5 id="vt-midfid" class="vertical-txt"><span>Ideate |</span> Mid-Fidelity Wireframes</h5>
+      <h5 class="counter-mobile">03/06</h5>
+      <h5 id="vt-mob-first" class="vertical-txt"><span>Ideate |</span> Mobile First</h5>
       <div class="container">
         <div class="row">
           <div class="column col-md-7">
-            <h3>LEVELLING UP</h3>
+            <h3 style="margin-top:1em;">UPSIZING</h3>
             <p>
-              To reduce points of friction and refine the user flow, I worked in iterative cycles based on feedback from my peers. Increasing the level of fidelity from low-fidelity paper sketches to mid-fidelity digital wireframes helped to improve the structure of the interface and discover inconsistencies in flow. These wireframes were created using Balsamiq.
+              Although the app is designed to be played on mobile, users will also be able to create workouts, view their progress, view and add to their calendar, and check their newsfeed on desktop (and tablet).
+            </p>
+            <p>
+              When designing the layout for larger screen sizes, it was necessary to consider the different design patterns used across the various platforms, as well as the increased screen real estate afforded by larger screen sizes. Moreover, it was important to understand that <strong>each platfrom affords a certain level of functionality</strong> which, in turn, requires a <strong>different user experience and ultimately leads to different user behavior.</strong> With these differences in mind, sketches were developed for tablet and desktop screens, examples of which are shown below.
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="section bg-dark">
+      <div class="container">
+        <div class="pt-2-5">
+          <picture>
+              <source=srcset="img/monstapursuit/desktop_sketches@1x.png" media="(max-min-width:767px)">
+              <img src="img/monstapursuit/desktop_sketches@2x.png" alt="desktop sketches">
+          </picture>
+          <div class="end-block-white" style="margin-bottom:0;"></div>
+        </div>
+      </div>
+    </div>
+    <div class="outer-container">
+      <h5 class="counter-levelling">03/06</h5>
+      <h5 id="vt-midfid" class="vertical-txt"><span>Ideate |</span> Mid-Fidelity Wireframes</h5>
+      <div class="container container-pb0">
+        <div class="row">
+          <div class="column col-md-7">
+            <h3 style="margin-top:1em;">LEVELLING UP</h3>
+            <p>
+              To <strong>reduce points of friction and refine the user flow,</strong> I worked in <strong>iterative cycles</strong> based on feedback from my peers. Increasing the level of fidelity from low-fidelity paper sketches to mid-fidelity digital wireframes helped to improve the structure of the interface and discover inconsistencies in flow. These wireframes were created using Balsamiq.
             </p>
           </div>
         </div>
@@ -506,6 +723,7 @@
             <source=srcset="img/monstapursuit/mid_fid_wires@1x.png" media="(max-min-width:767px)">
               <img src="img/monstapursuit/mid_fid_wires@2x.png" alt="mid fidelity wireframes">
           </picture>
+          <div class="end-block"></div>
         </div>
       </div>
     </div>
@@ -525,7 +743,10 @@
             <div class="column col-md-7">
               <h3>MAKING IT INTERACTIVE</h3>
               <p>
-                I refined the wireframes further to a higher-level version created using Adobe XD, paying attention to spacing, sizing of elements, and copy. With a set of polished, grayscale screens, I was able to put them together with click events and animation, making it interactive. I now had a clickable high-fidelity prototype of the app’s core features, ready for user testing.
+                Continuing the iterative process, I refined the wireframes further to a higher-level version created using Adobe XD, paying attention to spacing, sizing of elements, and copy.
+              </p>
+              <p>
+                With a set of polished, grayscale screens, I was able to put them together with click events and animation, making it interactive. I now had a clickable high-fidelity prototype of the app’s core features, ready for user testing.
               </p>
             </div>
           </div>
@@ -533,17 +754,18 @@
       </div>
     </div>
     <div class="section bg-beige">
-      <div class="container container-pb0">
+      <div class="container">
         <div class="pt-2-5">
           <div id="proto-lbox">
             <a href="javascript:void(0)">
-            <picture id="prototype">
-              <source=srcset="img/monstapursuit/prototype@1x.png" media="(max-min-width:767px)">
-                <img src="img/monstapursuit/prototype@2x.png" alt="prototype task example">
-            </picture>
-          </a>
+              <picture id="prototype">
+                <source=srcset="img/monstapursuit/prototype@1x.png" media="(max-min-width:767px)">
+                  <img src="img/monstapursuit/prototype@2x.png" alt="prototype task example">
+              </picture>
+            </a>
+          </div>
         </div>
-      </div>
+        <div class="end-block"></div>
       </div>
     </div>
 
@@ -561,18 +783,18 @@
             <div class="column col-md-7">
               <h3>PUTTING IT TO THE TEST</h3>
               <p>
-                It was finally time to test the concept of the app and assess how well users understood its value proposition. I also wanted to examine the ease of use of the app’s core features in order to optimize IA and improve the overall user experience.
+                It was finally time to test the concept of the app and assess how well users understood its value proposition. I also wanted to <strong>examine the ease of use of the app’s core features</strong> in order to optimize IA and improve the overall user experience.
+              </p>
+              <p>
+                I conducted <strong>moderated usability tests,</strong> 2 in person and 4 online, in which participants were asked to complete a set of scenario tasks. The tests were recorded and <strong>points of frustrations, comments, and observations were noted.</strong>
               </p>
             </div>
           </div>
           <div class="row">
             <div class="column colr-md-7">
-              <h3>TEST PARTICIPANTS</h3>
+              <h3>RECRUITING PARTICIPANTS</h3>
               <p>
-                I conducted moderated usability tests, 2 in person and 4 online, in which participants were asked to complete a set of scenario tasks. Each of the participants had some experience with running outdoors and using an app to track their runs. They had varied level of experience and fitness as I wanted to test the app on my target group. So my participants included committed runners with a regular training schedule, those who exercise as a social activity, and those new to running.
-              </p>
-              <p>
-                The tests were recorded and points of frustrations, comments, and observations were noted.
+                I recruited 6 participants, each having had some experience with running outdoors and using an app to track their runs. They had varied level of experience and fitness as I wanted to test the app on my <strong>target group.</strong> So my participants included <strong>committed runners</strong> with a regular training schedule, those who <strong>exercise as a social activity</strong>, and those <strong>new to running.</strong>
               </p>
             </div>
           </div>
@@ -583,12 +805,12 @@
       <div class="outer-container">
         <h5 class="counter">05/06</h5>
         <h5 id="vt-affinity" class="vertical-txt"><span>Testing |</span> Affinity Map</h5>
-        <div class="container container-pb0">
+        <div class="container" style="padding-bottom: 1.5em;">
           <div class="row">
-            <div class="coulmn col-md-7">
+            <div class="column col-md-7">
               <h3>AFFINITY MAP</h3>
               <p>
-                The feedback received from the usability tests was used to create an Affinity Map, with the findings categorized into observations, positive quotes, negative quotes, and errors. These were then collated into a “rainbow spreadsheet” to gauge importance and level of severity according to Jacob Nielsen’s error scale.
+                The feedback received from the usability tests was used to create an <strong>Affinity Map,</strong> with the findings categorized into observations, positive quotes, negative quotes, and errors. These were then collated into a “rainbow spreadsheet” to <strong>gauge importance and level of severity</strong> according to Jacob Nielsen’s error scale.
               </p>
             </div>
           </div>
@@ -600,10 +822,8 @@
           </div>
           <div class="row">
             <div class="column col-md-8 bullets">
+              <div class="v1"></div>
               <h3>KEY FINDINGS</h3>
-              <p>
-                The usability tests uncovered several pain points, which I prioritized in order of importance and addressed in a new iteration of the prototype.
-              </p>
               <p>
                 Key findings and observations are summarized below.
               </p>
@@ -622,38 +842,261 @@
       </div>
     </div>
 
-    <div id="section07" class="anchor"></div> <!--iterate & refine section-->
-
+    <div class="section bg-beige">
+      <div class="container" style="padding-bottom: 2em;">
+        <table class="key-results">
+          <tr>
+            <td>ALL</td>
+            <td>participants were excited about the game and thought it was a fun concept.</td>
+          </tr>
+          <tr>
+            <td>4 of 6</td>
+            <td>testers found elements of the copy ambiguous, particularly when creating a new Mission.</td>
+          </tr>
+          <tr>
+            <td>33%</td>
+            <td>found the Play screens distracting due to too much clutter (high cognitive load).</td>
+          </tr>
+          <tr>
+            <td>5 of 6</td>
+            <td>participants expressed confusion relating to the user interface having multiple ways of doing the same thing.</td>
+          </tr>
+          <tr>
+            <td>83%</td>
+            <td>liked being able to choose their own exercises and customize the experience.</td>
+          </tr>
+          <tr>
+            <td>1</td>
+            <td>tester suggested to provide personalized plans for users new to exercise who would not know where to begin in creating a Mission.</td>
+          </tr>
+        </table>
+      </div>
+    </div>
+    <div class="section"> <!---test quote sub-section--->
+      <div class="row highlight-text mt-0 pt-1-75"> <!--container/ wrapper-->
+        <div class="mw-1000 quote-single">
+          <div class="column quotes"> <!--column 1-->
+            <p>
+              It’s great! It gets you off the couch in the outdoors and you can compete with your friends.
+            </p>
+          </div>
+          <div class="end-block"></div>
+        </div>
+      </div>
+    </div>
     <div class="section bg-white">
+      <div class="outer-container">
+        <h5 class="counter">05/06</h5>
+        <h5 id="vt-results" class="vertical-txt"><span>Testing |</span>  RESULTS & CHANGES</h5>
+        <div class="container container-pb0">
+          <div class="row">
+            <div class="column col-md-7">
+              <h3>CHANGE FOR PROGRESS</h3>
+              <p>
+                Conducting usability tests was the most <strong>eye-opening</strong> part of the process, as it allowed me to <strong>experience the app through the minds of others</strong> and provided valuable insights on how it could be improved.
+              </p>
+              <p>
+                Of the issues that arose, 5 core issues were identified to be improved upon in the next iteration.
+              </p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="column desc-issue bullets col-md-7">
+              <p>
+                <strong>ISSUE 1 : Ambiguous language and copy mean that users had difficulty in sending a message.</strong>
+              </p>
+              <ul>
+                <li>Testers did not relate the Feed icon and label with sending a message.</li>
+                <li>It was noted that the word “Post” signifies sending a message to all followers.</li>
+              </ul>
+              <div class="v3"></div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="column colr-md-10 desc-sol">
+              <p> <strong>SOLUTION</strong></p>
+              <picture>
+                  <source=srcset="img/monstapursuit/sol_1@1x.png" media="(max-min-width:767px)">
+                  <img src="img/monstapursuit/sol_1@2x.png" alt="solution 1">
+              </picture>
+            </div>
+          </div>
+          <div class="row">
+            <div class="column desc-issue bullets col-md-7">
+              <p>
+                <strong>ISSUE 2 : Missions screen needs simplifying and clarifying and language used needs re-thinking:</strong>
+              </p>
+              <ul>
+                <li>Testers found a lack of clarity regarding the difference between a Mission and a Challenge.</li>
+                <li>General negative response to the word “Mission”, especially when related to exercise due to its connotation with a laborious process.</li>
+                <li>Having multiple ways to play and add to planner (CTA button on Missions card and tab on nav bar) led to confusion.</li>
+                <li>It was noted that the “Exercises” tab was out of place as there are only 2 categories of missions - those played alone and those played in groups.</li>
+              </ul>
+              <div class="v3"></div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="column colr-md-10 desc-sol">
+              <p> <strong>SOLUTION</strong></p>
+              <picture>
+                  <source=srcset="img/monstapursuit/sol_2@1x.png" media="(max-min-width:767px)">
+                  <img src="img/monstapursuit/sol_2@2x.png" alt="solution 2">
+              </picture>
+              <p style="font-size:0.8em; font-weight:300;">
+                * NOTE: 83% of users instinctively chose to play by clicking on the CTA button. Also, playing from the tab on the nav bar requires users to first load a challenge, making this method less efficient as well as redundant. The Exercises section consists of a glossary and explanation of the pre-loaded exercises, as well as the ability to create custom exercises, therefore it makes sense to be located as a stand-alone feature on the nav bar.
+            </p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="column desc-issue bullets col-md-7">
+              <p>
+                <strong>ISSUE 3 : Missions (now Challenges) empty state screen has too much information (high cognitive load).</strong>
+              </p>
+              <div class="v3"></div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="column colr-md-10 desc-sol">
+              <p> <strong>SOLUTION</strong></p>
+              <picture>
+                  <source=srcset="img/monstapursuit/sol_3@1x.png" media="(max-min-width:767px)">
+                  <img src="img/monstapursuit/sol_3@2x.png" alt="solution 3">
+              </picture>
+            </div>
+          </div>
+          <div class="row">
+            <div class="column desc-issue bullets col-md-7">
+              <p>
+                <strong>ISSUE 4 : More guidance is needed when creating a custom challenge. </strong>
+              </p>
+              <div class="v3"></div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="column colr-md-10 desc-sol bullets">
+              <p> <strong>SOLUTION</strong></p>
+              <ul>
+                <li>Use copy that takes the user through the steps in a sequential process, e.g. “Go to Step 2” instead of “Next”; Back to Step 1 instead of “Previous”. </li>
+              </ul>
+              <picture>
+                  <source=srcset="img/monstapursuit/sol_4@1x.png" media="(max-min-width:767px)">
+                  <img src="img/monstapursuit/sol_4@2x.png" alt="solution 4">
+              </picture>
+            </div>
+          </div>
+          <div class="row">
+            <div class="column desc-issue bullets col-md-7">
+              <p>
+                <strong>ISSUE 5 : Play screens are too busy.</strong>
+              </p>
+              <div class="v3"></div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="column colr-md-10 desc-sol">
+              <p> <strong>SOLUTION</strong></p>
+              <picture>
+                  <source=srcset="img/monstapursuit/sol_5@1x.png" media="(max-min-width:767px)">
+                  <img src="img/monstapursuit/sol_5@2x.png" alt="solution 5">
+              </picture>
+            </div>
+          </div>
+          <div class="end-block"></div>
+        </div>
+      </div>
+    </div>
+
+    <div id="section07" class="anchor bg-white"></div> <!--iterate & refine section-->
+
+    <div class="section">
       <div class="banner">
         <h2>6 | ITERATE & REFINE</h2>
       </div>
       <div class="outer-container">
         <h5 class="counter">06/06</h5>
         <h5 id="vt-visual" class="vertical-txt"><span>Iterate & Refine |</span> Visual Design</h5>
-        <div class="container pb-1">
+        <div class="container">
           <div class="row">
             <div class="column col-md-7">
               <h3>ALL ABOUT THE VISUALS</h3>
               <p>
-                Following the usability tests, my focus shifted to polishing the visual design. It was important that I developed a vibrant and friendly visual language to activate the visceral experience level of emotional design.
+                Following the usability tests, my focus shifted to polishing the visual design. I developed a vibrant and friendly visual language to activate the <strong>visceral experience level of emotional design.</strong>
               </p>
               <p>
-                I incorporated the recommendations laid out in Human Interface Guidelines and chose colours and fonts considering psychology of colour and type. I also designed fun illustrations and incorporated animations to help boost engagement through positive stimuli. While shaping the app’s visual design I ensured adherence to WCAG, in particular with regards to colour contrast, font size, form fields, and icons and buttons.
+                I incorporated the recommendations laid out in <strong>Human Interface Guidelines</strong> and chose colours and fonts considering <strong>psychology of colour and type.</strong> I also designed fun illustrations and incorporated animations to help boost engagement through positive stimuli. While shaping the app’s visual design I ensured <strong>adherence to WCAG,</strong> in particular with regards to colour contrast, font size, form fields, and icons and buttons.
               </p>
             </div>
           </div>
           <div class="row">
             <div class="column colr-md-7">
-              <h3>STYLE GUIDE</h3>
+              <h3>SMALL CHANGES, BIG RESULTS</h3>
+              <p>
+                Once the high fidelity mockups were ready, I put them through another round of testing, focusing on the visuals. I received many useful comments and tips . Overall, the response was positive, with reviewers reacting favourably to the colours and illustrations used. I implemented minor changes as follows:
+              </p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="column visual-design-img col-md-8">
+              <picture>
+                  <source=srcset="img/monstapursuit/refine_1@1x.png" media="(max-min-width:767px)">
+                  <img src="img/monstapursuit/refine_1@2x.png" alt="visual design 1">
+              </picture>
+            </div>
+          </div>
+          <div class="row">
+            <div class="column visual-design-img colr-md-8">
+              <picture>
+                  <source=srcset="img/monstapursuit/refine_2@1x.png" media="(max-min-width:767px)">
+                  <img src="img/monstapursuit/refine_2@2x.png" alt="visual design 2">
+              </picture>
+            </div>
+          </div>
+          <div class="row">
+            <div class="column visual-design-img col-md-10">
+              <picture>
+                  <source=srcset="img/monstapursuit/refine_3@1x.png" media="(max-min-width:767px)">
+                  <img src="img/monstapursuit/refine_3@2x.png" alt="visual design 3">
+              </picture>
+            </div>
+          </div>
+          <div class="row">
+            <div class="column visual-design-img colr-md-7">
+              <picture>
+                  <source=srcset="img/monstapursuit/refine_4@1x.png" media="(max-min-width:767px)">
+                  <img src="img/monstapursuit/refine_4@2x.png" alt="visual design 4">
+              </picture>
+            </div>
+          </div>
+          <div class="row">
+            <div class="column visual-design-img">
+              <picture>
+                  <source=srcset="img/monstapursuit/refine_5@1x.png" media="(max-min-width:767px)">
+                  <img src="img/monstapursuit/refine_5@2x.png" alt="visual design 5">
+              </picture>
+            </div>
+          </div>
+          <div class="end-block"></div>
+        </div>
+      </div>
+    </div>
+    <div class="section bg-beige">
+      <div class="outer-container">
+        <h5 class="counter">06/06</h5>
+        <h5 id="vt-style-guide" class="vertical-txt"><span>Iterate & Refine |</span> Style Guide</h5>
+        <div class="container" style="padding-bottom:1em;">
+          <div class="row">
+            <div class="column col-md-7">
+              <h3>STYLE & SUBSTANCE</h3>
               <p>
                 I created a style guide to ensure consistency of design during further development. The rules and standards included cover aspects such as colour palette, typography, UI elements, tone of voice, accessibility, and imagery and illustration. The full style guide can be downloaded below.
               </p>
             </div>
           </div>
+            <div class="v4"></div>
         </div>
       </div>
     </div>
+
     <div class="section bg-dark">
       <div class="container">
         <div class="pt-2-5">
@@ -665,6 +1108,7 @@
             <a id="style-guide-lbox" href="javascript:void(0)" style="color:#ffffff;">View Style Guide</a>
           </div>
         </div>
+        <div class="end-block-white" style="margin-bottom:0;"></div>
       </div>
     </div>
     <div class="section">
@@ -716,24 +1160,38 @@
               MonstaPursuit’s design has been validated through user testing, and the wireframes and style guide are ready to hand-off to developers.
             </p>
             <p>
-              Once the app is functional, I will continue to test its usability and make improvements where necessary. I will also explore opportunities to enhance the user experience and increase users’ engagement with the app, with features such as points, goal setting and rewards.
+              Once the app is functional, I will continue to test its usability and make improvements where necessary. I will also explore opportunities to enhance the user experience and increase users’ engagement with the app, with features such as <strong>points, goal setting and rewards.</strong>
             </p>
             <p>
               A carefully planned points system in which users can progress up a scoreboard is expected to increase competition among users, helping to promote usage as friends try to out beat one another.
             </p>
             <p>
-              Additionally, a rewards system tied to users’ goals can be implemented, whereby users receive extra points and/or coupons from industry partners as they progress further towards their goal. Points can also be exchanged for vouchers to be used in local health-related businesses. These rewards can help promote local start-ups in the health and fitness industry, and hence strengthen the community of like-minded individuals.
+              Additionally, a <strong>rewards system tied to users’ goals</strong> can be implemented, whereby users receive extra points and/or coupons from industry partners as they progress further towards their goal. Points can also be exchanged for vouchers to be used in local health-related businesses. These rewards can help promote local start-ups in the health and fitness industry, and hence strengthen the community of like-minded individuals.
             </p>
             <p>
-              By keeping users motivated to use the app, these features will help to build habit as users start feeling better and seeing progress as a result of consistent activity.
+              By keeping users motivated to use the app, these features will help to <strong>build habit</strong> as users start feeling better and seeing progress as a result of consistent activity.
             </p>
             <p>
-              Finally, augmented reality features could be implemented to provide a more immersive user experience.
+              Finally, <strong>augmented reality</strong> features could be implemented to provide a <strong>more immersive user experience.</strong>
+            </p>
+          </div>
+          <div class="column colr-md-8">
+            <h3>HYPOTHESIS VALIDATION</h3>
+            <p>
+              Validating the above hypotheses will require first launching the new features, testing and refining them through usability tests, and finally monitoring to see whether there is an increase in app downloads and usage. It would also be good to have a blog where users can add new feature suggestions as well as provide room for improvement.
+            </p>
+          </div>
+          <div class="column col-md-8">
+            <h3>USER TESTING EVOLUTION</h3>
+            <p>
+              User testing needs to be conducted out in the field. By testing the AR aspects to see if they delight the user or if they feel like a gimmick will be key to this feature of the app.
             </p>
           </div>
         </div>
+        <div class="end-block"></div>
       </div>
     </div>
+
     <div class="section">
       <div class="container">
         <div class="row">
@@ -754,30 +1212,34 @@
             </p>
           </div>
         </div>
+          <div class="end-block"></div>
       </div>
     </div>
 
   </main>
   <!---footer section--->
   <footer id="contact"><span id="contact-anchor"></span>
+    <p class="sideways-text">
+      Get in touch.
+    </p>
     <div class="container">
-      <h2 class="pb-1">Get in touch</h2>
+      <h2>Like what you see? <span> Let's talk.</span></h2>
       <p>
-        Do you like my work and want to discuss opportunities? Let's talk!
+        Contact me for full-time work, freelance projects, or simply to chat about design.
       </p>
       <p>
         Just click on the link below to shoot me an email.
       </p>
       <div>
-        <a href="mailto:joanne.saad@gmail.com" class="button contact mt-1 mb-1">Email me</a>
+        <a href="mailto:joanne.saad@gmail.com" class="button-contact mt-1 mb-1">Email me</a>
       </div>
       <div>
         <!--social media links-->
         <a href="https://www.linkedin.com/in/joannesaad" target="_blank" class="social-link">
-          <svg height="50px" id="Layer_1" style="enable-background:new 0 0 67 67;" version="1.1" viewBox="0 0 67 67" width="67px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+          <svg height="50px" id="Layer_1" style="enable-background:new 0 0 67 67;" version="1.1" viewBox="0 0 67 67" width="67px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="#ffffff">
             <path
               d="M50.837,48.137V36.425c0-6.275-3.35-9.195-7.816-9.195  c-3.604,0-5.219,1.983-6.119,3.374V27.71h-6.79c0.09,1.917,0,20.427,0,20.427h6.79V36.729c0-0.609,0.044-1.219,0.224-1.655  c0.49-1.22,1.607-2.483,3.482-2.483c2.458,0,3.44,1.873,3.44,4.618v10.929H50.837z M22.959,24.922c2.367,0,3.842-1.57,3.842-3.531  c-0.044-2.003-1.475-3.528-3.797-3.528s-3.841,1.524-3.841,3.528c0,1.961,1.474,3.531,3.753,3.531H22.959z M34,64  C17.432,64,4,50.568,4,34C4,17.431,17.432,4,34,4s30,13.431,30,30C64,50.568,50.568,64,34,64z M26.354,48.137V27.71h-6.789v20.427  H26.354z"
-              style="fill-rule:evenodd;clip-rule:evenodd;fill:#262626;" /></svg>
+              style="fill-rule:evenodd;clip-rule:evenodd;" /></svg>
         </a>
       </div>
       <div id="copyright">

@@ -6,7 +6,7 @@
   <meta name="author" content="Joanne Saad">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>About Joanne Saad</title>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Rajdhani:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,600;0,700;1,700&family=Rajdhani:wght@300;400;500;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
   <link rel="stylesheet" type="text/css" href="css/style.css"/>
   <link rel="icon" type="image/png" href="img/favicon/favicon.ico" />
@@ -15,15 +15,15 @@
 </head>
 
 <body>
-  <header>
+  <header id="header">
     <div class="nav-container highlightTextIn">
       <a href="index.html"><img src="img/JS_logo_black.svg" alt="Joanne Saad Designs Logo" class="logo"></a>
         <nav class="nav-main">
           <a id="hamburger" href="javascript:void(0)" class="icon" onclick="menuToggle()"><span></span></a>
           <ul id="nav-md-lg">
-            <li><a  href="index.html#work-anchor" alt="Work">Work</a></li>
-            <li><a href="about.html" alt="About">About</a></li>
-            <li><a  href="#contact-anchor"alt="Contact">Contact</a></li>
+            <li><a  href="index.html#work-anchor" alt="Work">Work.</a></li>
+            <li><a href="about.html" alt="About">About.</a></li>
+            <li><a  href="#contact-anchor"alt="Contact">Contact.</a></li>
           </ul>
           <div id="mobile-nav" class="nav-overlay">
             <div class="overlay-content">
@@ -61,28 +61,30 @@
         </div>
       </div>
     </div>
+    <div id="cartoon" class="parallax">
+    </div>
     <div class="section pt-2-5 md-p-0"> <!--container wrapper-->
       <div class="container"> <!--my story section-->
         <div class="row">
-          <div class="column center col-md-6 mr-2 col-lg-7 colleft-60"> <!--right column-->
+          <h2 class="center pb-1-75 pt-1-75">Always iterating. Always improving. Forever learning.</h2>
+          <div class="column center col-md-6 mr-2 col-lg-6 lg-colleft-50"> <!--right column-->
               <picture>
                 <source srcset="img/about_page/cartoon@1x.png" media="(max-width:767px)">
                 <img src="img/about_page/cartoon@2x.png" alt="joanne saad cartoon image" id="img-cartoon">
               </picture>
           </div>
-          <div class="column colr-lg-5"> <!--left column-->
-              <h2 class="center">My Story</h2>
+          <div class="column colr-lg-6"> <!--left column-->
               <p>
-                Hi I’m Joanne, a UX/UI designer currently based in London; but this has not always been the case. Over the years, my curious nature, along with my ability to learn and adapt quickly, have enabled me to cross both borders and
-                industries.
+                Great design involves iterating and improving, and my journey into UX design has followed a similar approach. Over the years, a curious nature coupled with an ability to learn and adapt quickly, have enabled me to cross both borders and industries. From engineering to business development, to graphic design, each of my roles have an underlying passion connecting them: <strong>a need to understand how humans work and a desire to solve their problems</strong>.
               </p>
               <p>
-                I started out as a structural engineer and soon ventured into the world of business. Along the way, I discovered the joys of graphic design in helping turn people’s stories into beautiful messages. However, I desired something more –
-                this is where UX Design comes in. It is the perfect bridge between my technical, analytical, business, and creative minds. Indeed, UX Design is where I find my flow.
+                I started out as a structural engineer and soon ventured into the world of business. Along the way, I discovered the joys of graphic design in helping to turn people’s stories into beautiful messages. However, I desired something more – which is where UX Design comes in.
               </p>
               <p>
-                Through UX Design I am committed to improve and enrich how people interact with technology so they can work smarter and live happier. I love getting under the hood of problems and figuring out how best to connect the dots so that the
-                system (human + technology) works in harmony - only then can I achieve my goal of turning people’s stories into meaningful experiences.
+                UX Design is the perfect bridge between my <strong>technical, analytical, business, and creative minds.</strong> Indeed, UX Design is where I <strong>find my flow.</strong> Through UX Design I am committed to improve and enrich how people interact with technology so they can <strong>work smarter and live happier.</strong> I love getting under the hood of problems and figuring out how best to connect the dots so that the system (human + technology) <strong>works in harmony</strong> - only then can I hope to make people’s lives simpler, more effective, and more fun.
+              </p>
+              <p>
+                My journey may have its twists, but those twists have made me dynamic and adaptable. Using my diverse experience, I am able to bridge the gap between business goals and customer needs, always working to ensure that no story goes unheard and no problem goes unsolved. I now use design to <strong>turn people’s stories into meaningful experiences.</strong>
               </p>
               <div class="center mt-1">
                 <a href="files/JS_resume.pdf" target="_blank" class= "button secondary mt-1-25">View Resume</a>
@@ -151,16 +153,19 @@
   </main>
   <!---footer section--->
   <footer id="contact"><span id="contact-anchor"></span>
+    <p class="sideways-text">
+      Get in touch.
+    </p>
     <div class="container">
-      <h2 class="pb-1">Get in touch</h2>
+      <h2>Now you know about me. Let's <span>talk about you.</span></h2>
       <p>
-        Do you like my work and want to discuss opportunities? Let's talk!
+        Do you like my work and want to discuss opportunities? Contact me for full-time work, freelance projects, or simply to chat about design.
       </p>
       <p>
         Just click on the link below to shoot me an email.
       </p>
       <div>
-        <a href="mailto:joanne.saad@gmail.com" class="button contact mt-1 mb-1">Email me</a>
+        <a href="mailto:joanne.saad@gmail.com" class="button-contact mt-1 mb-1">Email me</a>
       </div>
       <div>
         <!--social media links-->
@@ -183,12 +188,52 @@
   <script src="js/scripts.js"></script>
 
   <script>
-  if (window.matchMedia("(min-width: 768px)").matches) {
+  if (window.matchMedia("(min-width: 640px)").matches) {
+  var img = document.getElementById("about-s1");
+  var widescreen = 16/9; //1.78
+  var standard = 4/3;   //1.3333
+  var mobile = 9/16;    //0.562
+  var tabletPortrait = 3/4; //0.75
+
+  var userRatio = window.screen.width / window.screen.height;
+
+  //0.656; 1.04167 ; 1.55667
+  if(userRatio <= (mobile + (tabletPortrait-mobile)/2)){
+    img.style.backgroundImage = "url('img/about_page/about_background_9_16.png')";
+    console.log(window.screen.width);
+    console.log(window.screen.height);
+    console.log(userRatio);
+  } else if(userRatio > (mobile + (tabletPortrait-mobile)/2) && userRatio <= (tabletPortrait + (standard-tabletPortrait)/2)){
+    img.style.backgroundImage = "url('img/about_page/about_background_3_4.png')";
+    console.log(window.screen.width);
+    console.log(window.screen.height);
+    console.log(userRatio);
+  } else if(userRatio > (tabletPortrait + (standard-tabletPortrait)/2) && userRatio <= (standard + (widescreen-standard)/2)){
+    img.style.backgroundImage = "url('img/about_page/about_background_4_3.png')";
+    console.log(window.screen.width);
+    console.log(window.screen.height);
+    console.log(userRatio);
+  } else if( userRatio > (standard + (widescreen-standard)/2) && userRatio <= widescreen){
+    img.style.backgroundImage = "url('img/about_page/about_background_16_9.png')";
+    console.log(window.screen.width);
+    console.log(window.screen.height);
+    console.log(userRatio);
+  }else {
+    //user using different screen resolution
+    img.style.background = "url('img/about_page/about_background_16_9.png')";
+    console.log(window.screen.width);
+    console.log(window.screen.height);
+    console.log(userRatio);
+  }
+}
+
+
+  if (window.matchMedia("(min-width: 1024px)").matches) {
     var headerBg = document.getElementById("about-s1");
     window.onscroll=function(){
       headerBg.style.opacity = 1 - +window.pageYOffset/550+'';
       headerBg.style.top = +window.pageYOffset+ 'px';
-      headerBg.style.backgroundPositionY = - +window.pageYOffset/2+'px';
+      //headerBg.style.backgroundPositionY = - +window.pageYOffset/2+'px';
     }
   } else{
   }
