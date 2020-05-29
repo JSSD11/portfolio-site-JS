@@ -27,7 +27,6 @@ body{
   background-color: #efefef;
 }
 
-
 h1, h2, h3, h4, h5 {
   font-family: 'Montserrat', sans-serif;
   line-height: 1.4;
@@ -81,8 +80,8 @@ a:active{
 .button{
   display:inline-block;
   font-weight: 700;
-  background-color: #11c793;
-  color: #ffffff !important;
+  background-color: #0EA97D;
+  color: #ffffff;
   padding: 15px 40px;
   border-radius: 4px;
   transition: 0.4s opacity, 0.4s background-color, 0.4s font-size;
@@ -95,6 +94,10 @@ a:active{
 .button:focus,
 .button:active{
   background-color:#0b8562;
+}
+
+a:visited.button{
+  color: #ffffff !important;
 }
 
 .button-contact{
@@ -881,7 +884,7 @@ margin: 0 1em;
   color: #FFF;
 }
 
-#strip{
+.strip{
   height: 15em;
   background-image: url("../img/about_page/pattern@1x.jpg");
   background-color: #11c793;
@@ -1443,7 +1446,7 @@ font-weight: 600;
 }
 
 .row.five-ws h4{
-  font-family: 'Rajdhani', 'sans-serif';
+  font-family: 'Rajdhani', sans-serif;
   font-size: 1.25em;
 }
 
@@ -2183,7 +2186,7 @@ main {
     left: 0px;
     padding: 9px 10px;
     overflow: hidden;
-    content: attr(alt);
+    content: attr(title);
     transition: all 0.3s;
     transform: scale(0.8);
     -ms-transform: scale(0.8);
@@ -2582,7 +2585,7 @@ padding-top: 1em;
   margin-bottom: 1em;
 }
 
-#strip{
+.strip{
   height: 20em;
 }
 
@@ -3019,7 +3022,7 @@ main{
   margin-bottom: 6em;
 }
 
-#strip {
+.strip {
  background-image: url("../img/about_page/pattern@2x.jpg");
 }
 
@@ -3555,7 +3558,7 @@ header{
 }
 
 .hero-text{
-  left: 262px;
+  left: 255px;
 }
 
 .hero-video{
@@ -3854,7 +3857,7 @@ margin-top: 0px;
   top: calc(6.25vw + 2em + 355px + 2em);
 }
 
-#strip{
+.strip{
   height: 25em;
 }
 
@@ -3880,14 +3883,13 @@ margin-top: 0px;
 
 li.nav-line.active{
   width: 100px;
-margin-right: 1.5m !important;
+margin-right: 1.5em !important;
 }
 
 .grid-container{
   grid-template-rows: repeat(16, 100px);
   grid-gap: 3em;
 }
-
 
 }
 

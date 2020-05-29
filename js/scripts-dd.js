@@ -61,7 +61,6 @@ function hasScrolled() {
     lastScrollTop = st;
 }
 
-
 //reveal fixed navbar
 
 if (window.matchMedia("(min-width: 640px)").matches) {

@@ -22,25 +22,25 @@
   <header id="header">
     <div class="nav-container highlightTextIn">
       <a href="index.html"><img src="img/JS_logo_black.svg" alt="Joanne Saad Designs Logo" class="logo"></a>
-        <nav class="nav-main">
-          <a id="hamburger" href="javascript:void(0)" class="icon" onclick="menuToggle()"><span></span></a>
-          <ul id="nav-md-lg">
-            <li><a  href="index.html#work" alt="Work">Work.</a></li>
-            <li><a href="about.html" alt="About">About.</a></li>
-            <li><a  href="#contact"alt="Contact">Contact.</a></li>
-          </ul>
-          <div id="mobile-nav" class="nav-overlay">
-            <div class="overlay-content">
-              <a  href="index.html#work" alt="Work" onclick="menuToggle()">Work</a>
-              <a href="about.html" alt="About">About</a>
-              <a  href="#contact"alt="Contact" onclick="menuToggle()">Contact</a>
-            </div>
+      <nav class="nav-main">
+        <a id="hamburger" href="javascript:void(0)" class="icon" onclick="menuToggle()"><span></span></a>
+        <ul id="nav-md-lg">
+          <li><a  href="index.html#work-anchor" title="Work.">Work.</a></li>
+          <li><a href="about.html" title="About.">About.</a></li>
+          <li><a  href="#contact-anchor" title="Contact.">Contact.</a></li>
+        </ul>
+        <div id="mobile-nav" class="nav-overlay">
+          <div class="overlay-content">
+            <a  href="index.html#work-anchor" onclick="menuToggle()">Work</a>
+            <a href="about.html">About</a>
+            <a  href="#contact-anchor" onclick="menuToggle()">Contact</a>
           </div>
-        </nav>
+        </div>
+      </nav>
     </div>
   </header>
   <main id="deck-drills-page">
-    <div class="section intro"><span id="deck-drills-anchor--1"></dspan>
+    <div class="section intro"><span id="deck-drills-anchor--1"></span>
       <div class="container" >
         <div>
           <h1 class="mb-2">Deck Drills Case Study</h1>
@@ -73,7 +73,7 @@
           <div class="row"> <!--container for columns-->
             <div class="column col-md-6 pr-2"> <!--left column-->
               <div>
-                <h3>CHALLENGES</h4>
+                <h3>CHALLENGES</h3>
                 <ul>
                   <li>People need an intuitive and easy-to-use way to create and customize their own flashcards;</li>
                   <li>​The​ ​experience​ ​of​ ​memorizing​ ​and​ ​understanding​ ​new concepts,​ ​techniques,​ ​and​ ​terms can feel overwhelming, so people need a way to feel motivated and excited to learn.</li>
@@ -82,7 +82,7 @@
             </div>
             <div class="column col-md-6"> <!--right column-->
               <div>
-                <h3>OPPORTUNITIES</h4>
+                <h3>OPPORTUNITIES</h3>
                 <ul>
                   <li>Develop a learning app that is intuitive and simple to use.</li>
                   <li>Provide instant feedback and progress checks to help users effectively and efficiently learn new concepts and material.</li>
@@ -93,7 +93,7 @@
           </div>
         </div>
         <div class="row five-ws">
-          <h3>THE FIVE W's</h4>
+          <h3>THE FIVE W's</h3>
             <div class="board-container">
               <div class="pin center">
                 <img src="img/deck_drills/pin.svg" alt="pin">
@@ -388,6 +388,7 @@
             <ul>
               <li>5 interviews were conducted;</li>
               <li>Respondents were from a range of backgrounds and demographics in terms of age (range btween 22 - 45), gender (3 females and 2 males), occupation (from students to Managrers, to engineers), and location (Egypt, The Bahamas, Spain, UK, and USA).</li>
+            </ul>
           </div>
           <div class="column dd-interviews">
             <p>
@@ -396,31 +397,31 @@
             <div class="dd-slideshow dd-slider">
               <div><!--slide 1-->
                 <picture>
-                  <source=srcset="img/deck_drills/interview_1@1x.jpg" media="(max-width:767px)">
+                  <source srcset="img/deck_drills/interview_1@1x.jpg" media="(max-width:767px)">
                     <img src="img/deck_drills/interview_1@2x.jpg" alt="interview 1">
                 </picture>
               </div>
               <div> <!--slide 2-->
                 <picture>
-                <source=srcset="img/deck_drills/interview_2@1x.jpg" media="(max-min-width:767px)">
+                <source srcset="img/deck_drills/interview_2@1x.jpg" media="(max-min-width:767px)">
                   <img src="img/deck_drills/interview_2@2x.jpg" alt="interview 2">
                 </picture>
               </div>
               <div> <!--slide 3-->
                 <picture>
-                  <source=srcset="img/deck_drills/interview_3@1x.jpg" media="(max-min-width:767px)">
+                  <source srcset="img/deck_drills/interview_3@1x.jpg" media="(max-min-width:767px)">
                     <img src="img/deck_drills/interview_3@2x.jpg" alt="interview 3">
                 </picture>
               </div>
               <div> <!--slide 4-->
                 <picture>
-                  <source=srcset="img/deck_drills/interview_4@1x.jpg" media="(max-min-width:767px)">
+                  <source srcset="img/deck_drills/interview_4@1x.jpg" media="(max-min-width:767px)">
                     <img src="img/deck_drills/interview_4@2x.jpg" alt="interview 4">
                 </picture>
               </div>
               <div> <!--slide 5-->
                 <picture>
-                  <source=srcset="img/deck_drills/interview_5@1x.jpg" media="(max-min-width:767px)">
+                  <source srcset="img/deck_drills/interview_5@1x.jpg" media="(max-min-width:767px)">
                     <img src="img/deck_drills/interview_5@2x.jpg" alt="interview 5">
                 </picture>
               </div>
@@ -465,7 +466,7 @@
                   <img src="img/deck_drills/pin.svg" alt="pin">
                 </div>
                 <picture>
-                  <source=srcset="img/deck_drills/persona@1x.png" media="(max-width:767px)">
+                  <source srcset="img/deck_drills/persona@1x.png" media="(max-width:767px)">
                     <img src="img/deck_drills/persona@2x.png" alt="proto persona">
                 </picture>
               </div>
@@ -568,16 +569,16 @@
                     <ol style="font-weight:bold">
                       <li><span>Fill in the information for deck title and description (optional);</span></li>
                       <li><span>Optional: Choose to place deck in existing folder(s). If no folders have been created, choose to create new folder; </span></li>
-                      <li><span>Add required cards to the deck. For each card perform the following:
+                      <li><span>Add required cards to the deck. For each card perform the following:</span>
                         <ul style="list-style-type:disc">
-                          <li>Add term; </li>
-                          <li>Add description;</li>
-                          <li>Choose to add photo; </li>
-                          <li>Choose to add audio; </li>
-                          <li>Choose to import data (text) from document;</li>
-                          <li>Customize styles.</li>
+                          <li><span>Add term;</span> </li>
+                          <li><span>Add description;</span></li>
+                          <li><span>Choose to add photo;</span> </li>
+                          <li><span>Choose to add audio; </span></li>
+                          <li><span>Choose to import data (text) from document;</span></li>
+                          <li><span>Customize styles.</span></li>
                         </ul>
-                      </span></li>
+                      </li>
                     </ol>
                   </li>
                 </ol>
@@ -587,7 +588,7 @@
           </div>
           <div class="column colr-tab-6 center" style="padding:0;">
             <picture>
-            <source=srcset="img/deck_drills/task1m@1x.png" media="(max-min-width:767px)">
+            <source srcset="img/deck_drills/task1m@1x.png" media="(max-min-width:767px)">
               <img src="img/deck_drills/task1@2x.png" alt="user flow task 1" style="margin:1em auto 0; max-width:550px">
             </picture>
           </div>
@@ -623,7 +624,7 @@
           </div>
           <div class="column colr-tab-6 center" style="padding:0; margin-top:2em;">
             <picture>
-            <source=srcset="img/deck_drills/task2@1x.png" media="(max-min-width:767px)">
+            <source srcset="img/deck_drills/task2@1x.png" media="(max-min-width:767px)">
               <img src="img/deck_drills/task2@2x.png" alt="user flow task 2" style="margin:1em auto 0; max-width:550px">
             </picture>
           </div>
@@ -649,7 +650,7 @@
           </div>
           <div class="column col-md-6">
             <picture>
-            <source=srcset="img/deck_drills/paper_sketches@1x.png" media="(max-min-width:767px)">
+            <source srcset="img/deck_drills/paper_sketches@1x.png" media="(max-min-width:767px)">
               <img src="img/deck_drills/paper_sketches@2x.png" alt="paper sketches">
             </picture>
           </div>
@@ -671,7 +672,7 @@
               <img src="img/deck_drills/pin.svg" alt="pin">
             </div>
             <picture>
-            <source=srcset="img/deck_drills/prototype_tasks@1x.png" media="(max-min-width:767px)">
+            <source srcset="img/deck_drills/prototype_tasks@1x.png" media="(max-min-width:767px)">
               <img src="img/deck_drills/prototype_tasks@2x.png" alt="prototype taks">
             </picture>
           </div>
@@ -688,7 +689,7 @@
           <div>
             <a href="javascript:void(0)">
               <picture id="dd-proto-lbox">
-              <source=srcset="img/deck_drills/prototype@1x.jpg" media="(max-min-width:767px)">
+              <source srcset="img/deck_drills/prototype@1x.jpg" media="(max-min-width:767px)">
                 <img src="img/deck_drills/prototype@2x.jpg" alt="prototype">
               </picture>
             </a>
@@ -726,7 +727,7 @@
         <div class="row">
           <div class="column pt-1-75">
             <picture>
-            <source=srcset="img/deck_drills/test_results@1x.png" media="(max-min-width:767px)">
+            <source srcset="img/deck_drills/test_results@1x.png" media="(max-min-width:767px)">
               <img src="img/deck_drills/test_results@2x.png" alt="usability test report">
             </picture>
           </div>
@@ -757,48 +758,48 @@
           <div class="column center">
             <h3>Issue 1: Learnability issues due to inadequate guidance</h3>
             <picture>
-            <source=srcset="img/deck_drills/issue1@1x.png" media="(max-min-width:767px)">
+            <source srcset="img/deck_drills/issue1@1x.png" media="(max-min-width:767px)">
               <img src="img/deck_drills/issue1@2x.png" alt="issue 1">
             </picture>
             <h3>Amendments to prototype</h3>
             <picture>
-            <source=srcset="img/deck_drills/sol1@1x.png" media="(max-min-width:767px)">
+            <source srcset="img/deck_drills/sol1@1x.png" media="(max-min-width:767px)">
               <img src="img/deck_drills/sol1@2x.png" alt="solution 1">
             </picture>
           </div>
           <div class="column center">
             <h3>Issue 2: Navigation tab bar inconsistent across app</h3>
             <picture>
-            <source=srcset="img/deck_drills/issue2@1x.png" media="(max-min-width:767px)">
+            <source srcset="img/deck_drills/issue2@1x.png" media="(max-min-width:767px)">
               <img src="img/deck_drills/issue2@2x.png" alt="issue 2">
             </picture>
             <h3>Amendments to prototype</h3>
             <picture>
-            <source=srcset="img/deck_drills/sol2@1x.png" media="(max-min-width:767px)">
+            <source srcset="img/deck_drills/sol2@1x.png" media="(max-min-width:767px)">
               <img src="img/deck_drills/sol2@2x.png" alt="solution 2">
             </picture>
           </div>
           <div class="column center">
             <h3>Issue 3: Discoverability of some buttons</h3>
             <picture>
-            <source=srcset="img/deck_drills/issue3@1x.png" media="(max-min-width:767px)">
+            <source srcset="img/deck_drills/issue3@1x.png" media="(max-min-width:767px)">
               <img src="img/deck_drills/issue3@2x.png" alt="issue 3">
             </picture>
             <h3>Amendments to prototype</h3>
             <picture>
-            <source=srcset="img/deck_drills/sol3@1x.png" media="(max-min-width:767px)">
+            <source srcset="img/deck_drills/sol3@1x.png" media="(max-min-width:767px)">
               <img src="img/deck_drills/sol3@2x.png" alt="solution 3">
             </picture>
           </div>
           <div class="column center">
             <h3>Issue 4: Ambiguous icons</h3>
             <picture>
-            <source=srcset="img/deck_drills/issue4@1x.png" media="(max-min-width:767px)">
+            <source srcset="img/deck_drills/issue4@1x.png" media="(max-min-width:767px)">
               <img src="img/deck_drills/issue4@2x.png" alt="issue 4">
             </picture>
             <h3>Amendments to prototype</h3>
             <picture>
-            <source=srcset="img/deck_drills/sol4@1x.png" media="(max-min-width:767px)">
+            <source srcset="img/deck_drills/sol4@1x.png" media="(max-min-width:767px)">
               <img src="img/deck_drills/sol4@2x.png" alt="solution 4">
             </picture>
           </div>
@@ -807,11 +808,11 @@
           <div class="column center">
             <div id="prott-iframe" class="">
             <h3>Prototype:</h3>
-            <iframe src="https://prottapp.com/e/f3e857" width="432" height="980" frameborder="0" title="deck drills prototype"></iframe>
+            <iframe src="https://prottapp.com/e/f3e857" width="432" height="980" title="deck drills prototype"></iframe>
             </div>
             <a href="https://prottapp.com/p/f3e857" target="_blank">Link to prototype</a>
           </div>
-        </div
+        </div>
       </div>
     </div>
 
@@ -836,7 +837,7 @@
                 <img src="img/deck_drills/pin.svg" alt="pin">
               </div>
               <picture>
-              <source=srcset="img/deck_drills/mood_board@1x.png" media="(max-min-width:767px)">
+              <source srcset="img/deck_drills/mood_board@1x.png" media="(max-min-width:767px)">
                 <img src="img/deck_drills/mood_board@2x.png" alt="deck drills mood board">
               </picture>
             </div>
@@ -852,19 +853,19 @@
         <div class="row">
           <div class="column final_ui">
             <picture>
-                <source=srcset="img/deck_drills/final_ui_1@1x.png" media="(max-min-width:767px)">
+                <source srcset="img/deck_drills/final_ui_1@1x.png" media="(max-min-width:767px)">
                 <img src="img/deck_drills/final_ui_1@2x.png" alt="final UI 1">
             </picture>
             <picture>
-                <source=srcset="img/deck_drills/final_ui_2@1x.png" media="(max-min-width:767px)">
+                <source srcset="img/deck_drills/final_ui_2@1x.png" media="(max-min-width:767px)">
                 <img src="img/deck_drills/final_ui_2@2x.png" alt="final UI 2">
             </picture>
             <picture>
-                <source=srcset="img/deck_drills/final_ui_3@1x.png" media="(max-min-width:767px)">
+                <source srcset="img/deck_drills/final_ui_3@1x.png" media="(max-min-width:767px)">
                 <img src="img/deck_drills/final_ui_3@2x.png" alt="final UI 3">
             </picture>
             <picture>
-                <source=srcset="img/deck_drills/final_ui_4@1x.png" media="(max-min-width:767px)">
+                <source srcset="img/deck_drills/final_ui_4@1x.png" media="(max-min-width:767px)">
                 <img src="img/deck_drills/final_ui_4@2x.png" alt="final UI 4">
             </picture>
           </div>
@@ -892,7 +893,7 @@
               In thinking about next steps, I evaluated how the Hook model, displayed below, has been applied in the design of Deck Drills.
             </p>
             <picture>
-                <source=srcset="img/deck_drills/hook_model@1x.png" media="(max-min-width:767px)">
+                <source srcset="img/deck_drills/hook_model@1x.png" media="(max-min-width:767px)">
                 <img src="img/deck_drills/hook_model@2x.png" alt="Hook model">
             </picture>
             <div id="hook">
@@ -906,16 +907,19 @@
               <p>
                 <strong>Action</strong>
               </p>
+              <p>
                 This is where usability comes in. To increase thee odds of users using the app, it must be as easy as possible, while simultaneously boosting the user’s motivation.
               </p>
               <p>
                 <strong>Investment</strong>
               </p>
+              <p>
                 Deck Drills requires users to invest time and effort when creating their own decks which helps them to develop strong associations and connections with the vocabulary, as well as the app.
               </p>
               <p>
                 <strong>Variable Reward</strong>
               </p>
+              <p>
                 A future step in developing the design of Deck Drills is to focus on the variable rewards phase of the model.  In order to keep users engaged and eager to continue using the app, a points and rewards system needs to be designed. Additionally, social features are key to the variable reward phaser considering that social interaction creates infinite variability and emotional satisfaction. Thus th social aspect of the app needs to be developed. This should include the ability to share achievements with friends, engage in friendly competition, as well as form study buddy groups for support and accountability.
               </p>
             </div>
@@ -938,7 +942,7 @@
                 <img src="img/deck_drills/pin.svg" alt="pin">
               </div>
               <picture>
-              <source=srcset="img/deck_drills/conclusion@1x.png" media="(max-min-width:767px)">
+              <source srcset="img/deck_drills/conclusion@1x.png" media="(max-min-width:767px)">
                 <img src="img/deck_drills/conclusion@2x.png" alt="key takeaways">
               </picture>
             </div>
