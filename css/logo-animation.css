@@ -10,6 +10,12 @@
   visibility:hidden;
 }
 
+#letter-J { transform: translate(0px, 0px); }
+#s-copy { transform: translate(0px, 0px); }
+#designs  { transform: translate(0px, 0px); }
+#surname { transform: translate(0px, 0px); }
+#first-name { transform: translate(0px, 0px); }
+
 @keyframes hide-name{
   0%{
     transform: translate(1000px, 0);
