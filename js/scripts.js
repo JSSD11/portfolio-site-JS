@@ -24,7 +24,6 @@ function changeLogo(){
   }
 }
 
-
 window.onload = changeLogo();
 
 // Select all links with hashes

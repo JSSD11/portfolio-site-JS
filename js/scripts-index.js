@@ -92,7 +92,7 @@ if(('ontouchstart' in window) || (navigator.MaxTouchPoints > 0) || (navigator.ms
    modalSvg.onclick = function(){
    modal.style.display = 'block';
    newSvg.outerHTML += `<svg version="1.1" id="Layer_5_copy" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
-      y="0px" viewBox="0 0 720 1284.6" style="enable-background:new 0 0 720 1284.6;" xml:space="preserve">
+      y="0px" viewBox="0 0 720 1284.6" style="enable-background:new 0 0 720 1284.6; height:100%; width:100%; margin:0 auto;" xml:space="preserve">
    <style type="text/css">
      .st0{fill:#FAF3EA;}
      .st1{opacity:0.35;fill:#F4CF98;enable-background:new    ;}
@@ -1726,6 +1726,7 @@ if(('ontouchstart' in window) || (navigator.MaxTouchPoints > 0) || (navigator.ms
   // };
   //   xhttp.open("GET", "animation.txt", true);
   //   xhttp.send();
+
    }
 
     // Get the <span> element that closes the modal
