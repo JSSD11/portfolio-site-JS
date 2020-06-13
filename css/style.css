@@ -3248,7 +3248,7 @@ margin: 0 8vw;
  p.sideways-text{
   display: block;
   top: calc(50% + 100px);
-  font-weight: 600;
+  font-weight: 500;
   position: absolute;
   left: 0px;
   margin-left: 10px;
