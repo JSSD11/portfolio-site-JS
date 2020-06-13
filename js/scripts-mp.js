@@ -32,20 +32,11 @@ function hasScrolled() {
         // Scroll Down
         $('#header').removeClass('nav-down').addClass('nav-up');
         document.getElementsByClassName('nav-up')[0].style.top = - headerHeight - 5 + "px";
-        if (window.matchMedia("(min-width: 640px)").matches && documentTitle=="Deck Drills Project"){
-              document.getElementById("horiz-anchor-nav").style.top = "0";
-              document.getElementById("horiz-anchor-nav").style.transitionDuration = "0.25s";
-            }
     } else {
         // Scroll Up
         if(st + $(window).height() < $(document).height()) {
             $('#header').removeClass('nav-up').addClass('nav-down');
             document.getElementsByClassName('nav-down')[0].style.top ="0";
-            if (window.matchMedia("(min-width: 640px)").matches && documentTitle=="Deck Drills Project"){
-                console.log("deck drills page");
-                 document.getElementById("horiz-anchor-nav").style.top = headerHeight + "px";
-                 document.getElementById("horiz-anchor-nav").style.transitionDuration = "0.35s";
-              }
         }
     }
 
@@ -56,7 +47,7 @@ function hasScrolled() {
 $(document).ready(function(){
   $('.slider').slick({
     dots: true,
-    infinite: true,
+    infinite: false,
     speed: 500,
     fade: true,
     arrows : false,
