@@ -1,10 +1,12 @@
+
+//check if touchscreen
 if(('ontouchstart' in window) || (navigator.MaxTouchPoints > 0) || (navigator.msMaxTouchPoints > 0)) {
     console.log("your device IS a touch device");
 }else {
   var overlay = document.getElementById('logo-container').getElementsByClassName('overlay')[0];
   overlay.classList.add('not-touch');
-  var overlay = document.getElementById('anime-container').getElementsByClassName('overlay')[0];
-  overlay.classList.add('not-touch');
+//  var overlay = document.getElementById('anime-container').getElementsByClassName('overlay')[0];
+//  overlay.classList.add('not-touch');
   var projectCardArray=document.getElementsByClassName('card-overlay');
   console.log(projectCardArray.length);
   for(var i=0; i<projectCardArray.length; i++){
@@ -21,6 +23,8 @@ if(('ontouchstart' in window) || (navigator.MaxTouchPoints > 0) || (navigator.ms
 
   console.log("your device is NOT a touch device");
 }
+
+//animate on scroll function
 
   var LogoAnimation = function() {
 
@@ -89,6 +93,7 @@ if(('ontouchstart' in window) || (navigator.MaxTouchPoints > 0) || (navigator.ms
   var modal = document.getElementById("anime-modal");
    var newSvg = document.getElementById('svg-cairo-london');
    var modalSvg = document.getElementById('anime-container');
+   console.log(newSvg.outerHTML);
    modalSvg.onclick = function(){
    modal.style.display = 'block';
    newSvg.outerHTML += `<svg version="1.1" id="Layer_5_copy" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
