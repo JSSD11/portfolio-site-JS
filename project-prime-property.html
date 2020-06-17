@@ -496,7 +496,7 @@
           </div>
         </div>
       </div>
-      <div class="container full-width center" style="padding-bottom:2em; padding-top:2em;">
+      <div class="container full-width center styleguide-slideshow" style="padding-bottom:2em; padding-top:2em;">
         <div class="slider">
           <div>
             <picture>
@@ -974,10 +974,13 @@
     var slider = $('.slider').slick({
       dots: true,
       infinite: true,
-      speed: 500,
-      arrows : false,
+      speed: 700,
+      //arrows : true,
+    //  appendArrows: ".styleguide-slideshow",
       slidesToShow: 1,
-      autoplay: false
+      autoplay: false,
+      prevArrow:"<img class='slick-prev' src='img/prime_property/caret-left-solid.svg'>",
+      nextArrow:"<img class='slick-next' src='img/prime_property/caret-right-solid.svg'>"
     });
   });
 

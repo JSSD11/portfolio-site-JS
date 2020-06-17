@@ -2392,6 +2392,8 @@ h2.section-title{
   padding-left:0;
   padding-right:0;
   padding-bottom: 0;
+  width:100%;
+  max-width: 1000px;
 }
 
 #mood-board-1{
@@ -2481,6 +2483,27 @@ max-height: 667px;
   box-shadow:         0px 0px 10px 0px rgb(180, 155, 84);
   line-height: 5px;
 }
+
+#prime-property-page .slick-arrow.slick-prev{
+  left: 10px;
+  z-index: 1;
+  width: 25px;
+  height: 25px;
+}
+
+#prime-property-page .slick-arrow.slick-next{
+  right: 10px;
+  z-index: 1;
+  width: 25px;
+  height: 25px;
+}
+
+/*#prime-property-page .slick-prev:before {
+  content: "\003C";
+  color: red;
+  font-size: 30px;
+}*/
+
 
 /* =============================================================================
    Prime Property Overview Page styling
