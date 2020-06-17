@@ -9,7 +9,7 @@ if(('ontouchstart' in window) || (navigator.MaxTouchPoints > 0) || (navigator.ms
 //  overlay.classList.add('not-touch');
   var projectCardArray=document.getElementsByClassName('card-overlay');
   console.log(projectCardArray.length);
-  for(var i=0; i<projectCardArray.length; i++){
+  for (var i = 0; i < projectCardArray.length; i++) {
     var projectCardOverlay=projectCardArray[i].getElementsByClassName('overlay')[0];
     projectCardOverlay.classList.add('not-touch');
   }

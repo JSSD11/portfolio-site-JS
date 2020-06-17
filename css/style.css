@@ -2482,8 +2482,105 @@ max-height: 667px;
   line-height: 5px;
 }
 
+/* =============================================================================
+   Prime Property Overview Page styling
+==============================================================================*/
 
+#pp-overview .intro-container{
+  background-color:#363b3e;
+}
 
+#pp-overview .intro-container h3{
+  color:#ffffff;
+}
+
+#pp-overview h2,
+#pp-overview h3,
+#pp-overview h4{
+  color: #B49B54;
+}
+
+.row.full-wdth{
+  padding: 6em 0;
+  max-width: 1000px;
+}
+
+#pp-overview li{
+  margin: 0.5em 0;
+  color: #B49B54;
+}
+
+#pp-overview li span{
+  color: #363b3e;
+}
+
+.visual-design-wrapper{
+  padding: 0 28px;
+}
+
+/*.visual-design-double-col{
+  display: grid;
+  grid-gap: 14vw;
+  justify-content: center;
+  text-align: center;
+  width: 100%;
+  margin-top: 7vw;
+}*/
+
+.visual-design-single-col img,
+.visual-design-double-col img{
+  margin: 7vw auto;
+}
+
+.visual-design{
+  padding: 5vw 0;
+  margin: 0 auto;
+  max-width:1200px;
+  width:100%;
+}
+
+.responsive-mockups--image1{
+  width: 100%;
+  text-align:left;
+}
+
+.responsive-mockups--image2{
+  width: 100%;
+  margin: 0 auto;
+}
+
+.responsive-mockups--image3{
+  width: 100%;
+  float:right;
+}
+
+.responsive-mockups img{
+  margin: 30px auto;
+}
+
+.vl-right{
+  border-right: 1.5px solid #b49b54;
+  height: 20vh;
+  width:50%;
+}
+
+.container.responsive.full-width{
+  padding: 3em 0;
+}
+
+.row .responsive-mockups::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+#pp-overview .parallax-img{
+  background-image: url("../img/pp_overview/artboard1@1x.png");
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 60vw;
+}
 
 /* =============================================================================
    Margins & paddings
@@ -2628,6 +2725,43 @@ margin-bottom:3em;
     left: 45%;
     top: -46px;
   }
+
+  .visual-design-wrapper{
+    padding: 0 60px;
+  }
+
+  .visual-design-double-col{
+    display: -ms-flexbox; /* IE10 */
+    display: flex;
+    -ms-flex-wrap: wrap; /* IE10 */
+    flex-wrap: wrap;
+  }
+
+  .visual-design-single-col img{
+    margin: 20px auto;
+  }
+
+  .visual-design-col1{
+    -ms-flex: 50%;
+      flex: 50%;
+      max-width: 50%;
+      text-align: left;
+  }
+
+  .visual-design-col2{
+    -ms-flex: 50%;
+      flex: 50%;
+      max-width: 50%;
+      text-align: right;
+  }
+
+  .visual-design-col1 img,
+  .visual-design-col2 img{
+    margin: 22px 0;
+    vertical-align: middle;
+    width: 80%;
+  }
+
 
 
 }
@@ -4047,13 +4181,49 @@ margin: 0 auto;
   margin-bottom:2em !important;
 }
 
+/*---------------------------
+  Prime Property Overview Page
+----------------------------*/
+
+
+.responsive-mockups--image1{
+  width: 65%;
+  text-align:left;
+}
+
+.responsive-mockups--image2{
+  width: 80%;
+  margin: 0 auto;
+}
+
+.responsive-mockups--image3{
+  width: 65%;
+  float:right;
+}
+
+.responsive-mockups img{
+  margin: 50px auto;
+}
+
+.vl-right{
+  border-right: 1.5px solid #b49b54;
+  height: 200px;
+}
+
+.responsive-mockups--image1 .vl-right{
+  margin-right:30%;
+}
+
+.responsive-mockups--image2 .vl-right{
+  margin-right:50%;
+}
+
 }
 
 @media only screen and (min-width:690px){
   .hero-text{
     left: 40%;
   }
-
 
 }
 
@@ -4487,7 +4657,7 @@ li.nav-line.active{
 }
 
 /*-----------------------------
-MP Overvieew
+MP Overview
 -------------------------------*/
 .process-grid{
   grid-template-columns: repeat(6, 1fr);
@@ -4531,9 +4701,31 @@ margin-left: 20px;
 }
 
 /*-----------------------------
-Deck Drills Overview
+Prime Property Overview
 -------------------------------*/
+.visual-design{
+  padding: 60px 0;
+}
 
+.visual-design-col1 img,
+.visual-design-col2 img,{
+  width: 75%;
+  margin: 40px 0;
+}
+
+
+.visual-design-wrapper{
+  padding: 0 80px;
+}
+
+
+.visual-design-single-col img{
+  margin: 40px auto;
+}
+
+#pp-overview .parallax-img{
+  height: 50vw;
+}
 
 
 }
@@ -4685,6 +4877,7 @@ p.sideways-text{
 .grid-container{
   grid-gap: 2em;
 }
+
 
 }
 
@@ -5160,7 +5353,7 @@ MP Summary page
   transform-style: preserve-3d;
 }
 
-.parallax-container::before{
+#mp-overview .parallax-container::before{
   content:"";
 width: 100vw;
 height: 650px;
@@ -5185,12 +5378,12 @@ width:100%;
   display: block;
   width:350px;
   height:auto;
-  padding-bottom:250px;
+  padding-bottom:25vh;
   margin: 0 auto;
 }
 
-.intro-container{
-  margin-top: 200px;
+#mp-overview .intro-container{
+  margin-top: 30vh;
 }
 
 .intro-container .container{
@@ -5321,6 +5514,72 @@ Prime Property page
 
 .responsive-mockup img{
   margin: 200px 0;
+}
+
+/*------------------------------------------------
+Prime Property Overview page
+--------------------------------------------------*/
+
+#pp-overview .parallax-container::before{
+  content:"";
+width: 100vw;
+height: 650px;
+top:-10px;
+left:0;
+background-image: url("../img/pp_overview/prime_property_cover_widescreen.png");
+position: absolute;
+background-position: center center;
+background-size: cover;
+background-repeat: no-repeat;
+z-index: -1;
+transform:translateZ(-1px) scale(2);
+}
+
+#pp-overview .foreground-content img {
+  display: block;
+  width:280px;
+  height:auto;
+  padding-top:30vh;
+  margin: 0 auto;
+}
+
+#pp-overview .intro-container{
+  margin-top:0;
+}
+
+
+.visual-design-wrapper{
+  padding: 0 120px;
+}
+
+
+.visual-design-single-col img{
+  margin: 50px auto;
+}
+
+
+.visual-design-col1 img,
+.visual-design-col2 img{
+  margin: 50px 0;
+  width: 70%;
+}
+
+.responsive-mockups img{
+  margin: 70px auto;
+}
+
+.vl-right{
+  border-right: 1.5px solid #b49b54;
+  height: 250px;
+  margin-right: 30%;
+}
+
+#pp-overview .parallax-img{
+  background-image: url("../img/pp_overview/artboard1@2x.png");
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height:550px;
 }
 
 }
