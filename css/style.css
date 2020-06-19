@@ -2659,10 +2659,11 @@ max-height: 667px;
  }
 
  .mobile_img{
-   max-width: 350px;
-   width: 100%;
+   max-width: 500px;
+   width: 80%;
    margin: 1em auto;
    position:relative;
+   min-width: 290px;
  }
 
  #laja-london-page .video-container{
@@ -2672,14 +2673,16 @@ max-height: 667px;
  .mobile-video-container{
    position: absolute;
    width: 100%;
-   top:18%;
+   top:22%;
    left: 50%;
    transform: translateX(-50%);
  }
 
  #mobile-video{
-   width: 75%;
-   max-width:290px;
+   width: 43%;
+   transform:scale(1, 1.1);
+   object-fit:fill;
+   min-width: 180px;
  }
 
 
@@ -2787,6 +2790,13 @@ margin-bottom:3em;
   text-align: center;
 }
 
+@media only screen and (min-width: 400px){
+
+  .mobile-video-container{
+    top:20%;
+  }
+}
+
 @media only screen and (min-width: 450px) {
   #img-cartoon,
   .solution-section img {
@@ -2805,6 +2815,10 @@ margin-bottom:3em;
 .chal,
 .sol{
   text-align: center;
+}
+
+.mobile-video-container{
+  top:20%;
 }
 
 }
@@ -2863,7 +2877,12 @@ margin-bottom:3em;
     width: 80%;
   }
 
+  @media only screen and (min-width: 550px){
 
+    .mobile-video-container{
+      top:19%;
+    }
+  }
 
 }
 
@@ -4374,24 +4393,23 @@ left: -40px;
   top:calc(50% - 3em + 70px);
 }
 
-/*.mobile_img{
-  max-width: 400px;
-  width: 80%;
+.mobile_img{
+  max-width: 500px;
   margin: 3em auto;
-  position:relative;
 }
 
 #mobile-video{
-  width: 100%;
-  max-width:375px;
-}*/
+  max-width:300px;
+  object-fit: fill;
+  transform: scale(1, 1.1);
+}
 
 #laja-london-page .video-container{
   margin-top:3em;
 }
 
 .mobile-video-container{
-  top:11%;
+  top:12.5%;
   left: 50%;
   transform: translateX(-50%);
 }
@@ -4908,25 +4926,19 @@ Prime Property Overview
 /*-----------------------------
 Laja London Page
 -------------------------------*/
-.mobile_img{
-  max-width: 400px;
-  width: 80%;
-  margin: 3em auto;
-  position:relative;
-}
 
-.mobile-video-container{
-  position: absolute;
-  width: 320px;
-  top:11.5%;
-  left: 50%;
-  transform: translateX(-50%);
+
+.mobile_img{
+  max-width: 550px;
 }
 
 #mobile-video{
-  width: 100%;
-  max-width:375px;
+  max-width:330px;
+  max-height: 667px;
+  object-fit: fill;
+  transform: scale(1, 1.1);
 }
+
 
 
 }
@@ -5837,10 +5849,20 @@ transform:translateZ(-1px) scale(2);
 
 .mobile-video-container{
   position: absolute;
-  width: 375px;
-  top: 100px;
+  top: 120px;
   left: 50%;
   transform: translateX(-50%);
+}
+
+.mobile_img{
+  max-width: 600px;
+}
+
+#mobile-video{
+  max-width:375px;
+  max-height: 667px;
+  object-fit: fill;
+  transform: scale(1, 1.1);
 }
 
 
