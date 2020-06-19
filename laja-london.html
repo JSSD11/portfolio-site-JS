@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="author" content="Joanne Saad">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Laja London Website</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Rajdhani:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+  <link rel="icon" type="image/png" href="img/favicon/favicon.ico" />
+  <link rel="icon" type="image/png" href="img/favicon/favicon-32x32.png" sizes="32x32" />
+  <link rel="icon" type="image/png" href="img/favicon/favicon-16x16.png" sizes="16x16" />
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css"/>
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css"/>
+  <link rel="stylesheet" type="text/css" href="css/style.css"/>
+</head>
+
+<body class="project-page">
+  <header id="header">
+    <div class="nav-container highlightTextIn">
+      <a href="index.html"><img src="img/JS_logo_black.svg" alt="Joanne Saad Designs Logo" class="logo"></a>
+      <nav class="nav-main">
+        <a id="hamburger" href="javascript:void(0)" class="icon" onclick="menuToggle()"><span></span></a>
+        <ul id="nav-md-lg">
+          <li><a  href="index.html#work-anchor" title="Work.">Work.</a></li>
+          <li><a href="about.html" title="About.">About.</a></li>
+          <li><a  href="#contact-anchor" title="Contact.">Contact.</a></li>
+        </ul>
+        <div id="mobile-nav" class="nav-overlay">
+          <div class="overlay-content">
+            <a  href="index.html#work-anchor" onclick="menuToggle()">Work</a>
+            <a href="about.html">About</a>
+            <a  href="#contact-anchor" onclick="menuToggle()">Contact</a>
+          </div>
+        </div>
+      </nav>
+    </div>
+  </header>
+  <main id="laja-london-page">
+    <div class="section ll-intro">
+      <div class="ll-intro-picture-wrapper">
+        <picture>
+          <source srcset="img/laja_london/laja_london@1x.png" media="(max-width:639px)">
+          <img id="ll-hero-img" src="img/laja_london/laja_london@2x.png" alt="Laja London hero image">
+        </picture>
+        <div id="ll-parallax-img" class="ll-parallax-intro"></div>
+      </div>
+      <div class="ll-logo">
+        <img src="img/laja_london/ll_with_crown.png" alt="laja london full logo">
+      </div>
+      <div class="intro-container">
+        <div class="container">
+          <div class="row">
+            <div class="column">
+              <h2>OVERVIEW</h2>
+              <p>
+                LAJA LONDON is a premium, lifestyle fashion brand for men that commits to deliver modern, sophisticated, and inspirational clothing, with a focus on design and quality. To Laja London, design is as much about the head-to-toe look as it is about creating functional, practical clothes that fit in with our busy lifestyles. They achieve this through emphasis on good quality fabrics, construction, fit, and an attention to detail.
+              </p>
+              <p>
+                Additionally Laja London encourages a healthy lifestyle by embodying the values and aspirations of healthy living through the notion of feeling and looking as good inside as out.
+              </p>
+              <p>
+                I was commissioned by Laja London to design and develop their e-commerce website. The objective was for the website to portray the brand's key values of <strong>quality</strong>, <strong>practicality</strong>, and <strong>attention to detail</strong>.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="section">
+      <div class="container full-container">
+        <div class="row">
+          <div class="column col-md-7">
+            <h3>MY ROLE</h3>
+            <p>
+              I was responsible for the UX and UI design of the ecommerce site, as well as the front-end development servivces.
+            </p>
+            <p>
+              The following outlines the key objectives to the brief:
+              <ul>
+                <li>A visually appealing online store;</li>
+                <li>Highly secure and reliable;</li>
+                <li>Mobile responsiveness;</li>
+                <li>Easy payment service to buyers, allowing theem to pay using different payment options;</li>
+                <li>An integrated, easy-to-use inventory management system;</li>
+                <li>SEO friendly;</li>
+                <li>Excellent loading speed;</li>
+              </ul>
+            </p>
+            <p>
+              Considering time and resource constraints, we decided to use the Shopify platform to facilitate the building of the website. However, rather than using a cookie-cutter website template, I decided to fully customize the website as none of the free themes provided the desired user experience.
+            </p>
+          </div>
+          <div class="column colr-md-5 ll-tools">
+            <h3>SKILLS & TOOLS</h3>
+            <ul>
+              <li>Adobe Photoshop<li>
+              <li>Adobe Illustrator</li>
+              <li>Sketch</li>
+              <li>Shopify Partners</li>
+              <li>Copywriting</li>
+              <li>HTML</li>
+              <li>CSS</li>
+              <li>JavaScript</li>
+              <li>Liquid</li>
+            </ul>
+            <h3>PROJECT DURATION</h3>
+            <p>
+              2 months
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="section">
+      <div class="container center" style="position:relative;">
+        <div class="ll-sideways-text">
+          <h2>HOMEPAGE</h2>
+        </div>
+        <div class="row center">
+          <div class="column ll-wrapper">
+            <div class="video-container" >
+              <div class="shadow-grey">
+                <video src="video/laja_london/homepage.mov" controls id="pp-video" >
+                </video>
+                <div id="overlay-homepage" class="overlay" onclick="playPauseHomepage()">
+                  <div id="play-video-button" class="play-button" style="width:60px; margin:0 auto;">
+                    <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                       width="438.533px" height="438.533px" viewBox="0 0 438.533 438.533" fill="#11c793" style="enable-background:new 0 0 438.533 438.533;"
+                       xml:space="preserve">
+                    <g>
+                      <path d="M409.133,109.203c-19.608-33.592-46.205-60.189-79.798-79.796C295.736,9.801,259.058,0,219.273,0
+                        c-39.781,0-76.466,9.801-110.063,29.407c-33.595,19.604-60.192,46.201-79.8,79.796C9.801,142.8,0,179.489,0,219.267
+                        s9.804,76.463,29.407,110.062c19.607,33.585,46.204,60.189,79.799,79.798c33.597,19.605,70.283,29.407,110.063,29.407
+                        s76.47-9.802,110.065-29.407c33.593-19.602,60.189-46.206,79.795-79.798c19.603-33.599,29.403-70.287,29.403-110.062
+                        C438.533,179.489,428.732,142.795,409.133,109.203z M328.904,234.966L173.588,326.33c-2.856,1.711-5.902,2.567-9.136,2.567
+                        c-3.045,0-6.09-0.764-9.135-2.286c-6.09-3.614-9.136-8.939-9.136-15.985V127.907c0-7.041,3.046-12.371,9.136-15.987
+                        c6.28-3.427,12.369-3.333,18.271,0.284l155.316,91.36c6.088,3.424,9.134,8.663,9.134,15.703
+                        C338.038,226.308,334.992,231.537,328.904,234.966z"/>
+                    </g>
+                    </svg>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="section">
+      <div class="container center" style="position:relative;">
+        <div class="ll-sideways-text products">
+          <h2>PRODUCTS PAGE</h2>
+        </div>
+        <div class="row center">
+          <div class="column ll-wrapper">
+            <div class="video-container" >
+              <div class="shadow-grey">
+                <video src="video/laja_london/product2.mov" controls id="product-video" >
+                </video>
+                <div id="overlay-product" class="overlay" onclick="playPauseProduct()">
+                  <div id="play-video-button-product" class="play-button" style="width:60px; margin:0 auto;">
+                    <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                       width="438.533px" height="438.533px" viewBox="0 0 438.533 438.533" fill="#11c793" style="enable-background:new 0 0 438.533 438.533;"
+                       xml:space="preserve">
+                    <g>
+                      <path d="M409.133,109.203c-19.608-33.592-46.205-60.189-79.798-79.796C295.736,9.801,259.058,0,219.273,0
+                        c-39.781,0-76.466,9.801-110.063,29.407c-33.595,19.604-60.192,46.201-79.8,79.796C9.801,142.8,0,179.489,0,219.267
+                        s9.804,76.463,29.407,110.062c19.607,33.585,46.204,60.189,79.799,79.798c33.597,19.605,70.283,29.407,110.063,29.407
+                        s76.47-9.802,110.065-29.407c33.593-19.602,60.189-46.206,79.795-79.798c19.603-33.599,29.403-70.287,29.403-110.062
+                        C438.533,179.489,428.732,142.795,409.133,109.203z M328.904,234.966L173.588,326.33c-2.856,1.711-5.902,2.567-9.136,2.567
+                        c-3.045,0-6.09-0.764-9.135-2.286c-6.09-3.614-9.136-8.939-9.136-15.985V127.907c0-7.041,3.046-12.371,9.136-15.987
+                        c6.28-3.427,12.369-3.333,18.271,0.284l155.316,91.36c6.088,3.424,9.134,8.663,9.134,15.703
+                        C338.038,226.308,334.992,231.537,328.904,234.966z"/>
+                    </g>
+                    </svg>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="section">
+      <div class="container center" style="position:relative;">
+        <div class="ll-sideways-text about">
+          <h2>ABOUT</h2>
+        </div>
+        <div class="row center">
+          <div class="column ll-wrapper">
+            <div class="video-container" >
+              <div class="shadow-grey">
+                <video src="video/laja_london/about.mov" controls id="about-video" >
+                </video>
+                <div id="overlay-about" class="overlay" onclick="playPauseAbout()">
+                  <div id="play-video-button-about" class="play-button" style="width:60px; margin:0 auto;">
+                    <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                       width="438.533px" height="438.533px" viewBox="0 0 438.533 438.533" fill="#11c793" style="enable-background:new 0 0 438.533 438.533;"
+                       xml:space="preserve">
+                    <g>
+                      <path d="M409.133,109.203c-19.608-33.592-46.205-60.189-79.798-79.796C295.736,9.801,259.058,0,219.273,0
+                        c-39.781,0-76.466,9.801-110.063,29.407c-33.595,19.604-60.192,46.201-79.8,79.796C9.801,142.8,0,179.489,0,219.267
+                        s9.804,76.463,29.407,110.062c19.607,33.585,46.204,60.189,79.799,79.798c33.597,19.605,70.283,29.407,110.063,29.407
+                        s76.47-9.802,110.065-29.407c33.593-19.602,60.189-46.206,79.795-79.798c19.603-33.599,29.403-70.287,29.403-110.062
+                        C438.533,179.489,428.732,142.795,409.133,109.203z M328.904,234.966L173.588,326.33c-2.856,1.711-5.902,2.567-9.136,2.567
+                        c-3.045,0-6.09-0.764-9.135-2.286c-6.09-3.614-9.136-8.939-9.136-15.985V127.907c0-7.041,3.046-12.371,9.136-15.987
+                        c6.28-3.427,12.369-3.333,18.271,0.284l155.316,91.36c6.088,3.424,9.134,8.663,9.134,15.703
+                        C338.038,226.308,334.992,231.537,328.904,234.966z"/>
+                    </g>
+                    </svg>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="section">
+      <div class="container center" style="position:relative;">
+        <div class="ll-sideways-text lookbook">
+          <h2>LOOKBOOK</h2>
+        </div>
+        <div class="row center">
+          <div class="column ll-wrapper">
+            <div class="video-container" >
+              <div class="shadow-grey">
+                <video src="video/laja_london/lookbook2.mov" controls id="lookbook-video" >
+                </video>
+                <div id="overlay-lookbook" class="overlay" onclick="playPauseLookbook()">
+                  <div id="play-video-button-lookbook" class="play-button" style="width:60px; margin:0 auto;">
+                    <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                       width="438.533px" height="438.533px" viewBox="0 0 438.533 438.533" fill="#11c793" style="enable-background:new 0 0 438.533 438.533;"
+                       xml:space="preserve">
+                    <g>
+                      <path d="M409.133,109.203c-19.608-33.592-46.205-60.189-79.798-79.796C295.736,9.801,259.058,0,219.273,0
+                        c-39.781,0-76.466,9.801-110.063,29.407c-33.595,19.604-60.192,46.201-79.8,79.796C9.801,142.8,0,179.489,0,219.267
+                        s9.804,76.463,29.407,110.062c19.607,33.585,46.204,60.189,79.799,79.798c33.597,19.605,70.283,29.407,110.063,29.407
+                        s76.47-9.802,110.065-29.407c33.593-19.602,60.189-46.206,79.795-79.798c19.603-33.599,29.403-70.287,29.403-110.062
+                        C438.533,179.489,428.732,142.795,409.133,109.203z M328.904,234.966L173.588,326.33c-2.856,1.711-5.902,2.567-9.136,2.567
+                        c-3.045,0-6.09-0.764-9.135-2.286c-6.09-3.614-9.136-8.939-9.136-15.985V127.907c0-7.041,3.046-12.371,9.136-15.987
+                        c6.28-3.427,12.369-3.333,18.271,0.284l155.316,91.36c6.088,3.424,9.134,8.663,9.134,15.703
+                        C338.038,226.308,334.992,231.537,328.904,234.966z"/>
+                    </g>
+                    </svg>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="section">
+      <div class="container center" style="position:relative;">
+        <div class="ll-sideways-text mobile">
+          <h2>MOBILE</h2>
+        </div>
+        <div class="mobile_img">
+          <img src="img/laja_london/iphone_jet_black.png" alt="mobile background">
+        </div>
+        <div class="mobile-video-container" >
+          <video src="video/laja_london/mobile.mov" controls id="mobile-video" >
+          </video>
+          <div id="overlay-mobile" class="overlay" onclick="playPauseMobile()">
+            <div id="play-video-button-mobile" class="play-button" style="width:60px; margin:0 auto;">
+              <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                 width="438.533px" height="438.533px" viewBox="0 0 438.533 438.533" fill="#11c793" style="enable-background:new 0 0 438.533 438.533;"
+                 xml:space="preserve">
+              <g>
+                <path d="M409.133,109.203c-19.608-33.592-46.205-60.189-79.798-79.796C295.736,9.801,259.058,0,219.273,0
+                  c-39.781,0-76.466,9.801-110.063,29.407c-33.595,19.604-60.192,46.201-79.8,79.796C9.801,142.8,0,179.489,0,219.267
+                  s9.804,76.463,29.407,110.062c19.607,33.585,46.204,60.189,79.799,79.798c33.597,19.605,70.283,29.407,110.063,29.407
+                  s76.47-9.802,110.065-29.407c33.593-19.602,60.189-46.206,79.795-79.798c19.603-33.599,29.403-70.287,29.403-110.062
+                  C438.533,179.489,428.732,142.795,409.133,109.203z M328.904,234.966L173.588,326.33c-2.856,1.711-5.902,2.567-9.136,2.567
+                  c-3.045,0-6.09-0.764-9.135-2.286c-6.09-3.614-9.136-8.939-9.136-15.985V127.907c0-7.041,3.046-12.371,9.136-15.987
+                  c6.28-3.427,12.369-3.333,18.271,0.284l155.316,91.36c6.088,3.424,9.134,8.663,9.134,15.703
+                  C338.038,226.308,334.992,231.537,328.904,234.966z"/>
+              </g>
+              </svg>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </main>
+  <!--footer section-->
+  <footer id="contact"><span id="contact-anchor"></span>
+    <p class="sideways-text">
+      Get in touch.
+    </p>
+    <div class="container">
+      <h2>Like what you see? <span> Let's talk.</span></h2>
+      <p>
+        Contact me for full-time work, freelance projects, or simply to chat about design.
+      </p>
+      <p>
+        Just click on the link below to shoot me an email.
+      </p>
+      <div>
+        <a href="mailto:joanne.saad@gmail.com" class="button-contact mt-1 mb-1">Email me</a>
+      </div>
+      <div>
+        <!--social media links-->
+        <a href="https://www.linkedin.com/in/joannesaad" target="_blank" class="social-link">
+          <svg height="50px" id="Layer_1" style="enable-background:new 0 0 67 67;" version="1.1" viewBox="0 0 67 67" width="67px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="#262626">
+            <path
+              d="M50.837,48.137V36.425c0-6.275-3.35-9.195-7.816-9.195  c-3.604,0-5.219,1.983-6.119,3.374V27.71h-6.79c0.09,1.917,0,20.427,0,20.427h6.79V36.729c0-0.609,0.044-1.219,0.224-1.655  c0.49-1.22,1.607-2.483,3.482-2.483c2.458,0,3.44,1.873,3.44,4.618v10.929H50.837z M22.959,24.922c2.367,0,3.842-1.57,3.842-3.531  c-0.044-2.003-1.475-3.528-3.797-3.528s-3.841,1.524-3.841,3.528c0,1.961,1.474,3.531,3.753,3.531H22.959z M34,64  C17.432,64,4,50.568,4,34C4,17.431,17.432,4,34,4s30,13.431,30,30C64,50.568,50.568,64,34,64z M26.354,48.137V27.71h-6.789v20.427  H26.354z"
+              style="fill-rule:evenodd;clip-rule:evenodd;" /></svg>
+        </a>
+      </div>
+      <div id="copyright">
+        <p>
+          Copyright © Joanne Saad 2020
+        </p>
+      </div>
+    </div>
+  </footer>
+
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+  <script src="js/scripts.js"></script>
+
+
+  <script>
+
+
+  var ppVideo = document.getElementById("pp-video");
+  function playPauseHomepage() {
+    console.log("video clicked");
+    var play = document.getElementById("play-video-button");
+    if (ppVideo.paused) {
+      play.classList.add('hide-play');
+      ppVideo.play();
+      console.log("video is playing");
+    } else {
+      ppVideo.pause();
+      play.classList.remove('hide-play');
+      console.log("video is paused");
+    }
+  }
+  ppVideo.onplay = function() {
+    var play = document.getElementById("play-video-button");
+    play.classList.add('hide-play');
+    console.log('Playing');
+  };
+  ppVideo.onpause = function() {
+    var play = document.getElementById("play-video-button");
+    play.classList.remove('hide-play');
+    console.log('Paused');
+  };
+
+  var productVideo = document.getElementById("product-video");
+  function playPauseProduct() {
+    var play = document.getElementById("play-video-button-product");
+    if (productVideo.paused) {
+      play.classList.add('hide-play');
+      productVideo.play();
+    } else {
+      productVideo.pause();
+      play.classList.remove('hide-play');
+    }
+  }
+  productVideo.onplay = function() {
+    var play = document.getElementById("play-video-button-product");
+    play.classList.add('hide-play');
+  };
+  productVideo.onpause = function() {
+    var play = document.getElementById("play-video-button-product");
+    play.classList.remove('hide-play');
+  };
+
+  var aboutVideo = document.getElementById("about-video");
+  function playPauseAbout() {
+    var play = document.getElementById("play-video-button-about");
+    if (aboutVideo.paused) {
+      play.classList.add('hide-play');
+      aboutVideo.play();
+    } else {
+      aboutVideo.pause();
+      play.classList.remove('hide-play');
+    }
+  }
+  aboutVideo.onplay = function() {
+    var play = document.getElementById("play-video-button-about");
+    play.classList.add('hide-play');
+  };
+  aboutVideo.onpause = function() {
+    var play = document.getElementById("play-video-button-about");
+    play.classList.remove('hide-play');
+  };
+
+  var lookbookVideo = document.getElementById("lookbook-video");
+  function playPauseLookbook() {
+    var play = document.getElementById("play-video-button-lookbook");
+    if (lookbookVideo.paused) {
+      play.classList.add('hide-play');
+      lookbookVideo.play();
+    } else {
+      lookbookVideo.pause();
+      play.classList.remove('hide-play');
+    }
+  }
+  lookbookVideo.onplay = function() {
+    var play = document.getElementById("play-video-button-lookbook");
+    play.classList.add('hide-play');
+  };
+  lookbookVideo.onpause = function() {
+    var play = document.getElementById("play-video-button-lookbook");
+    play.classList.remove('hide-play');
+  };
+
+  var mobileVideo = document.getElementById("mobile-video");
+  function playPauseMobile() {
+    var play = document.getElementById("play-video-button-mobile");
+    if (mobileVideo.paused) {
+      play.classList.add('hide-play');
+      mobileVideo.play();
+    } else {
+      mobileVideo.pause();
+      play.classList.remove('hide-play');
+    }
+  }
+  mobileVideo.onplay = function() {
+    var play = document.getElementById("play-video-button-mobile");
+    play.classList.add('hide-play');
+  };
+  mobileVideo.onpause = function() {
+    var play = document.getElementById("play-video-button-mobile");
+    play.classList.remove('hide-play');
+  };
+
+</script>
+
+</body>
+
+</html>

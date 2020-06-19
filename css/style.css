@@ -2606,6 +2606,84 @@ max-height: 667px;
 }
 
 /* =============================================================================
+   Laja London Page styling
+==============================================================================*/
+
+#laja-london-page .shadow-grey{
+  -webkit-box-shadow: 0px 0px 8px 0px rgba(50, 50, 50, 0.6);
+  -moz-box-shadow:    0px 0px 8px 0px rgba(50, 50, 50, 0.6);
+  box-shadow:         0px 0px 8px 0px rgba(50, 50, 50, 0.6);
+}
+
+#laja-london-page .intro-container{
+  padding-top: 3em;
+}
+
+.ll-sideways-text h2{
+  letter-spacing: 5px;
+}
+
+ .ll-wrapper{
+   width: 100%;
+   margin: 0 auto;
+   position:relative;
+ }
+
+ .overlay{
+   position: absolute;
+   display: flex;
+   bottom: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   transition: all 0.25s;
+   text-align: center;
+   align-items: center;
+   justify-content: center;
+ }
+
+ #laja-london-page .intro-container{
+   background-color:#262626;
+   color: #ffffff;
+ }
+
+
+ .ll-intro-picture-wrapper{
+   position: relative;
+   width: 100%;
+   height:100%;
+ }
+
+ .ll-logo{
+   display:none;
+ }
+
+ .mobile_img{
+   max-width: 350px;
+   width: 100%;
+   margin: 1em auto;
+   position:relative;
+ }
+
+ #laja-london-page .video-container{
+   margin-top:0;
+ }
+
+ .mobile-video-container{
+   position: absolute;
+   width: 100%;
+   top:18%;
+   left: 50%;
+   transform: translateX(-50%);
+ }
+
+ #mobile-video{
+   width: 75%;
+   max-width:290px;
+ }
+
+
+/* =============================================================================
    Margins & paddings
 ==============================================================================*/
 
@@ -4241,12 +4319,90 @@ margin: 0 auto;
   margin-right:50%;
 }
 
+/*---------------------------
+  Laja London Page
+----------------------------*/
+
+.ll-sideways-text h2{
+  letter-spacing: 15px;
+  margin-top: 3em;
+}
+
+.ll-sideways-text{
+display: block;
+top: calc(50% + 6em);
+position: absolute;
+left: -40px;
+/* Rotate from top left corner (not default) */
+-webkit-transform-origin: 0 0;
+-moz-transform-origin:    0 0;
+-ms-transform-origin:     0 0;
+-o-transform-origin:      0 0;
+
+-webkit-transform: rotate(270deg);
+-moz-transform:    rotate(270deg);
+-ms-transform:     rotate(270deg);
+-o-transform:      rotate(270deg);
+}
+
+#laja-london-page .intro-container{
+  padding-top: 0;
+}
+
+.ll-wrapper{
+  position:relative;
+  width: 80%;
+}
+
+.ll-tools{
+  padding-left: 3em;
+}
+
+.ll-sideways-text.products{
+  top:calc(50% - 3em + 212px);
+}
+
+.about{
+  top:calc(50% - 3em + 80px);
+}
+
+.ll-sideways-text.lookbook{
+  top:calc(50% - 3em + 140px);
+}
+
+.ll-sideways-text.mobile{
+  top:calc(50% - 3em + 70px);
+}
+
+/*.mobile_img{
+  max-width: 400px;
+  width: 80%;
+  margin: 3em auto;
+  position:relative;
+}
+
+#mobile-video{
+  width: 100%;
+  max-width:375px;
+}*/
+
+#laja-london-page .video-container{
+  margin-top:3em;
+}
+
+.mobile-video-container{
+  top:11%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
 }
 
 @media only screen and (min-width:690px){
   .hero-text{
     left: 40%;
   }
+
 
 }
 
@@ -4736,7 +4892,6 @@ Prime Property Overview
   margin: 40px 0;
 }
 
-
 .visual-design-wrapper{
   padding: 0 80px;
 }
@@ -4748,6 +4903,29 @@ Prime Property Overview
 
 #pp-overview .parallax-img{
   height: 50vw;
+}
+
+/*-----------------------------
+Laja London Page
+-------------------------------*/
+.mobile_img{
+  max-width: 400px;
+  width: 80%;
+  margin: 3em auto;
+  position:relative;
+}
+
+.mobile-video-container{
+  position: absolute;
+  width: 320px;
+  top:11.5%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+#mobile-video{
+  width: 100%;
+  max-width:375px;
 }
 
 
@@ -4899,6 +5077,10 @@ p.sideways-text{
 
 .grid-container{
   grid-gap: 2em;
+}
+
+.ll-sideways-text{
+  left:-20px;
 }
 
 
@@ -5604,6 +5786,68 @@ transform:translateZ(-1px) scale(2);
   background-repeat: no-repeat;
   height:550px;
 }
+
+/*---------------------------
+  Laja London Page
+----------------------------*/
+.ll-sideways-text{
+  left:-20px;
+}
+
+.ll-sideways-text.products{
+  top:calc(50% - 3em + 228px);
+}
+
+.about{
+  top:calc(50% - 3em + 91.5px);
+}
+
+.ll-sideways-text.lookbook{
+  top:calc(50% - 3em + 150px);
+}
+
+#ll-hero-img{
+  display: none;
+}
+
+
+#laja-london-page .intro-container{
+  margin-top:-20px;
+}
+
+.ll-parallax-intro{
+  background-image: url("../img/laja_london/laja_background@2x.png");
+  background-position: center top;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height:1100px;
+  background-attachment: fixed;
+  max-height: 100vh;
+}
+
+.ll-logo{
+  display:block;
+  width: 450px;
+  margin-left: 42%;
+  padding-bottom:2vh;
+  position:absolute;
+  top: 30%;
+  transform: translateY(-50%);
+}
+
+.mobile-video-container{
+  position: absolute;
+  width: 375px;
+  top: 100px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+
+.ll-sideways-text.mobile{
+  top:calc(50% - 3em + 75px);
+}
+
 
 }
 
