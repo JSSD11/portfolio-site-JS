@@ -349,7 +349,7 @@ $(function () {
           namespace:'home-page',
           beforeEnter({next}){
             let scriptHome = document.createElement('script');
-       scriptHome.src = './scripts-index.js'; // location of your draggable js file that is responsible for that image loading and dragging functionality
+       scriptHome.src = './js/scripts-index.js'; // location of your draggable js file that is responsible for that image loading and dragging functionality
        next.container.appendChild(scriptHome);
      },
      afterEnter({next}){
@@ -362,21 +362,21 @@ $(function () {
        namespace:'about-page',
        beforeEnter({next}){
          let scriptAbout = document.createElement('script');
-    scriptAbout.src = './scripts-about.js'; // location of your draggable js file that is responsible for that image loading and dragging functionality
+    scriptAbout.src = './js/scripts-about.js'; // location of your draggable js file that is responsible for that image loading and dragging functionality
     next.container.appendChild(scriptAbout);
     }
   }, {
       namespace:'project-page',
       afterEnter({next}){
       let scriptMpOverview = document.createElement('script');
-      scriptMpOverview.src = './scripts-overview-projects.js'; // location of your draggable js file that is responsible for that image loading and dragging functionality
+      scriptMpOverview.src = './js/scripts-overview-projects.js'; // location of your draggable js file that is responsible for that image loading and dragging functionality
       next.container.appendChild(scriptMpOverview);
     }
   }, {
       namespace:'graphic-projects',
       afterEnter({next}){
       let scriptMpOverview = document.createElement('script');
-      scriptMpOverview.src = './scripts-graphic-work.js'; // location of your draggable js file that is responsible for that image loading and dragging functionality
+      scriptMpOverview.src = './js/scripts-graphic-work.js'; // location of your draggable js file that is responsible for that image loading and dragging functionality
       next.container.appendChild(scriptMpOverview);
     }
         }],
