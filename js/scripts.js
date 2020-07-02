@@ -116,6 +116,11 @@ $(document).ready(function(){
 //}
 //}
 
+const workAnchor =  $('#work-anchor').offset().top;
+console.log(workAnchor);
+const graphicWorkAnchor =  $('#graphic-work-anchor').offset().top;
+console.log(graphicWorkAnchor);
+
 function smoothScroll(){
   $("a").on('click', function(event) {
 
@@ -236,7 +241,7 @@ $(function () {
     barba.init({
        prevent: data => data.el.classList.contains('stopBarba'),
         transitions: [{
-                sync: true,
+                //sync: true,
 
                 async leave(data) {
                     const done = this.async();
@@ -268,24 +273,29 @@ $(function () {
                       if(data.next.url.hash=="work-anchor"){
                         console.log("work section");
                         $('#work-anchor').addClass('myclass');
-                        console.log($('#work-anchor').offset().top);
-                        $("#work-anchor").get(0).scrollIntoView();
-                        //  $('html, body').animate({
-                          //  scrollTop: $("#work-anchor").offset().top
-                        //  }, 1000);
+                        console.log($('#work').offset().top);
+                        //$("#work-anchor").get(0).scrollIntoView();
+
+                          $('html, body').animate({
+                            scrollTop: workAnchor
+                          }, 1000);
                       smoothScroll();
                     }else if (data.next.url.hash=="graphic-work-anchor"){
                       console.log("graphic work section");
                       $('#graphic-work-anchor').addClass('myclass');
                       console.log($('#graphic-work-anchor').offset().top);
-                      $("#graphic-work-anchor").get(0).scrollIntoView();
-                      //  $('html, body').animate({
-                        //  scrollTop: $("#work-anchor").offset().top
-                      //  }, 1000);
+                      //$("#graphic-work-anchor").get(0).scrollIntoView();
+                        $('html, body').animate({
+                          scrollTop: graphicWorkAnchor
+                        }, 1000);
                     smoothScroll();
                     } else{$(window).scrollTop(0);}
 
-                    }
+                  },
+                  async enter(data) {
+                    console.log("enter data");
+                    console.log($('#work-anchor').offset().top);
+                },
                 },
               {
                 //  name: 'opacity-transition',
@@ -341,7 +351,12 @@ $(function () {
             let scriptHome = document.createElement('script');
        scriptHome.src = './scripts-index.js'; // location of your draggable js file that is responsible for that image loading and dragging functionality
        next.container.appendChild(scriptHome);
-       }
+     },
+     afterEnter({next}){
+       console.log("restting position of anchor link");
+       console.log(workAnchor);
+
+     }
      } ,
       {
        namespace:'about-page',
