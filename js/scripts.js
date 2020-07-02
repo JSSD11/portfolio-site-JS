@@ -10,8 +10,9 @@ function menuToggle() {
   }
 }
 
-function changeLogo(){
-  var body=document.getElementsByTagName("body")[0];
+
+/*function changeLogo(){
+  var body=document.getElementsByTagName("main")[0];
   //console.log(body.id);
   if (body.id=="index"){
     console.log("true");
@@ -24,9 +25,10 @@ function changeLogo(){
   }
 }
 
-window.onload = changeLogo();
+window.onload = changeLogo();*/
 
 // Select all links with hashes
+
 $('a[href*="#"]')
   // Remove links that don't actually link to anything
   .not('[href="#"]')
@@ -63,7 +65,32 @@ $('a[href*="#"]')
     }
   });
 
+/*
+$(document).ready(function(){
+  // Add smooth scrolling to all links
+  $("a").on('click', function(event) {
 
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+      // Prevent default anchor click behavior
+      event.preventDefault();
+
+      // Store hash
+      var hash = this.hash;
+
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 800, function(){
+
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    } // End if
+  });
+});
+*/
 //if (window.matchMedia("(max-width: 1024px)").matches) {
   //var prevScrollpos = window.pageYOffset;
 //  var headerHeight = document.getElementById("header").offsetHeight;
@@ -88,3 +115,255 @@ $('a[href*="#"]')
 //  }
 //}
 //}
+
+function smoothScroll(){
+  $("a").on('click', function(event) {
+
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+      // Prevent default anchor click behavior
+      event.preventDefault();
+
+      // Store hash
+      var hash = this.hash;
+
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 800, function(){
+
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    } // End if
+  });
+}
+
+function delay(n) {
+    n = n || 2000;
+    return new Promise((done) => {
+        setTimeout(() => {
+            done();
+        }, n);
+    });
+}
+
+function pageTransitionLeaveHome() {
+    var tl = gsap.timeline();
+    tl.to(".loading-screen", {
+        duration: 0.6,
+        width: "100%",
+        left: "0%",
+        ease: "Power2.easeIn",
+    });
+
+    tl.to(".loading-screen", {
+        duration: 0.6,
+        width: "100%",
+        left: "100%",
+        ease: "Power4.easeIn",
+        delay: 0.4,
+    });
+    tl.set(".loading-screen", { left: "-100%" });
+}
+
+function pageTransitionBackHome() {
+    var tl = gsap.timeline();
+    tl.to(".loading-screen-2", {
+        duration: 0.6,
+        width: "100%",
+        right: "0%",
+        ease: "Power2.easeIn",
+    });
+
+    tl.to(".loading-screen-2", {
+        duration: 0.6,
+        width: "100%",
+        right: "100%",
+        ease: "Power4.easeIn",
+        delay: 0.4,
+    });
+    tl.set(".loading-screen-2", { right: "-100%" });
+}
+
+function pageTransitionFade() {
+    var tl = gsap.timeline();
+    tl.fromTo(".barba-animating-container", 1, {
+               opacity: 0,
+               scale: 1.5,
+           }, {
+               opacity: 1,
+               scale: 1,
+               transformOrigin: '50% 50%',
+               ease: Power4.in,
+           });
+    }
+
+    function pageTransitionFadeBottom() {
+        var tl = gsap.timeline();
+        tl.fromTo(".barba-animating-container", 1.2, {
+                   opacity: 0,
+                   y: -200,
+               }, {
+                   opacity: 1,
+                   y: 0,
+                   transformOrigin: '50% 50%',
+                   ease: Power4.inOut,
+               });
+        }
+
+function pageTransitionSlide() {
+    var tl = gsap.timeline();
+    tl.set(".barba-animating-container", {
+               x: window.innerWidth * 1.5,
+               scale: 0.8,
+               transformOrigin: '50% 50%'
+           })
+
+           tl.to(".barba-animating-container", 0.8, {
+               x: 0,
+               ease: Power4.easeOut
+           });
+
+           tl.to(".barba-animating-container", 1, {
+               scale: 1,
+               ease: Power4.easeOut
+           });
+       }
+
+$(function () {
+    barba.init({
+       prevent: data => data.el.classList.contains('stopBarba'),
+        transitions: [{
+                sync: true,
+
+                async leave(data) {
+                    const done = this.async();
+
+                    pageTransitionLeaveHome();
+                    await delay(800);
+                    done();
+
+                       $(window).scrollTop(0);
+                },
+
+              //  from:{namespace: ['home-page']},
+                to:{namespace: ['about-page']},
+            },
+            {
+              sync: true,
+            //  from:{namespace:['about-page']},
+               to:{namespace: ['home-page']},
+                    async leave(data) {
+
+                        console.log(data.next.url.hash);
+
+                      const done = this.async();
+
+                      pageTransitionBackHome();
+                      await delay(800);
+                      done();
+
+                      if(data.next.url.hash=="work-anchor"){
+                        console.log("work section");
+                        $('#work-anchor').addClass('myclass');
+                        console.log($('#work-anchor').offset().top);
+                        $("#work-anchor").get(0).scrollIntoView();
+                        //  $('html, body').animate({
+                          //  scrollTop: $("#work-anchor").offset().top
+                        //  }, 1000);
+                      smoothScroll();
+                    }else if (data.next.url.hash=="graphic-work-anchor"){
+                      console.log("graphic work section");
+                      $('#graphic-work-anchor').addClass('myclass');
+                      console.log($('#graphic-work-anchor').offset().top);
+                      $("#graphic-work-anchor").get(0).scrollIntoView();
+                      //  $('html, body').animate({
+                        //  scrollTop: $("#work-anchor").offset().top
+                      //  }, 1000);
+                    smoothScroll();
+                    } else{$(window).scrollTop(0);}
+
+                    }
+                },
+              {
+                //  name: 'opacity-transition',
+                 to:{
+                    namespace: ['project-page']
+                  },
+
+                   leave(data) {
+
+
+                    console.log('leave transition has been applied!');
+                  },
+                   async enter(data) {
+
+                     const done = this.async();
+
+                    pageTransitionFadeBottom();
+                     await delay(200);
+                     done();
+                     $(window).scrollTop(0);
+
+                      console.log('enter transition has been applied!');
+
+                  },
+                },
+                {
+                  //  name: 'opacity-transition',
+                   to:{
+                      namespace: ['graphic-projects']
+                    },
+
+                     leave(data) {
+
+                      console.log('leave transition has been applied!');
+                    },
+                     async enter(data) {
+
+                       const done = this.async();
+
+                      pageTransitionSlide();
+                       await delay(200);
+                       done();
+                       $(window).scrollTop(0);
+
+                        console.log('enter transition has been applied!');
+
+                    },
+                  }
+        ],
+        views:[{
+          namespace:'home-page',
+          beforeEnter({next}){
+            let scriptHome = document.createElement('script');
+       scriptHome.src = '../js/scripts-index.js'; // location of your draggable js file that is responsible for that image loading and dragging functionality
+       next.container.appendChild(scriptHome);
+       }
+     } ,
+      {
+       namespace:'about-page',
+       beforeEnter({next}){
+         let scriptAbout = document.createElement('script');
+    scriptAbout.src = '../js/scripts-about.js'; // location of your draggable js file that is responsible for that image loading and dragging functionality
+    next.container.appendChild(scriptAbout);
+    }
+  }, {
+      namespace:'project-page',
+      afterEnter({next}){
+      let scriptMpOverview = document.createElement('script');
+      scriptMpOverview.src = '../js/scripts-overview-projects.js'; // location of your draggable js file that is responsible for that image loading and dragging functionality
+      next.container.appendChild(scriptMpOverview);
+    }
+  }, {
+      namespace:'graphic-projects',
+      afterEnter({next}){
+      let scriptMpOverview = document.createElement('script');
+      scriptMpOverview.src = '../js/scripts-graphic-work.js'; // location of your draggable js file that is responsible for that image loading and dragging functionality
+      next.container.appendChild(scriptMpOverview);
+    }
+        }],
+    });
+});

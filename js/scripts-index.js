@@ -1,3 +1,47 @@
+console.log("homepage script loaded");
+
+var main = document.getElementsByTagName("main")[0];
+console.log(main.id);
+
+//reset footer colors
+var footer = document.getElementsByTagName("footer")[0];
+var footerSpan = footer.getElementsByTagName("h2")[0].getElementsByTagName("span")[0];
+  footer.style.backgroundColor="#d0d0d0";
+  footer.style.color="#262626";
+  footerSpan.style.color ="#ffffff";
+
+/*function changeLogo(){
+  var body=document.getElementsByTagName("body")[0];
+  //console.log(body.id);
+  if (body.id=="index"){
+    console.log("true");
+    var image = document.getElementsByClassName("logo")[0];
+    image.src="img/JS_logo_green.svg";
+  } else {
+    console.log("false");
+    var image = document.getElementsByClassName("logo")[0];
+    image.src="img/JS_logo_black.svg";
+  }
+}
+
+window.onload = changeLogo();function changeLogo(){
+  var body=document.getElementsByTagName("main")[0];
+  //console.log(body.id);
+  if (body.id=="index"){
+    console.log("true");
+    var image = document.getElementsByClassName("logo")[0];
+    image.src="img/JS_logo_green.svg";
+  } else {
+    console.log("false");
+    var image = document.getElementsByClassName("logo")[0];
+    image.src="img/JS_logo_black.svg";
+  }
+}
+
+window.onload = changeLogo();
+*/
+
+document.getElementById("heroVideo").play();
 
 //check if touchscreen
 if(('ontouchstart' in window) || (navigator.MaxTouchPoints > 0) || (navigator.msMaxTouchPoints > 0)) {
@@ -1672,10 +1716,10 @@ if(('ontouchstart' in window) || (navigator.MaxTouchPoints > 0) || (navigator.ms
      </g>
    </g>
    <g id="dots">
-     <circle class="st35" cx="478.7" cy="82.2" r="3.2"/>
-     <circle class="st35" cx="344" cy="156.4" r="3.2"/>
-     <circle class="st35" cx="360" cy="156.4" r="3.2"/>
-     <circle class="st35" cx="376" cy="156.4" r="3.2"/>
+     <circle class="st35 circle" cx="478.7" cy="82.2" r="3.2"/>
+     <circle class="st35 circle" cx="344" cy="156.4" r="3.2"/>
+     <circle class="st35 circle" cx="360" cy="156.4" r="3.2"/>
+     <circle class="st35 circle" cx="376" cy="156.4" r="3.2"/>
    </g>
    <g id="cairo_x5F_text">
      <g id="from">

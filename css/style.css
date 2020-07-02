@@ -18,6 +18,10 @@ Highlight/Accent colour 2: #80899a / #4b5161
   box-sizing:border-box;
 }
 
+html{
+  overflow-x:hidden;
+}
+
 body{
   font-family: 'Rajdhani', sans-serif !important;
   font-size: 16px;
@@ -299,7 +303,7 @@ header{
   padding: 20px;
   text-decoration: none;
   font-size: 26px;
-  color: #818181;
+  color: #d0d0d0;
   display: block; /* Display block instead of inline */
   transition: 0.3s; /* Transition effects on hover (color) */
 }
@@ -367,30 +371,114 @@ main {
   padding-top: 55px;
 }
 
-.project-page footer{
-  background-color: #262626;
-  color: #ffffff;
+.project-page footer,
+ footer.project-page-footer{
+  background-color: #262626 !important;
+  color: #ffffff !important;
 }
 
-.project-page footer span{
-  color:#11c793;
+.project-page footer span,
+ footer.project-page-footer span{
+  color:#11c793 !important;
 }
 
-.project-page .button-contact{
-  border: 3px solid #ffffff;
+.project-page .button-contact,
+.project-page-footer .button-contact{
+  border: 3px solid #ffffff !important;
   color: #ffffff !important;
 }
 
 .project-page .button-contact:hover,
 .project-page .button-contact:focus,
-.project-page .button-contact:active{
-  background-color:#ffffff;
+.project-page .button-contact:active,
+.project-page-footer .button-contact:hover,
+.project-page-footer .button-contact:focus,
+.project-page-footer .button-contact:active{
+  background-color:#ffffff !important;
   color: #262626 !important;
 }
 
-.project-page footer svg{
-  fill:#ffffff;
+.project-page footer svg,
+ footer.project-page-footer svg{
+  fill:#ffffff !important;
 }
+
+/*.transition-fade {
+  transition: 0.4s;
+  opacity: 1;
+  transform: translateX(0);
+  transform-origin: left;
+}
+
+html.is-animating .transition-fade {
+  opacity: 0;
+  transform: translateX(100%);
+}
+
+html.is-leaving .transition-fade{
+  opacity:0;
+}*/
+
+.loading-screen{
+  position: relative;
+  padding-left: 0;
+  padding-right:0;
+  padding-top:0;
+  background-color: #262626;
+  width: 0%;
+  height: 100%;
+}
+
+.load-container{
+  position: fixed;
+  top:0;
+  left:0;
+  width: 100%;
+  height:100vh;
+  overflow:hidden;
+  z-index: 100;
+  pointer-events: none;
+}
+
+.loading-screen-2{
+  position: relative;
+  padding-left: 0;
+  padding-right:0;
+  padding-top:0;
+  background-color: #262626;
+  width: 0%;
+  height: 100%;
+}
+
+.load-container-2{
+  position: fixed;
+  top:0;
+  left:0;
+  width: 100%;
+  height:100vh;
+  overflow:hidden;
+  z-index: 100;
+  pointer-events: none;
+}
+
+.screen-wipe-top{
+  width:100%;
+  height: 100vh;
+  background: #11c793;
+  position: fixed;
+  z-index: 100;
+  top: -100%;
+}
+
+.screen-wipe-bottom{
+  width:100%;
+  height: 100vh;
+  background: #11c793;
+  position: fixed;
+  z-index: 100;
+  bottom: -100%;
+}
+
 
 /* =============================================================================
    Index styling
@@ -650,15 +738,18 @@ a.card:hover {
   margin: 1em auto;
 }
 
-#work h2{
+#work h2,
+#graphic-work h2{
   text-align: center;
   position: relative;
 }
 
-#work h2 span{
+#work h2 span,
+#graphic-work h2 span{
 position: absolute;
 top: -95px;
 }
+
 
 #work .container{
   max-width: 1000px;
@@ -1316,7 +1407,7 @@ padding-bottom: 3em;
 .play-button{
   position: absolute;
     display: flex;
-    bottom: 0;
+    top: 50px;
     left: 50%;
     width: 100%;
     height: 100%;
@@ -1544,6 +1635,9 @@ body #mp-overview {
   background-color:#fbfaf6 !important;
 }
 
+#hero-parallax-img{
+  display:none;
+}
 /*.parallax-section{
   perspective: 1px;
   transform-style: preserve-3d;
@@ -1595,7 +1689,7 @@ z-index: 2;
 width:100%;
 }
 
-.foreground-content img {
+.cover-logo {
   display: none;
 }
 
@@ -1715,12 +1809,16 @@ width:100%;
   margin-bottom: 0;
 }
 
-.parallax-img{
+.non-parallax-img{
   background-image: url("../img/mp_overview/illustration@1x.jpg");
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
   height: 80vw;
+}
+
+.parallax-img{
+  display:none;
 }
 
 .container.final-images{
@@ -2121,6 +2219,10 @@ padding-top:0;
 .section-anchor{
   position: absolute;
   top: -50px;
+}
+
+#mp-overview .box{
+  margin-top:5vw;
 }
 
 /* =============================================================================
@@ -2632,10 +2734,10 @@ max-height: 667px;
  .overlay{
    position: absolute;
    display: flex;
-   bottom: 0;
+   top: 0;
    left: 0;
    width: 100%;
-   height: 100%;
+   height: calc(100% - 100px);
    transition: all 0.25s;
    text-align: center;
    align-items: center;
@@ -2666,6 +2768,8 @@ max-height: 667px;
    min-width: 290px;
  }
 
+
+
  #laja-london-page .video-container{
    margin-top:0;
  }
@@ -2685,6 +2789,146 @@ max-height: 667px;
    min-width: 180px;
  }
 
+ /* =============================================================================
+    Graphic Design pages
+ ==============================================================================*/
+.subnav{
+  max-width: 1200px;
+  margin: 8vw 0 0 5vw;
+}
+
+.subnav a{
+  display: inline-block;
+  color: #262626 !important;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.subnav p{
+  display: inline-block;
+  font-weight: 600;
+  margin: 0;
+}
+
+
+ #letterhead .slick-arrow.slick-next,
+#signage .slick-arrow.slick-next,
+#vector .slick-arrow.slick-next   {
+   right: 0;
+   z-index: 1;
+   width: 20px;
+   height: 100px;
+   opacity:0.4;
+ }
+
+ #letterhead .slick-arrow.slick-next:hover,
+ #letterhead .slick-arrow.slick-prev:hover,
+ #signage .slick-arrow.slick-next:hover,
+ #signage .slick-arrow.slick-prev:hover,
+ #vector .slick-arrow.slick-next:hover,
+ #vector .slick-arrow.slick-prev:hover  {
+opacity:1;
+ }
+
+ #letterhead .slick-arrow.slick-prev,
+ #signage .slick-arrow.slick-prev,
+ #vector .slick-arrow.slick-prev {
+   left: 0;
+   z-index: 1;
+   width: 20px;
+   height: 100px;
+   opacity:0.4;
+ }
+
+ .graphic-projects .slick-dots li button:before,
+ #letterhead .slick-dots li button:before,
+ #signage .slick-dots li button:before,
+ #vector .slick-dots li button:before {
+     color: #11c793;
+   }
+
+  .graphic-projects .slick-dots li.slick-active button:before,
+   #letterhead .slick-dots li.slick-active button:before,
+   #signage .slick-dots li.slick-active button:before,
+   #vector .slick-dots li.slick-active button:before{
+    opacity: 1;
+  }
+
+.slick-lightbox-close:before{
+    color: #11c793 !important;
+    font-size: 40px !important;
+    font-weight: bold !important;
+    opacity: 1 !important;
+  }
+
+  .slick-lightbox .slick-next{
+    right: 5px !important;
+  }
+
+  .slick-lightbox .slick-prev{
+    left: 5px !important;
+  }
+
+  .slick-lightbox-slick-img {
+    object-fit: contain !important;
+  }
+
+  .logo_grid{
+  width: 100%;
+  display: grid;
+  grid-gap: 2em;
+  margin: 0 auto;
+  justify-content: center;
+}
+
+.slider_shadow{
+  -webkit-box-shadow: 0px 0px 10px 0px rgba(50, 50, 50, 0.6);
+  -moz-box-shadow:    0px 0px 10px 0px rgba(50, 50, 50, 0.6);
+  box-shadow:         0px 0px 10px 0px rgba(50, 50, 50, 0.6);
+}
+
+#vector .slick-dots{
+  bottom: -40px !important;
+}
+
+.slide{
+  position:relative;
+}
+
+ p.slide_caption{
+  display: none;
+}
+
+.container.graphic_slider {
+  padding:0;
+  margin: 0 5vw;
+}
+
+#vector .slick-dots li{
+  margin: auto !important;
+}
+
+#autocad img {
+  margin-top: 10vw;
+}
+
+.graphics_grid{
+width: 100%;
+display: grid;
+grid-gap: 10vw;
+margin: 0 auto;
+justify-content: center;
+}
+
+.graphic-projects p.sideways-text{
+  font-weight: 600 !important;
+}
+
+#fashion .shadow-grey{
+  -webkit-box-shadow: 0px 0px 8px 0px rgba(50, 50, 50, 0.6);
+  -moz-box-shadow:    0px 0px 8px 0px rgba(50, 50, 50, 0.6);
+  box-shadow:         0px 0px 8px 0px rgba(50, 50, 50, 0.6);
+}
 
 /* =============================================================================
    Margins & paddings
@@ -2795,6 +3039,15 @@ margin-bottom:3em;
   .mobile-video-container{
     top:20%;
   }
+
+  .slick-lightbox .slick-next{
+      right: 10px !important;
+    }
+
+  .slick-lightbox .slick-prev{
+      left: 10px !important;
+    }
+
 }
 
 @media only screen and (min-width: 450px) {
@@ -2877,14 +3130,88 @@ margin-bottom:3em;
     width: 80%;
   }
 
+  .logo_grid{
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 1.5em;
+  }
+
+}
+
   @media only screen and (min-width: 550px){
 
     .mobile-video-container{
       top:19%;
     }
+
+    .graphics_grid{
+  grid-gap: 1em;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: repeat(28, 7.8vw);
+    }
+
+   .graphics_grid img{
+      height: 100% ;
+      object-fit: cover;
+      max-width: 100%;
+    }
+
+    .graphics_grid--item-1{
+      grid-column: 1 / span 2;
+      grid-row: 1 /span 3;
+    }
+
+    .graphics_grid--item-2{
+      grid-column: 3 / span 2;
+      grid-row: 1 /span 3;
+    }
+
+    .graphics_grid--item-3{
+      grid-column: 5 / span 2;
+      grid-row: 1 /span 3;
+    }
+
+    .graphics_grid--item-4{
+      grid-column: 1 / span 2;
+      grid-row: 4 /span 4;
+    }
+
+    .graphics_grid--item-5{
+      grid-column: 3 / span 4;
+      grid-row: 4 /span 4;
+    }
+
+    .graphics_grid--item-6{
+      grid-column: 1 / span 4;
+      grid-row: 8 /span 5;
+    }
+
+    .graphics_grid--item-7{
+      grid-column: 5 / span 2;
+      grid-row: 8 /span 5;
+    }
+
+    .graphics_grid--item-8{
+      grid-column: 1 / span 3;
+      grid-row: 13 /span 4;
+    }
+
+    .graphics_grid--item-9{
+      grid-column: 4 / span 3;
+      grid-row: 13 /span 4;
+    }
+
+    .graphics_grid--item-10{
+      grid-column: 1 / span 6;
+      grid-row: 17 /span 5;
+    }
+
+    .graphics_grid--item-11{
+      grid-column: 1 / span 4;
+      grid-row: 22 /span 6;
+    }
+
   }
 
-}
 
 @media only screen and (min-width: 600px) {
   .end-block{
@@ -2898,7 +3225,6 @@ margin-bottom:3em;
     width: 50px;
     margin: 40px 40px 0;
   }
-
 
 }
 
@@ -4368,6 +4694,7 @@ left: -40px;
   padding-top: 0;
 }
 
+
 .ll-wrapper{
   position:relative;
   width: 80%;
@@ -4414,6 +4741,77 @@ left: -40px;
   transform: translateX(-50%);
 }
 
+/*---------------------------
+Graphic Design Pages
+----------------------------*/
+.graphic-projects .hero-section p.sideways-text{
+  top: calc(50% + 60px);
+}
+
+.graphic-projects #letterhead .hero-section p.sideways-text{
+  top: calc(50% + 90px);
+}
+
+.graphic-projects #vector .hero-section p.sideways-text{
+  top: calc(50% + 80px);
+}
+
+.graphic-projects #presentations .hero-section p.sideways-text{
+  top: calc(50% + 40px);
+}
+
+.graphic-projects #branding .hero-section p.sideways-text{
+  top: calc(50% + 30px);
+}
+
+.graphic-projects #hero-new .row{
+  margin-top: 2em;
+}
+
+.graphic-projects .cards{
+  margin-top: 0;
+}
+
+.container.graphic_slider{
+  margin: 0 auto;
+}
+
+.graphic_slider{
+  width: 80%;
+  margin: 0 auto;
+  position: relative;
+}
+
+.graphic_slider img{
+  line-height: 0;
+}
+
+.graphic_container{
+  width: 80%;
+  margin: 0 auto;
+  position: relative;
+}
+
+p.slide_caption{
+  display: block;
+  margin: 1em 1em;
+  font-weight: 500;
+}
+
+#graphics .hero-section p.sideways-text:first-of-type,
+#logos .hero-section p.sideways-text:first-of-type,
+#autocad .hero-section p.sideways-text:first-of-type,
+#fashion .hero-section p.sideways-text:first-of-type{
+  top: calc(25% + 60px);
+}
+
+#graphics .hero-section p.sideways-text:nth-of-type(3),
+#logos .hero-section p.sideways-text:nth-of-type(3),
+#autocad .hero-section p.sideways-text:nth-of-type(3),
+#fashion .hero-section p.sideways-text:nth-of-type(3){
+  top: calc(75% + 60px);
+}
+
 }
 
 @media only screen and (min-width:690px){
@@ -4421,6 +4819,13 @@ left: -40px;
     left: 40%;
   }
 
+  .slick-lightbox .slick-next{
+    right: 15px !important;
+  }
+
+  .slick-lightbox .slick-prev{
+    left: 15px !important;
+  }
 
 }
 
@@ -4486,7 +4891,7 @@ About
 #hero-about{
   position:relative;
   width:100%;
-  height: 80vh;
+  height: 100vh;
   overflow:hidden;
   background:#11c793;
 }
@@ -4513,12 +4918,12 @@ About
 }
 
 #about-s1 h2{
-  top: calc(40vh - 50px); /*container heeight is 80vh and scroll down 50px from bottom */
+  top: calc(50vh - 50px); /*container heeight is 80vh and scroll down 50px from bottom */
   padding:0;
 }
 
 #scroll-down{
-  bottom: 50px;
+  bottom: 100px;
 }
 
 #cartoon:before {
@@ -4889,7 +5294,7 @@ margin-left: 20px;
   font-size: 1.2em;
 }
 
-.parallax-img{
+.non-parallax-img{
   height: 70vw;
 }
 
@@ -4927,7 +5332,6 @@ Prime Property Overview
 Laja London Page
 -------------------------------*/
 
-
 .mobile_img{
   max-width: 550px;
 }
@@ -4937,6 +5341,24 @@ Laja London Page
   max-height: 667px;
   object-fit: fill;
   transform: scale(1, 1.1);
+}
+
+/*-----------------------------
+Graphic Design Pages
+-------------------------------*/
+.subnav{
+  margin: 60px 0 0 5vw;
+}
+
+#autocad img {
+  margin-top: 4em;
+  max-width: 800px;
+}
+
+.graphics_grid{
+grid-gap: 2em;
+grid-template-columns: repeat(6, 1fr);
+grid-template-rows: repeat(16, 6.4vw);
 }
 
 
@@ -5095,6 +5517,21 @@ p.sideways-text{
   left:-20px;
 }
 
+/*---------------------------
+Graphic Design Pages
+----------------------------*/
+
+.logo_grid{
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.graphics_grid{
+grid-gap: 2em;
+grid-template-columns: repeat(6, 1fr);
+grid-template-rows: repeat(16, 6.8vw);
+}
+
+
 
 }
 
@@ -5105,6 +5542,10 @@ p.sideways-text{
 
 .hero-section{
   padding-top: 3em;
+}
+
+.graphic-projects .hero-section{
+  padding-top: 2em;
 }
 
 }
@@ -5151,6 +5592,13 @@ p.sideways-text{
     left: 45%;
     top: -50px;
   }
+
+  .graphics_grid{
+  grid-gap: 2em;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: repeat(16, 7.2vw);
+  }
+
 }
 
 /* =============================================================================
@@ -5196,9 +5644,11 @@ p.sideways-text{
   right:110px;
 }
 
-#work h2 span{
+#work h2 span,
+#graphic-work h2 span{
 top: -120px;
 }
+
 
 footer #contact-anchor{
   position: absolute;
@@ -5547,7 +5997,11 @@ MP Summary page
   display: none;
 }
 
-.parallax-section{
+#mp-overview .box{
+  margin-top:3em;
+}
+
+/*.parallax-section{
   perspective: 1px;
   transform-style: preserve-3d;
   overflow-y: scroll;
@@ -5555,9 +6009,9 @@ MP Summary page
   height: 100vh;
   -webkit-overflow-scrolling: touch;
   min-height: 100%;
-}
+}*/
 
-.parallax-container {
+/*.parallax-container {
   position: relative;
   width: 100vw;
   height: 100vh;
@@ -5568,9 +6022,9 @@ MP Summary page
   display: flex;
   -webkit-overflow-scrolling: touch;
   transform-style: preserve-3d;
-}
+}*/
 
-#mp-overview .parallax-container::before{
+/*#mp-overview .parallax-container::before{
   content:"";
 width: 100vw;
 height: 650px;
@@ -5583,7 +6037,11 @@ background-size: cover;
 background-repeat: no-repeat;
 z-index: -1;
 transform:translateZ(-1px) scale(2);
-}
+-ms-transform:translateZ(-1px) scale(2); /* IE 9 *//*
+-moz-transform:translateZ(-1px) scale(2); /* Firefox *//*
+-webkit-transform:translateZ(-1px) scale(2); /* Safari and Chrome *//*
+-o-transform:translateZ(-1px) scale(2);
+}*/
 
 .foreground {
 position: relative;
@@ -5591,17 +6049,29 @@ z-index: 2;
 width:100%;
 }
 
-.foreground-content img {
-  display: block;
-  width:350px;
-  height:auto;
-  padding-bottom:25vh;
-  margin: 0 auto;
+#hero-parallax-img{
+  display:block;
+  max-height: 100vh;
+  object-fit:cover;
 }
 
-#mp-overview .intro-container{
-  margin-top: 30vh;
+.cover-logo{
+  display: block;
+  position: absolute;
+  left: 50%;
+  transform:translateX(-50%);
 }
+
+#mp-logo {
+  width:350px;
+  height:auto;
+  margin: 0 auto;
+  top: 15vh;
+}
+
+/*#mp-overview .intro-container{
+  margin-top: 30vh;
+}*/
 
 .intro-container .container{
   padding:3em 5vw;
@@ -5639,12 +6109,25 @@ width:100%;
   margin-bottom: 1.75em;
 }
 
-.parallax-img{
+.non-parallax-img{
+  display:none;
+}
+  /*
   background-image: url("../img/mp_overview/illustration@2x.jpg");
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
   height:800px;
+}*/
+
+.parallax-img{
+  display:block;
+  background-image: url("../img/mp_overview/illustration@2x.jpg");
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height:800px;
+  background-attachment:fixed;
 }
 
 /*------------------------------------------------
@@ -5658,7 +6141,7 @@ Deck Drills Summary page
   padding-top:0;
 }
 
-#dd-overview .parallax-container::before{
+/*#dd-overview .parallax-container::before{
   content:"";
 width: 100vw;
 height: 75vh;
@@ -5671,15 +6154,20 @@ background-size: cover;
 background-repeat: no-repeat;
 z-index: -1;
 transform:translateZ(-1px) scale(2);
-}
+}*/
 
 #dd-overview .intro-container{
-  margin-top:50vh;
+  margin-top:0;
 }
 
-#dd-overview .foreground-content{
-  padding-top:21vh;
+#dd-overview .lg-rellax-bottom{
+  padding-bottom: 3em;
 }
+
+#dd-overview .lg-rellax-top{
+  padding-top: 3em;
+}
+
 
 /*------------------------------------------------
 Prime Property page
@@ -5737,7 +6225,7 @@ Prime Property page
 Prime Property Overview page
 --------------------------------------------------*/
 
-#pp-overview .parallax-container::before{
+/*#pp-overview .parallax-container::before{
   content:"";
 width: 100vw;
 height: 650px;
@@ -5750,20 +6238,21 @@ background-size: cover;
 background-repeat: no-repeat;
 z-index: -1;
 transform:translateZ(-1px) scale(2);
-}
+}*/
 
-#pp-overview .foreground-content img {
+#pp-logo {
   display: block;
+  position: absolute;
   width:280px;
   height:auto;
-  padding-top:30vh;
+  top:50vh;
   margin: 0 auto;
+  left: 52%
 }
 
-#pp-overview .intro-container{
-  margin-top:0;
+#pp-overview #hero-parallax-img{
+  object-fit:contain;
 }
-
 
 .visual-design-wrapper{
   padding: 0 120px;
@@ -5796,7 +6285,7 @@ transform:translateZ(-1px) scale(2);
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
-  height:550px;
+  height:600px;
 }
 
 /*---------------------------
@@ -5822,12 +6311,20 @@ transform:translateZ(-1px) scale(2);
   display: none;
 }
 
-
-#laja-london-page .intro-container{
-  margin-top:-20px;
+#laja-london-page .full-section{
+  padding-top: 4em;
 }
 
-.ll-parallax-intro{
+#laja-london-page .video-container{
+  margin-top:0;
+}
+
+
+#laja-london-page .intro-container{
+  margin-top:0;
+}
+
+/*.ll-parallax-intro{
   background-image: url("../img/laja_london/laja_background@2x.png");
   background-position: center top;
   background-size: cover;
@@ -5835,15 +6332,15 @@ transform:translateZ(-1px) scale(2);
   height:1100px;
   background-attachment: fixed;
   max-height: 100vh;
-}
+}*/
 
-.ll-logo{
+#ll-logo{
   display:block;
-  width: 450px;
-  margin-left: 42%;
+  width: 400px;
   padding-bottom:2vh;
   position:absolute;
-  top: 30%;
+  top: 50%;
+  left:20%;
   transform: translateY(-50%);
 }
 
@@ -5870,6 +6367,15 @@ transform:translateZ(-1px) scale(2);
   top:calc(50% - 3em + 75px);
 }
 
+/*---------------------------
+  Graphic Design Pages
+----------------------------*/
+
+.graphics_grid{
+grid-gap: 1.5em;
+grid-template-columns: repeat(6, 1fr);
+grid-template-rows: repeat(16, 7.8vw);
+}
 
 }
 
@@ -5908,6 +6414,16 @@ transform:translateZ(-1px) scale(2);
     margin-left:2em;
   }
 
+  /*---------------------------
+    Graphic Design Pages
+  ----------------------------*/
+
+  .graphics_grid{
+  grid-gap: 1.5em;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: repeat(16, 8vw);
+  }
+
 }
 
 /* =============================================================================
@@ -5918,6 +6434,16 @@ transform:translateZ(-1px) scale(2);
   #mp-page .container{
     padding: 0 70px 60px 6em;
     margin: 0 auto;
+  }
+
+  /*---------------------------
+    Graphic Design Pages
+  ----------------------------*/
+
+  .graphics_grid{
+  grid-gap: 1.5em;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: repeat(16, 98px);
   }
 
 }

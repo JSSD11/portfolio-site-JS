@@ -13,12 +13,23 @@
   <link rel="icon" type="image/png" href="img/favicon/favicon-16x16.png" sizes="16x16" />
   <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css" />
   <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-lightbox/0.2.12/slick-lightbox.css"/>
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="css/style.css" />
+  <link rel="stylesheet" type="text/css" href="css/process-animation.css" />
+  <link rel="stylesheet" type="text/css" href="css/logo-animation.css"/>
+  <link rel="stylesheet" type="text/css" href="css/style-animation.css"/>
 </head>
 
-<body class="project-page">
-  <header id="header" class="nav-down">
+<body class="project-page" data-barba="wrapper">
+  <div class="load-container">
+    <div class="loading-screen"></div>
+  </div>
+  <div class="load-container-2">
+    <div class="loading-screen-2"></div>
+  </div>
+  <wrap data-barba="container" data-barba-namespace="project-page">
+  <header id="header" class="">
     <div class="nav-container highlightTextIn">
       <a href="index.html"><img src="img/JS_logo_black.svg" alt="Joanne Saad Designs Logo" class="logo"></a>
       <nav class="nav-main">
@@ -38,58 +49,60 @@
       </nav>
     </div>
   </header>
-  <main id="pp-overview">
-    <div class="section parallax-section">
-      <div class="parallax-container">
-        <picture>
-          <source srcset="img/prime_property/pp_cover@1x.png" media="(max-width:639px)">
-          <img id="mp-hero-img" src="img/prime_property/pp_cover@2x.png" alt="Prime Property hero image">
-        </picture>
-        <div class="foreground center">
-          <div class="foreground-content">
-            <img src="img/pp_overview/pp_logo.png" alt="prime property logo">
-            <div class="intro-container">
-              <div class="container">
-                <div class="overview-grid">
-                  <div class="overview-grid-item">
-                    <h3>OVERVIEW</h3>
-                    <p>
-                      Prime Property is a responsive web app that provides property buyers with with information on properties of interest. The app also connects people with real estate agents to make the process of buying a new home as easy as possible.
-                    </p>
-                  </div>
-                  <div class="overview-grid-item">
-                    <h3>MY ROLE</h3>
-                    <p>
-                      As the UI designer, I was responsible for setting the visual direction for the project and delivered mockups of varied fidelity, along with a final prototype.
-                    </p>
-                  </div>
-                  <div class="overview-grid-item">
-                    <h3>PROJECT DURATION</h3>
-                    <p>
-                      2 months
-                    </p>
+  <main id="pp-overview" class="project-page">
+    <div class="barba-animating-container">
+      <div class="section parallax-section">
+        <div class="parallax-container">
+          <picture>
+            <source srcset="img/prime_property/pp_cover@1x.png" media="(max-width:639px)">
+            <img id="mp-hero-img" src="img/prime_property/pp_cover@2x.png" alt="Prime Property hero image">
+          </picture>
+          <img id="hero-parallax-img" src="img/pp_overview/prime_property_cover_widescreen2.png" alt="Prime Property hero image parallax" class="rellax" data-rellax-speed="-10">
+          <img src="img/pp_overview/pp_logo.png" alt="prime property logo" id="pp-logo" class="cover-logo">
+          <div class="foreground center">
+            <div class="foreground-content">
+              <div class="intro-container">
+                <div class="container">
+                  <div class="overview-grid">
+                    <div class="overview-grid-item">
+                      <h3>OVERVIEW</h3>
+                      <p>
+                        Prime Property is a responsive web app that provides property buyers with with information on properties of interest. The app also connects people with real estate agents to make the process of buying a new home as easy as possible.
+                      </p>
+                    </div>
+                    <div class="overview-grid-item">
+                      <h3>MY ROLE</h3>
+                      <p>
+                        As the UI designer, I was responsible for setting the visual direction for the project and delivered mockups of varied fidelity, along with a final prototype.
+                      </p>
+                    </div>
+                    <div class="overview-grid-item">
+                      <h3>PROJECT DURATION</h3>
+                      <p>
+                        2 months
+                      </p>
+                    </div>
                   </div>
                 </div>
               </div>
-            </div>
-            <div class="row" style="background-color:#fcfcfc;">
-              <div class="container full-container center" style="background-color:#fcfcfc;">
-                <h3>THE PROJECT</h3>
-                <p>
-                  Real estate investment is an increasingly popular way for individuals to achieve financial security. It is an exciting and emotional experience, but often complicated. While there are plenty of blogs and agencies providing information, often, buyers new to the market may struggle to get started without professional guidance and waste time viewing properties out of their range. This web app will provide them with the expertise needed to get started efficiently.
-                </p>
-                <h3>TOOLS</h3>
-                <p>
-                  Sketchpad, pen & pencil, Adobe Illustrator, Adobe Photoshop, Sketch, Adobe XD, Adobe After Effects.
-                </p>
+              <div class="row" style="background-color:#fcfcfc;">
+                <div class="container full-container center" style="background-color:#fcfcfc;">
+                  <h3>THE PROJECT</h3>
+                  <p>
+                    Real estate investment is an increasingly popular way for individuals to achieve financial security. It is an exciting and emotional experience, but often complicated. While there are plenty of blogs and agencies providing information, often, buyers new to the market may struggle to get started without professional guidance and waste time viewing properties out of their range. This web app will provide them with the expertise needed to get started efficiently.
+                  </p>
+                  <h3>TOOLS</h3>
+                  <p>
+                    Sketchpad, pen & pencil, Adobe Illustrator, Adobe Photoshop, Sketch, Adobe XD, Adobe After Effects.
+                  </p>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </div>
     </div>
-
-    <div class="section">
+    <div class="section" style="background-color:#fcfcfc;">
       <div class="row full-width">
         <div data-aos="fade-up">
           <picture>
@@ -100,7 +113,7 @@
       </div>
     </div>
 
-    <div class="section">
+    <div class="section" style="background-color:#fcfcfc;">
       <div class="container full-container">
         <div class="row">
           <h3 data-aos="fade-up">The Five W's</h3>
@@ -140,7 +153,7 @@
       </div>
     </div>
 
-    <div class="section">
+    <div class="section" style="background-color:#fcfcfc;">
       <div class="container">
         <div class="row">
           <div class="column">
@@ -357,13 +370,13 @@
       <div class="container last-container center">
         <h4 style="color:#363b3e;">Want to learn more about my thoughts and process on creating Prime Property?</h4>
         <h4 style="color:#363b3e;" >Just click on the link below:</h4>
-        <a href="project-prime-property.html" class="button center" style="margin-top:0.8em;">View full case study</a>
+        <a href="project-prime-property.html" class="button center stopBarba" style="margin-top:0.8em;" data-barba-prevent="self">View full case study</a>
       </div>
     </div>
 
   </main>
   <!--footer section-->
-  <footer id="contact"><span id="contact-anchor"></span>
+  <footer id="contact" class="project-page-footer"><span id="contact-anchor"></span>
     <p class="sideways-text">
       Get in touch.
     </p>
@@ -376,11 +389,11 @@
         Just click on the link below to shoot me an email.
       </p>
       <div>
-        <a href="mailto:joanne.saad@gmail.com" class="button-contact mt-1 mb-1">Email me</a>
+        <a href="mailto:joanne.saad@gmail.com" class="button-contact mt-1 mb-1 stopBarba" data-barba-prevent="self">Email me</a>
       </div>
       <div>
         <!--social media links-->
-        <a href="https://www.linkedin.com/in/joannesaad" target="_blank" class="social-link">
+        <a href="https://www.linkedin.com/in/joannesaad" target="_blank" class="social-link stopBarba" data-barba-prevent="self">
           <svg height="50px" id="Layer_1" style="enable-background:new 0 0 67 67;" version="1.1" viewBox="0 0 67 67" width="67px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="#ffffff">
             <path
               d="M50.837,48.137V36.425c0-6.275-3.35-9.195-7.816-9.195  c-3.604,0-5.219,1.983-6.119,3.374V27.71h-6.79c0.09,1.917,0,20.427,0,20.427h6.79V36.729c0-0.609,0.044-1.219,0.224-1.655  c0.49-1.22,1.607-2.483,3.482-2.483c2.458,0,3.44,1.873,3.44,4.618v10.929H50.837z M22.959,24.922c2.367,0,3.842-1.57,3.842-3.531  c-0.044-2.003-1.475-3.528-3.797-3.528s-3.841,1.524-3.841,3.528c0,1.961,1.474,3.531,3.753,3.531H22.959z M34,64  C17.432,64,4,50.568,4,34C4,17.431,17.432,4,34,4s30,13.431,30,30C64,50.568,50.568,64,34,64z M26.354,48.137V27.71h-6.789v20.427  H26.354z"
@@ -399,10 +412,12 @@
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-lightbox/0.2.12/slick-lightbox.min.js"></script>
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/rellax/1.11.0/rellax.min.js"></script>
   <script src="js/scripts.js"></script>
-
-  <script>
+</wrap>
+<!-- <script>
   //hide reveal header
 
   // Hide Header on on scroll down
@@ -469,6 +484,10 @@
   //  }
 //  });
 });
+</script>-->
+
+  <script>
+    var rellax = new Rellax('.rellax');
   </script>
 
   <script>
@@ -479,6 +498,7 @@
      once: true,
    });
 </script>
+-->
 
 </body>
 

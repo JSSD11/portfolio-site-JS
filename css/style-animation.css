@@ -6,6 +6,7 @@
   font-family: 'Montserrat', sans-serif;
 }
 
+
 @keyframes shrink{
   20%{
     opacity: 1;
@@ -187,22 +188,22 @@
   animation: dash-cairo2 8s infinite linear backwards;
 }
 
-circle:nth-child(1) {
+.circle:nth-child(1) {
   visibility: hidden;
   animation: appear1 8s infinite linear backwards;
 }
 
-circle:nth-child(2) {
+.circle:nth-child(2) {
   visibility: hidden;
   animation: appear2 8s infinite linear backwards;
 }
 
-circle:nth-child(3) {
+.circle:nth-child(3) {
   visibility: hidden;
   animation: appear3 8s infinite linear backwards;
 }
 
-circle:nth-child(4) {
+.circle:nth-child(4) {
   visibility: hidden;
   animation: appear4 8s infinite linear backwards;
 }

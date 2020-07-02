@@ -18,7 +18,14 @@
   <link rel="stylesheet" type="text/css" href="css/style.css" />
 </head>
 
-<body class="project-page">
+<body class="project-page" data-barba="wrapper">
+  <div class="load-container">
+    <div class="loading-screen"></div>
+  </div>
+  <div class="load-container-2">
+    <div class="loading-screen-2"></div>
+  </div>
+  <wrap data-barba="container" data-barba-prevent="all">
   <header id="header" class="nav-down">
     <div class="nav-container highlightTextIn">
       <a href="index.html"><img src="img/JS_logo_black.svg" alt="Joanne Saad Designs Logo" class="logo"></a>
@@ -1431,6 +1438,10 @@
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+  <script src="https://unpkg.com/@barba/core"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.4/gsap.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/rellax/1.11.0/rellax.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.2/photoswipe.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.2/photoswipe-ui-default.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
@@ -1474,7 +1485,7 @@ console.log('Paused');
 //mpVideo.addEventListener("click", playPause, false);
 
   </script>
-
+</wrap>
 </body>
 
 </html>
