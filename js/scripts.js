@@ -355,7 +355,6 @@ $(function () {
      afterEnter({next}){
        console.log("restting position of anchor link");
        console.log(workAnchor);
-
      }
      } ,
       {
