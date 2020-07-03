@@ -1861,22 +1861,23 @@ body #dd-overview {
 }
 
 #deck-drills-page a{
-color: #c6780f;
+color: #c6780f !important;
 font-size: 1.25em;
 font-weight: 600;
 }
 
 #deck-drills-page a:visited {
-  color: #5b370c;
+  color: #5b370c !important;
 }
+
 
 #deck-drills-page a:hover,
 #deck-drills-page a:focus {
-  color: #f2972a;
+  color: #f2972a !important;
 }
 
 #deck-drills-page a:active{
-  color:#5b370c;
+  color:#5b370c !important;
 }
 
 #deck-drills-page .button,
