@@ -305,7 +305,6 @@ $(function () {
 
                    leave(data) {
 
-
                     console.log('leave transition has been applied!');
                   },
                    async enter(data) {
@@ -381,3 +380,7 @@ $(function () {
         }],
     });
 });
+
+ if ('scrollRestoration' in history) { history.scrollRestoration = 'manual'; }
+
+ Barba.Dispatcher.on('newPageReady', function(current, prev, container) { history.scrollRestoration = 'manual'; });
