@@ -4768,7 +4768,8 @@ Graphic Design Pages
   margin-top: 2em;
 }
 
-.graphic-projects .cards{
+#presentations .cards,
+#branding .cards{
   margin-top: 0;
 }
 
