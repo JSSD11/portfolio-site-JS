@@ -1868,14 +1868,14 @@ body #dd-overview {
 
 #deck-drills-page a,
 #dd-overview a{
-color: #c6780f !important;
+color: #c6780f;
 font-size: 1.25em;
 font-weight: 600;
 }
 
 #deck-drills-page a:visited,
 #dd-overview  a:visited {
-  color: #5b370c !important;
+  color: #5b370c ;
 }
 
 
@@ -1883,16 +1883,17 @@ font-weight: 600;
 #deck-drills-page a:focus,
 #dd-overview a:hover,
 #dd-overview a:focus {
-  color: #f2972a !important;
+  color: #f2972a ;
 }
 
 #deck-drills-page a:active,
 #dd-overview a:active{
-  color:#5b370c !important;
+  color:#5b370c ;
 }
 
 #deck-drills-page .button,
 #dd-overview .button{
+    color: #ffffff !important;
     background-color: #c6780f;
     font-weight: 500;
   }
@@ -1904,6 +1905,7 @@ font-weight: 600;
 #dd-overview .button:focus,
 #dd-overview .button:active{
     background-color: #a8620e;
+    color: #ffffff !important;
 }
 
 #deck-drills-page li{
