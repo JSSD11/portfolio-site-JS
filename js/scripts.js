@@ -338,9 +338,7 @@ $(function () {
                        await delay(200);
                        done();
                        $(window).scrollTop(0);
-
                         console.log('enter transition has been applied!');
-
                     },
                   }
         ],
