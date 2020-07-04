@@ -189,6 +189,7 @@ if (main.id=="promotion"){
       speed: 500,
       arrows : true,
       slidesToShow: 1,
+      adaptiveHeight: true,
       prevArrow:"<img class='slick-prev' src='img/l_s/arrow_left.svg'>",
       nextArrow:"<img class='slick-next' src='img/l_s/arrow_right.svg'>"
     });
