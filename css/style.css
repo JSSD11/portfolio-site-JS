@@ -1203,6 +1203,7 @@ font-weight: 600;
 #mp-overview .button:focus,
 #mp-overview .button:active{
     background-color: #3e434f;
+    color: #ffffff;
 }
 
 .s-overview-1{
@@ -2375,6 +2376,7 @@ font-weight: 600;
 #pp-overview .button{
     background-color: #B49B54;
     font-weight: 500;
+    color: #ffffff;
   }
 
 #prime-property-page .button:hover,
@@ -2384,6 +2386,7 @@ font-weight: 600;
 #pp-overview .button:focus,
 #pp-overview .button:active{
     background-color: #937D44;
+    color: #ffffff;
 }
 
 #prime-property-page li{
