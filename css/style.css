@@ -2855,9 +2855,10 @@ max-height: 667px;
 }
 
 
- #letterhead .slick-arrow.slick-next,
+#letterhead .slick-arrow.slick-next,
 #signage .slick-arrow.slick-next,
-#vector .slick-arrow.slick-next   {
+#vector .slick-arrow.slick-next,
+#promotion .slick-arrow.slick-next {
    right: 0;
    z-index: 1;
    width: 20px;
@@ -2870,13 +2871,16 @@ max-height: 667px;
  #signage .slick-arrow.slick-next:hover,
  #signage .slick-arrow.slick-prev:hover,
  #vector .slick-arrow.slick-next:hover,
- #vector .slick-arrow.slick-prev:hover  {
+ #vector .slick-arrow.slick-prev:hover,
+ #promotion .slick-arrow.slick-next:hover,
+ #promotion .slick-arrow.slick-prev:hover   {
 opacity:1;
  }
 
  #letterhead .slick-arrow.slick-prev,
  #signage .slick-arrow.slick-prev,
- #vector .slick-arrow.slick-prev {
+ #vector .slick-arrow.slick-prev,
+ #promotion .slick-arrow.slick-prev {
    left: 0;
    z-index: 1;
    width: 20px;
@@ -2887,14 +2891,16 @@ opacity:1;
  .graphic-projects .slick-dots li button:before,
  #letterhead .slick-dots li button:before,
  #signage .slick-dots li button:before,
- #vector .slick-dots li button:before {
+ #vector .slick-dots li button:before,
+ #promotion .slick-dots li button:before {
      color: #11c793;
    }
 
   .graphic-projects .slick-dots li.slick-active button:before,
    #letterhead .slick-dots li.slick-active button:before,
    #signage .slick-dots li.slick-active button:before,
-   #vector .slick-dots li.slick-active button:before{
+   #vector .slick-dots li.slick-active button:before,
+  #promotion .slick-dots li.slick-active button:before{
     opacity: 1;
   }
 
