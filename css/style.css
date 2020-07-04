@@ -208,7 +208,7 @@ header{
 .nav-container{
   min-height:40px;
   max-width: 1200px;
-  width: calc(100vw - 4em);
+  /*width: calc(100vw - 4em);*/
   margin: auto;
 }
 
