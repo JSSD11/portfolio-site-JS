@@ -62,7 +62,7 @@
               </h2>
             </div>
             <div id="scroll-down" class="center">
-              <div>
+              <a href="#about-anchor" style="text-decoration:none; color:#262626;">
                 <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 85 84.9" style="enable-background:new 0 0 85 84.9;" xml:space="preserve">
                   <style type="text/css">
                     .st0 {
@@ -73,7 +73,7 @@
                 	c0,23.5,19,42.5,42.5,42.5C66,84.9,85,65.8,85,42.4C85,20.5,68.4,2.5,47.2,0.1z" />
                 </svg>
                 <p> scroll down</p>
-              </div>
+              </a>
             </div>
           </div>
         </div>
@@ -81,7 +81,8 @@
         </div>
         <div class="section pt-2-5 md-p-0">
           <!--container wrapper-->
-          <div class="container" style="background-color:#efefef;">
+          <div class="container" style="background-color:#efefef; position:relative;">
+            <div id="about-anchor"></div>
             <!--my story section-->
             <div class="row">
               <h3 class="center pb-1-75 pt-1-75">Always iterating. Always improving. Forever learning.</h3>
@@ -123,7 +124,7 @@
           <div class="strip parallax">
           </div>
           <div class="container center pt-2-5 md-p-0">
-            <div class="row">
+            <div class="row more_info">
               <!--container for columns-->
               <div class="column col-lg-6">
                 <!--column 1-->
@@ -138,7 +139,7 @@
               <div class="column col-lg-6">
                 <!--column 2-->
                 <div class="lg-width-80">
-                  <h3>I love what I do.</h3>
+                  <h3 style="margin-top:2em;">I love what I do.</h3>
                   <p>
                     I mostly enjoy the process of crafting solutions to problems that ultimately deliver business value. I believe that, through in-depth user research and exploration, the right solution will present itself. I love using multiple tools
                     and testing various iterations until I have developed . It’s about reaching that “AhA!” moment, where the user not only understands the product, but also can see how it will improve their lives.
@@ -147,9 +148,9 @@
               </div>
             </div>
             <div class="row">
-              <h3>My skills and toolset.</h3>
+              <h3 style="margin-top:2em;">My skills and toolset.</h3>
               <div class="column col-md-6">
-                <ul>
+                <ul class="skills">
                   <li>Research</li>
                   <li>Prototyping</li>
                   <li>Wireframing</li>
@@ -198,33 +199,35 @@
     </main>
     <!--footer section-->
     <footer id="contact"><span id="contact-anchor"></span>
-      <p class="sideways-text">
-        Get in touch.
-      </p>
-      <div class="container">
-        <h2>Now you know about me. Let's <span>talk about you.</span></h2>
-        <p>
-          Do you like my work and want to discuss opportunities? Contact me for full-time work, freelance projects, or simply to chat about design.
+      <div style="max-width: 1200px; margin: auto; position: relative;">
+        <p class="sideways-text">
+          Get in touch.
         </p>
-        <p>
-          Just click on the link below to shoot me an email.
-        </p>
-        <div>
-          <a href="mailto:joanne.saad@gmail.com" class="button-contact mt-1 mb-1 stopBarba" data-barba-prevent="self">Email me</a>
-        </div>
-        <div>
-          <!--social media links-->
-          <a href="https://www.linkedin.com/in/joannesaad" target="_blank" class="social-link stopBarba" data-barba-prevent="self">
-            <svg height="50px" style="enable-background:new 0 0 67 67;" version="1.1" viewBox="0 0 67 67" width="67px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-              <path
-                d="M50.837,48.137V36.425c0-6.275-3.35-9.195-7.816-9.195  c-3.604,0-5.219,1.983-6.119,3.374V27.71h-6.79c0.09,1.917,0,20.427,0,20.427h6.79V36.729c0-0.609,0.044-1.219,0.224-1.655  c0.49-1.22,1.607-2.483,3.482-2.483c2.458,0,3.44,1.873,3.44,4.618v10.929H50.837z M22.959,24.922c2.367,0,3.842-1.57,3.842-3.531  c-0.044-2.003-1.475-3.528-3.797-3.528s-3.841,1.524-3.841,3.528c0,1.961,1.474,3.531,3.753,3.531H22.959z M34,64  C17.432,64,4,50.568,4,34C4,17.431,17.432,4,34,4s30,13.431,30,30C64,50.568,50.568,64,34,64z M26.354,48.137V27.71h-6.789v20.427  H26.354z"
-                style="fill-rule:evenodd;clip-rule:evenodd;fill:#262626;" /></svg>
-          </a>
-        </div>
-        <div id="copyright">
+        <div class="container">
+          <h2>Now you know about me. Let's <span>talk about you.</span></h2>
           <p>
-            Copyright © Joanne Saad 2020
+            Do you like my work and want to discuss opportunities? Contact me for full-time work, freelance projects, or simply to chat about design.
           </p>
+          <p>
+            Just click on the link below to shoot me an email.
+          </p>
+          <div>
+            <a href="mailto:joanne.saad@gmail.com" class="button-contact mt-1 mb-1 stopBarba" data-barba-prevent="self">Email me</a>
+          </div>
+          <div>
+            <!--social media links-->
+            <a href="https://www.linkedin.com/in/joannesaad" target="_blank" class="social-link stopBarba" data-barba-prevent="self">
+              <svg height="50px" style="enable-background:new 0 0 67 67;" version="1.1" viewBox="0 0 67 67" width="67px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                <path
+                  d="M50.837,48.137V36.425c0-6.275-3.35-9.195-7.816-9.195  c-3.604,0-5.219,1.983-6.119,3.374V27.71h-6.79c0.09,1.917,0,20.427,0,20.427h6.79V36.729c0-0.609,0.044-1.219,0.224-1.655  c0.49-1.22,1.607-2.483,3.482-2.483c2.458,0,3.44,1.873,3.44,4.618v10.929H50.837z M22.959,24.922c2.367,0,3.842-1.57,3.842-3.531  c-0.044-2.003-1.475-3.528-3.797-3.528s-3.841,1.524-3.841,3.528c0,1.961,1.474,3.531,3.753,3.531H22.959z M34,64  C17.432,64,4,50.568,4,34C4,17.431,17.432,4,34,4s30,13.431,30,30C64,50.568,50.568,64,34,64z M26.354,48.137V27.71h-6.789v20.427  H26.354z"
+                  style="fill-rule:evenodd;clip-rule:evenodd;fill:#262626;" /></svg>
+            </a>
+          </div>
+          <div id="copyright">
+            <p>
+              Copyright © Joanne Saad 2020
+            </p>
+          </div>
         </div>
       </div>
     </footer>
