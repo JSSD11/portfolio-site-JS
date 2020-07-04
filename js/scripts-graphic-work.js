@@ -22,7 +22,6 @@ if (main.id=="letterhead"){
       arrows : true,
       slidesToShow: 1,
       autoplay: false,
-      adaptiveHeight: true,
       prevArrow:"<img class='slick-prev' src='img/l_s/arrow_left.svg'>",
       nextArrow:"<img class='slick-next' src='img/l_s/arrow_right.svg'>"
     });
@@ -110,7 +109,6 @@ if (main.id=="signage"){
       arrows : true,
       slidesToShow: 1,
       autoplay: false,
-      adaptiveHeight: true,
       prevArrow:"<img class='slick-prev' src='img/l_s/arrow_left.svg'>",
       nextArrow:"<img class='slick-next' src='img/l_s/arrow_right.svg'>"
     });
@@ -133,7 +131,6 @@ if (main.id=="vector"){
       speed: 500,
       arrows : true,
       slidesToShow: 1,
-      variableHeight: true,
       prevArrow:"<img class='slick-prev' src='img/l_s/arrow_left.svg'>",
       nextArrow:"<img class='slick-next' src='img/l_s/arrow_right.svg'>"
     });
@@ -192,7 +189,6 @@ if (main.id=="promotion"){
       speed: 500,
       arrows : true,
       slidesToShow: 1,
-      variableHeight: true,
       prevArrow:"<img class='slick-prev' src='img/l_s/arrow_left.svg'>",
       nextArrow:"<img class='slick-next' src='img/l_s/arrow_right.svg'>"
     });
