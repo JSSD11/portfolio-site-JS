@@ -1134,6 +1134,11 @@ position: absolute;
   transform: none;
 }
 
+.slick-list,
+.slick-track {
+    height: 100%;
+}
+
 body #mp-page {
   color: #4b5161;
   background-color:#fbfaf6 !important;
