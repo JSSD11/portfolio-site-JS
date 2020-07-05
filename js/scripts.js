@@ -314,7 +314,7 @@ $(function () {
                      const done = this.async();
 
                     pageTransitionFadeBottom();
-                     await delay(200);
+                     await delay(500);
                      done();
                      $(window).scrollTop(0);
 
