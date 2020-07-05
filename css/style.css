@@ -1134,6 +1134,10 @@ position: absolute;
   transform: none;
 }
 
+.slick-list{
+  height: auto;
+}
+
 /*.slick-list,
 .slick-track {
     height: 100%;
