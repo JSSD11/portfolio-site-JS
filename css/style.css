@@ -3949,9 +3949,7 @@ footer p.sideways-text{
 /*------------------------
   About page styling
 -------------------------*/
-.tools{
-  padding-top: 0;
-}
+
 
 #about-s1{
 padding-top: 1em;
@@ -4036,11 +4034,19 @@ padding-top: 1em;
 
 .tools{
   margin-top: 2em !important;
+  padding-top: 0;
 }
 
 .more_info h3{
   margin-top: 2em;
 }
+
+.skills_tools{
+  display: flex;
+  justify-content: center;
+}
+
+
 
 /*------------------------
   MonstaPursuit styling

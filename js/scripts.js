@@ -118,6 +118,7 @@ $(document).ready(function(){
 
 const workAnchor =  $('#work-anchor').offset().top;
 console.log(workAnchor);
+console.log(document.getElementById('work-anchor').getBoundingClientRect().top);
 const graphicWorkAnchor =  $('#graphic-work-anchor').offset().top;
 console.log(graphicWorkAnchor);
 
@@ -294,7 +295,8 @@ $(function () {
                   },
                   async enter(data) {
                     console.log("enter data");
-                    console.log($('#work-anchor').offset().top);
+                    console.log(document.getElementById('work-anchor').getBoundingClientRect().top);
+                      console.log($('#work-anchor').position().top);
                 },
                 },
               {
@@ -380,5 +382,3 @@ $(function () {
 });
 
  if ('scrollRestoration' in history) { history.scrollRestoration = 'manual'; }
-
- 
