@@ -64,6 +64,7 @@ $('a[href*="#"]')
     }
   });
 
+
 /*
 $(document).ready(function(){
   // Add smooth scrolling to all links
@@ -351,6 +352,24 @@ $(function() {
           $(window).scrollTop(0);
           console.log('enter transition has been applied!');
         },
+      },
+      {
+      //  sync: true,
+        //  from:{namespace:['about-page']},
+        to: {
+          namespace: ['my-website']
+        },
+        async leave(data) {
+
+          console.log(data.next.url.hash);
+
+          const done = this.async();
+
+          pageTransitionLeaveHome();
+          await delay(800);
+          done();
+          $(window).scrollTop(0);
+        },
       }
     ],
     views: [{
@@ -404,3 +423,27 @@ $(function() {
 if ('scrollRestoration' in history) {
   history.scrollRestoration = 'manual';
 }
+
+
+
+/*/
+$(document).on('click', 'a[href^="#"]', function (event) {
+    event.preventDefault();
+
+    $('html, body').animate({
+        scrollTop: $($.attr(this, 'href')).offset().top
+    }, 500);
+});
+*/
+
+jQuery(function($) {
+
+$(document).on('click', 'a[href^="#"]', function (event){
+    event.preventDefault();
+    var target_offset = $(this.hash).offset() ? $(this.hash).offset().top : 0;
+    //change this number to create the additional off set
+    var customoffset = 85;
+    $('html, body').animate({scrollTop:target_offset - customoffset}, 500);
+});
+
+}(jQuery));
