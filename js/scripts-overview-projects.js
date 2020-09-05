@@ -267,6 +267,26 @@ if (main.id == "laja-london-page") {
   };
 } else {}
 
+/* var main = document.getElementsByTagName("main")[0];
+if (main.id == "smoothies-project") {
+  var slider = document.getElementsByClassName("slider")[0];
+  console.log(slider);
+
+  $(document).ready(function() {
+
+    var slider = $('.slider').not('.slick-initialized').slick({
+      dots: true,
+      infinite: true,
+      speed: 500,
+      arrows: false,
+      slidesToShow: 1,
+      adaptiveHeight: true,
+      autoplay: false
+    });
+
+  });
+} else {}
+*/
 //change footer Colours
 
 var projectFooter = document.getElementsByClassName("project-page-footer")[0];

@@ -1,0 +1,973 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="author" content="Joanne Saad">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Oh So Smoothies Project Overview</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Rajdhani:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+  <link rel="icon" type="image/png" href="img/favicon/favicon.ico" />
+  <link rel="icon" type="image/png" href="img/favicon/favicon-32x32.png" sizes="32x32" />
+  <link rel="icon" type="image/png" href="img/favicon/favicon-16x16.png" sizes="16x16" />
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css" />
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css" />
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-lightbox/0.2.12/slick-lightbox.css" />
+  <link rel="stylesheet" type="text/css" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="css/style.css" />
+  <link rel="stylesheet" type="text/css" href="css/process-animation.css" />
+  <link rel="stylesheet" type="text/css" href="css/logo-animation.css" />
+  <link rel="stylesheet" type="text/css" href="css/style-animation.css" />
+</head>
+
+<body id="smoothies" class="project-page" data-barba="wrapper">
+  <div class="load-container">
+    <div class="loading-screen"></div>
+  </div>
+  <div class="load-container-2">
+    <div class="loading-screen-2"></div>
+  </div>
+  <wrap data-barba="container" data-barba-namespace="project-page">
+    <header id="header" class="">
+      <div class="nav-container highlightTextIn">
+        <a href="index.html"><img src="img/JS_logo_black.svg" alt="Joanne Saad Designs Logo" class="logo"></a>
+        <nav class="nav-main">
+          <a id="hamburger" href="javascript:void(0)" class="icon" onclick="menuToggle()"><span></span></a>
+          <ul id="nav-md-lg">
+            <li><a href="index.html#work-anchor" title="Work.">Work.</a></li>
+            <li><a href="about.html" title="About.">About.</a></li>
+            <li><a href="#contact-anchor" title="Contact.">Contact.</a></li>
+          </ul>
+          <div id="mobile-nav" class="nav-overlay">
+            <div class="overlay-content">
+              <a href="index.html#work-anchor" onclick="menuToggle()">Work</a>
+              <a href="about.html">About</a>
+              <a href="#contact-anchor" onclick="menuToggle()">Contact</a>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <main id="smoothies-project" class="project-page">
+      <div class="barba-animating-container">
+        <div class="section parallax-section">
+          <div class="parallax-container">
+            <picture>
+              <source srcset="img/smoothie/smoothie_1@1x.png" media="(max-width:767px)">
+              <img id="smoothies-hero-img" src="img/smoothie/smoothie_1@2x.png" alt="Oh So Smoothies hero image">
+            </picture>
+            <img id="hero-parallax-img" src="img/smoothie/smoothie_parallax@2x.png" alt="Oh So Smoothies hero image parallax" class="rellax" data-rellax-speed="-10">
+            <img src="img/smoothie/hero_speech_1.png" alt="oh so smoothies logo" id="smoothie-speech" class="cover-logo">
+            <div class="foreground center">
+              <img src="img/smoothie/smoothie_logo.png" alt="oh so smoothies logo" id="smoothie-logo">
+              <div class="foreground-content">
+                <div class="intro-container">
+                  <div class="container">
+                    <div class="overview-grid">
+                      <div class="overview-grid-item">
+                        <h3>OVERVIEW</h3>
+                        <p>
+                        Oh So Smoothies is a VUI skill that allows users to select a smoothie recipe from several options, and follow step-by-step directions on how to prepare it. The goal of the project is to illustrate the voice design process from start to finish within the context of building an Alexa skill.
+                        </p>
+                      </div>
+                      <div id="middle-row" class="overview-grid-item item--2">
+                        <p>
+                          The project focuses on foundational voice design theory and practices, inlcuding discovering the users and their pain points, thinking about appropriate use cases, designing and testing voice experiences, and visualizing the interaction between voice and visual interfaces. As the project was carried out without the asistance of a developer, the building of code is beyond the scope.
+                        </p>
+                      </div>
+                      <div class="overview-grid-item">
+                        <h3>MY ROLE</h3>
+                        <p>
+                          User research   |   Personas   |   User flows   |   Script design   |   User Testing   |   Multimodal Prototyping
+                        </p>
+                        <h3>THE TEAM</h3>
+                        <p>
+                          Myself & VUI Mentor
+                        </p>
+                        <h3>PROJECT DURATION</h3>
+                        <p>
+                          4 weeks
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="section" style="background-color:#ffffff;">
+        <div class="container full-container">
+          <div class="row">
+            <div class="smoothie-grid" data-aos="fade-up">
+              <h3>THE CHALLENGE</h3>
+              <p>
+                Build a voice skill that allows the user to select quick 5-minute recipes from several options and then provide step-by-step instructions.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="container" style="padding-bottom: 3em;">
+          <div class="row" style="background-color:#ffffff;">
+            <div class="column col-md-8" data-aos="fade-up">
+              <h3> CHALLENGE CONTEXT</h3>
+              <p>
+                Making a meal can be difficult in today’s busy world. To help solve this problem, we’ll design and deploy an Alexa skill that allows users to browse several recipes, then select one and have Alexa assist with the meal preparation.
+              </p>
+              <h3> APP FEATURE REQUIREMENTS </h3>
+              <p>
+                The design brief stated the following basic app features for the skill:
+              </p>
+                <ul>
+                  <li>At least 10 different recipes with at least 3 steps each;</li>
+                  <li>Breakfast, lunch, dinner, and snack recipe buckets;</li>
+                  <li>The ability to have Alexa select a recipe for a user;</li>
+                  <li>The ability to ask for a different recipe if the user doesn’t like a suggestion;</li>
+                  <li>Confirmation for the chosen recipe;</li>
+                  <li>A strategy for dealing with users who miss a preparation step or need something repeated;</li>
+                  <li>A way to check whether your user is ready to move on to the next step;</li>
+                  <li>A response for an unsupported utterance;</li>
+                  <li>A custom help message relevant to the skill;</li>
+                </ul>
+              <p>
+                These were only provided as guidance, with some degree of flexibility in meeting them, therefore allowing room to exercise creativity.
+              </p>
+            </div>
+            <div class="column colr-md-8" data-aos="fade-up">
+              <h3> SCOPING </h3>
+              <p>
+                Considering the original challenge to create a 5 minute recipe skill, I decided to narrow down the scope to specifically provide smoothie recipes. This would be an effective focus considering the wide variety of quick options that can be made without complicated techniques or equipment.
+              </p>
+            </div>
+            <div class="column colr-md-7" data-aos="fade-up">
+              <p> <span class="highlight-font">Target audience: </span> 18-35 year olds who seek a healthy lifestyle and are either new to smoothies and need inspiration and clear instuctions on how to make them, or are current smoothie-makers looking for variety.
+              </p>
+              <p> <span class="highlight-font">Assumptions: </span>
+              </p>
+              <ul>
+                <li>Able to physically make a smoothie, and have made one before.</li>
+                <li>Value quick snack/meals made of whole food ingredients.</li>
+                <li>Own an Alexa device and a blender.</li>
+              </ul>
+            </div>
+            <div class="column col-md-8" data-aos="fade-up">
+              <h3> DESIGN CRITERIA</h3>
+              <p>
+                In order to ensure the application provided users with a fast, simple, and intuitive experience, it was important to first establish several constraints to work with. Thus the following basic design guidelines were defined:
+              </p>
+              <p data-aos="fade-right"> <span class="highlight-font">Design for a specific circumstance:  </span> Imagine someone using the skill in a specific circumstance. For example, a young, health-conscious professional may want a quick and healthy breakfast option that they can eat on the go on the way to work. Or, a busy parent may want to throw together a quick healthy snack or small meal for a hungry child. Such scenarios bring the skill to life and help to inform good design decisions.
+              </p>
+              <p data-aos="fade-left"> <span class="highlight-font">Help users make choices: </span> ​Deciding on a smoothie shouldn’t be difficult. The skill should help users narrow down their options and select something that suits them.
+              </p>
+              <p data-aos="fade-right"> <span class="highlight-font">Give users clear directions: </span> ​These quick recipes should help users prepare something in a straightforward way that doesn’t take much of their time. Make sure you provide them with clear directions in a format that works for someone knee-deep in (possibly messy) ingredients.
+              </p>
+              <p data-aos="fade-left"> <span class="highlight-font">Have fun: </span> ​Meals should be fun and comforting rather than a source of stress. Keep the tone lighthearted and informative.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="section">
+        <div class="non-parallax-img center" data-aos="fade-up">
+        </div>
+        <div class="parallax-img">
+        </div>
+      </div>
+
+      <div class="section" style="background-color:#ffffff;">
+          <div class="container full-container">
+            <div class="row">
+            <h2 class="center section_title" data-aos="fade-up"> DEFINE PHASE</h2>
+            <div class="column col-md-7" data-aos="fade-up">
+              <p><span class="sub-heading">Understanding the Problem</span></p>
+              <p>
+                We identified that some people don’t know what to cook or prepare, so finding tasty recipes easily is a real user need. This task becomes even more difficult for people who are trying to eat healthy. On top of that, a lot of these same people are pressed for time. Therefore, for our project, we’ll target the needs of time-pressed individuals who wish to embark on a healthy lifestyle. Simple, healthy and nutritious recipes that take five minutes or less to make are ideal to meet their needs.
+              </p>
+            </div>
+            <div class="column colr-md-7" data-aos="fade-up">
+              <p><span class="sub-heading">Competitive Analysis</span></p>
+              <p>
+                A lightweight competitive analysis was performed on existing cookbooks, cooking websites, and cooking apps, with a focus on those that target healthy eating.
+              </p>
+              <p>
+                It was noted that one issue with using recipes to cook is that the cook’s attention is divided between the recipe and the tasks of cooking. Additionally, the cook’s hands are often dirty or occupied, meaning that interacting with the recipe — turning the page or scrolling on a mobile device — is often challenging. This is an area where existing solutions, like cookbooks and mobile devices, have inherent challenges, which makes it a good potential candidate for an alternative solution like voice.
+              </p>
+            </div>
+            <div class="column col-md-7" data-aos="fade-up">
+              <p><span class="sub-heading">Business Goals</span></p>
+              <p>
+                After having defined the problem and performed an initial competitive analysis, we considered the business requirements of the skill.
+              </p>
+              <p>
+                With Alexa, the goal of a skill is often to provide convenient access to content. Additionally, the interaction can improve a customer’s experience with a brand. In our case, we defined our business goal as: to improve engagement and use of our recipes. Our objective is to increase the number of daily and weekly average users, which we hope to achieve through the Alexa skill.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="section" style="background-color:#ffffff;">
+        <div class="container full-container" style="padding-bottom: 3em;">
+          <div class="row">
+            <h2 class="center section_title" data-aos="fade-up" style="margin-top:0;"> PERSONAS</h2>
+            <div class="column col-md-8" data-aos="fade-up">
+              <p>
+                To learn more about potential users' viewpoint on cooking, food, and healthy living, I conducted three short interview sessions with folks who said they may find a recipe reader skill useful. In particular, I was interested in discovering their points of joy, pain, motivations, and frustrations with regards to cooking.
+              </p>
+              <p>
+                Based on these interviews, I developed a set of personas, which I used as a point of reference for the remainder of the design process to ensure I remained on target.
+              </p>
+            </div>
+          </div>
+          <div class="row" style="padding-bottom: 1em;">
+            <div data-aos="fade-up">
+              <p><span class="sub-heading">User Persona</span></p>
+              <div class="persona_img center">
+                <picture>
+                  <source srcset="img/smoothie/user_persona@1x.png" media="(max-width:767px)">
+                  <img src="img/smoothie/user_persona@2x.png" alt="User Persona">
+                </picture>
+              </div>
+            </div>
+            <div class="column col-md-8" data-aos="fade-up">
+              <p>
+                Pictured above is a persona card for Sadie, who represents a synthesis of the preliminary user interviews I conducted.
+              </p>
+            </div>
+            <div class="column col-md-8">
+              <div class="hidden-text">
+                <p>
+                  As with more typical visual UX design projects, personas for voice-led interactions are developed to humanize a targeted group of users that would engage with the product or service and thus help to better understand their needs.
+                </p>
+                <p>
+                  However, in the case of voice applications, the persona is also conveying something about the context(s) of use. This might include the environment where a user is likely to interact with the product, or any specific situation in which a user might engage with the skill. This is because where your user will be interacting with your application makes a big difference when it comes to what senses they’ll have free, as well as how easily the system would be able to process audio from your user.
+                </p>
+                <p>
+                  Four key observations worth noting about Sadie are:
+                </p>
+                <ol>
+                  <li>Two of the three people I interviewed enjoyed cooking, but considered themselves as casual cooks, only perfomring basic, simple recipes. The third was a novice in the kitchen.</li>
+                  <li>All interviewees cited time and effort as a major hindrance to cooking more often, while the greatest motivation to cook related to health and diet.</li>
+                  <li>While all three interviewees were experienced with technology, two of them saw cooking as an opportunity to unplug. One of the interviewees regularly searched for recipes online (both on the laptop and phone), but found the potential of preforming this task hands-free, via voice, appealing.</li>
+                  <li>The persona card includes a section titled Speaking Style. This is an important feature of a voice user persona because users are more comfortable communicating with those who are similar to them. Having a clear description of how users communicate with their voices will be helpful when it comes time to develop the speaking style of the System Persona.</li>
+                </ol>
+              </div>
+              <a data-aos="fade-up" href="javasctipt:void();" class="collapsible"> MORE ON USER PERSONA</a>
+            </div>
+          </div>
+          <div class="row">
+            <div data-aos="fade-up">
+              <p><span class="sub-heading">System Persona</span></p>
+              <div class="column col-md-8">
+                <p>
+                  The system persona is a representation of the assistant the end user will interact with. In particular, it describes the communication style of the voice interface.
+                </p>
+                <p>
+                  When developing the system persona, it was important to create a personality that matches the user persona's preferences and speech patterns. This helps to ensure that users would be able to relate and would enjoy speaking with the system.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="persona_img center" data-aos="fade-up">
+            <picture>
+              <source srcset="img/smoothie/system_persona@1x.png" media="(max-width:767px)">
+              <img src="img/smoothie/system_persona@2x.png" alt="System Persona">
+            </picture>
+          </div>
+          <div class="row" style="padding-bottom: 0;">
+            <div class="column colr-md-8" data-aos="fade-up" style="padding-top:1em; ">
+              <p>
+                As health efforts and ‘trying new things’ can oftentimes be frustrating, I took care to build a system persona that is witty and fun, but not at the expense of being supportive and encouraging.
+              </p>
+              <p>
+                It felt important to cater to users who may be more sensitive to failure. The encouraging nature of the system persona could increase their level of engagement without negatively affecting the set of users who do not 'need' this positive reinforcement.
+              </p>
+            </div>
+            <div class="column colr-md-8">
+              <div class="hidden-text">
+                <p>
+                When designing voice interations, the system persona is arguably the most important aspect to take into consideration. For websites, apps, or physical interfaces, the form, colors, structure, word choice, and surface material all express a certain style that represents the product, the company, and the users who’ll be interacting with them. In voice-based systems, however, all these elements are represented in the system persona.
+                </p>
+                <p>
+                  There exists considerable research on the tendency of humans to anthropomorphize computers and voice interfaces, and to immediately begin inferring characteristics such as age, gender, and likeability from voices.
+                </p>
+                <p>
+                  Additionally, studies suggest that when users interact with interfaces that contain elements of personification, they will relate better and more comfortably to the interface if its manner resembles their own. Therefore it is important to design the system with a personality that appeals to users.
+                </p>
+              </div>
+              <a data-aos="fade-up" href="javasctipt:void();" class="collapsible" style="text-align:right;">MORE ON SYSTEM PERSONA</a>
+            </div>
+          </div>
+          <div class="row">
+            <div data-aos="fade-up">
+              <p><span class="sub-heading">Placeona</span></p>
+              <div class="column col-md-8">
+                <p>
+                  In addition to developing user and system personas, it can also be useful to identify <strong>Placeonas</strong>, which capture how location can influence which types of interactive technology it makes sense for people to use.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div>
+              <div class="hidden-text">
+                <div class="column">
+                  <p>
+                    In its simplest terms, the placeona answers the following two part question:
+                   </p>
+                   <div class="center" style="width: 80%; padding: 2em 0 1em;margin: 0 auto;">
+                     <picture>
+                       <source srcset="img/smoothie/placeona_desc@1x.png" media="(max-width:767px)">
+                       <img src="img/smoothie/placeona_desc@2x.png" alt="Placeona description">
+                     </picture>
+                   </div>
+                 </div>
+                 <div class="row">
+                   <div class="column col-md-8">
+                    <p>
+                      The concept of a placeona considers that there is no “one best input” or “one best output” for an interaction - it's all about <strong>context</strong>. Based on a specific action in a specific location, the placeona catalogues the availability of the user's hands, eyes, voice, ears - our primary ways of interacting with interfaces.
+                    </p>
+                    <p>
+                      <strong>For example: the driving placeona is: hands busy, eyes busy, ears free, voice free.</strong>
+                    </p>
+                    <p>
+                      Therefore, by describing the various locations a product or service is likely to be used in the placeona format, designers can have a reference point to ascertain which medium is most appropriate for users in each respective scenario. Specifically, with regards to VUI's, developing placeonas around the product's core functionality should reveal whether voice is the most viable mode of interaction with the service.
+                    </p>
+                    <p>
+                      For the smoothie recipe reader, I developed the following placeona:
+                    </p>
+                  </div>
+                </div>
+                <div class="border-rect">
+                  <p><strong>Placeona:</strong></p>
+                  <p>Making a smoothie in the kitchen</p>
+                  <p><strong>User's hands: Busy</strong><br>
+                    The user's hands are covered in ingredients, so they're not able to touch anything.
+                  </p>
+                  <p><strong>User's eyes: Mostly Busy</strong><br>
+                    The user's eyes are mainly occupieed with watching what they are doing - be it chopping ingredients, or making sure all ingredients are blended well.
+                  </p>
+                  <p><strong>User's ears: Mostly Free</strong><br>
+                    The user can hear and listen without issue (except when blending).
+                  </p>
+                  <p><strong>User's mouth: Free</strong><br>
+                    The user can talk and givee instructions using their voice.
+                  </p>
+                </div>
+                <div class="row">
+                  <div class="column col-md-8">
+                    <p>
+                      With voice and hearing available, and vision occasionally available, this action context appeared as a great fit for a voice interface.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <a data-aos="fade-up" href="javasctipt:void();" class="collapsible">MORE ON PLACEONA</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="section" style="background-color:#ffffff;">
+        <div class="container" style="padding:0; margin:0 auto; text-align: center;" data-aos="fade-up">
+          <picture>
+            <source srcset="img/smoothie/voice_interactions@1x.png" media="(max-width:767px)">
+            <img src="img/smoothie/voice_interactions@2x.png" alt="Sample utterances" data-aos="fade-up">
+          </picture>
+        </div>
+      </div>
+
+      <div class="section" style="background-color:#ffffff;">
+        <div class="container full-container">
+          <div class="row">
+            <h2 class="center section_title" data-aos="fade-up"> USER STORIES</h2>
+            <div class="column col-md-8" data-aos="fade-up">
+              <p>
+                Following the development of the personas, I created a collection of user stories to help design the features needed and clarify the scope of the user experience. The user stories characterize a user in a relevant way <strong>(setting the context)</strong>, present that user's specific need <strong>(identifying a problem)</strong>, and postulating on a product feature that might resolve that need <strong>(providing a solution)</strong>.
+              </p>
+              <p>
+                In this way, the exercise of creating user stories is useful in that it pairs realistic user needs with potential product features, thus making sure that the product stays user-centered.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div style="width: 100%; max-width:1000px; margin: 0 auto;">
+          <picture>
+            <source srcset="img/smoothie/user_stories@1x.png" media="(max-width:767px)">
+            <img src="img/smoothie/user_stories@2x.png" alt="User Stories" data-aos="fade-up">
+          </picture>
+        </div>
+      </div>
+
+      <div class="section" style="background-color:#ffffff;">
+        <div class="container full-container" style="padding-bottom: 0;">
+          <div class="row">
+            <h2 class="center section_title" data-aos="fade-up"> SAMPLE DIALOGUES</h2>
+            <div class="column col-md-7" data-aos="fade-up">
+              <p>
+                User stories segue nicely into sample dialogues, which are imagined scripted conversations between the user and the system, that elaborate on the scenario presented in the user stories. Thus, sample dialogues are speculations on what a user might want to say, and hear in response, during an exchange with a system. The purpose of a sample dialog is to document the basics of the interaction you’re designing.
+              </p>
+              <p>
+                Sample dialogues are an important step in this design process, since this is where the tone and manner of the interactions really begins to take shape.
+              </p>
+            </div>
+            <div class="column colr-md-7" data-aos="fade-up">
+              <p>
+                Indeed, sample dialogues allow designers to get a general sense of what the overall experience will feel like. The goal is to learn whether the experience makes sense and to course-correct early. In fact, they're much like sketching and creating initial low- and mid-fidelity prototypes - they're lightweight, understandable, and quick to change.
+              </p>
+              <p>
+                Sample dialogues also provide a chance to think about the optimal way for a user to complete a task.
+              </p>
+            </div>
+            <div class="column col-md-7" data-aos="fade-up">
+              <p>
+                Two sample dialogues are presented below:
+              </p>
+            </div>
+          </div>
+          <div style="width: 100%; max-width:1000px; margin: 1em auto;">
+            <picture>
+              <source srcset="img/smoothie/sample_dialogues@1x.png" media="(max-width:767px)">
+              <img src="img/smoothie/sample_dialogues@2x.png" alt="Sample dialogues" data-aos="fade-up">
+            </picture>
+          </div>
+        </div>
+      </div>
+
+      <div class="section" style="background-color:#ffffff;">
+        <div class="container full-container" >
+          <div class="row">
+            <h2 class="center section_title" data-aos="fade-up"> USER FLOWS AND INFORMATION ARCHITECTURE</h2>
+            <div class="column col-md-8" data-aos="fade-up">
+              <p>
+                Once the sample dialogues were developed and sufficiently honed, the next step was to describe them in logical terms, which will in turn help to build the actual interaction model.
+              </p>
+              <p>
+                Considering the relative simplicity of the skill, the flowchart approach was implemented to communicate how the experience should behave. In the case of a VUI, the user flow maps out how all the intents in a skill are related to one another — they show <strong>what</strong> a system can do as well as <strong>how </strong>a system will respond to various inputs. In other words, user flows provide a way to view the logic of the system without going into detail regarding what the system will actually say.
+              </p>
+            </div>
+            <div class="column col-md-8">
+              <div class="hidden-text">
+                <p>
+                  User flows are created to help clarify how a system would work. Much like an information architecture diagram, they map out all the possible paths a user could take, and explains how the user could reach them. In this way, user flows rely less on the specific dialogue and more on making sure that all the user needs are met in a way that’s both clear and understandable to the user.
+                </p>
+                <p>
+                  Moreover, User flows help to expose issues and identify additional use cases, as well as error cases. Much of what makes a voice experience pleasant is an elegant handling of errors, so its important to plan for as many error cases as possible.
+                </p>
+                <p>
+                  Flows don’t work in isolation — they make much more sense when combined with a script. However, it generally helps to write the flows first, then write the script, and then take some time refining both together to make sure the full spec makes sense.
+                </p>
+              </div>
+              <a data-aos="fade-up" href="javasctipt:void();" class="collapsible" >MORE ON USER FLOWS</a>
+            </div>
+            <div class="column colr-md-8" data-aos="fade-up">
+              <p>
+                In order to create the user flow for the smoothie reipe skill, I first needed to define the various intents necessary to perform each task supported by the skill.
+              </p>
+              <p>
+                Based on the user stories, the following intents capture the inital core functionality of the skill:
+              </p>
+              <ul class="purple-bullets">
+                <li><strong>Choose Recipe Intent:</strong> <span> Lets a user choose which smoothie recipe they'd like to make.</span></li>
+                <li><strong>Ingredients Intent:</strong><span> Lets a user heat yhe ingredients in a recipe.</span></li>
+                <li><strong>Instructions Intent:</strong><span> Provides the recipe instructions.</span></li>
+                <li><strong>Diet Requirements Intent:</strong><span> Allows the user to store specific dietary restriction or allergy information so that they don't have to inform the system every time.</span></li>
+                <li><strong>Swap Ingredient Intent:</strong><span> Allows users to request to substitute any ingredient due to taste preference, ingredient availablility, or dietary restriction.</span></li>
+                <li><strong>Favourites Intent:</strong><span> Lets users save/ retrieve their favourite recipes.</span></li>
+                <li><strong>Next Step Intent:</strong> <span>Goes tot he next step in a recipe.</span></li>
+                <li><strong>Repeat Intent:</strong><span> Repeats any prompts/ responses provided by the skill, as requeested by the user.</span></li>
+                <li> <strong>Global Intents</strong>:
+                  <ul>
+                    <li><strong>Help Intent:</strong><span> Provides a help message to the user.</span></li>
+                    <li><strong>Cancel Intent:</strong><span> Exits from a strp within a skill.</span></li>
+                    <li><strong>Stop Intent:</strong><span> Exits thr skill.</span></li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+            <div class="column col-md-8" data-aos="fade-up">
+              <p>
+                As displayed below, the Overview flow depicts the high-level structure of the skill, mapping out all the supported intents. Additional flows were also built for each of the skill's core intents, as shown below.
+              </p>
+            </div>
+          </div>
+          <div data-aos="fade-up">
+            <div class="swiper-container">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <picture>
+                    <source srcset="img/smoothie/overview_flow@1x.png" media="(max-width:767px)">
+                    <img src="img/smoothie/overview_flow@2x.png" alt="Overview flow" style="width:90%;">
+                  </picture>
+                </div>
+                <div class="swiper-slide">
+                  <picture>
+                    <source srcset="img/smoothie/choose_recipe_intent@1x.png" media="(max-width:767px)">
+                    <img src="img/smoothie/choose_recipe_intent@2x.png" alt="Choose Recipe Intent Flow" style="width:90%;">
+                  </picture>
+                </div>
+                <div class="swiper-slide">
+                  <picture>
+                    <source srcset="img/smoothie/ingredients_intent@1x.png" media="(max-width:767px)">
+                    <img src="img/smoothie/ingredients_intent@2x.png" alt="Ingredients Intent Flow" style="width:90%;">
+                  </picture>
+                </div>
+                <div class="swiper-slide">
+                  <picture>
+                    <source srcset="img/smoothie/instructions_intent@1x.png" media="(max-width:767px)">
+                    <img src="img/smoothie/instructions_intent@2x.png" alt="Instructions Intent Flow" style="width:90%;">
+                  </picture>
+                </div>
+              </div>
+              <div class="swiper-pagination"></div>
+              <div class="swiper-button-prev"></div>
+              <div class="swiper-button-next"></div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="column colr-md-8" data-aos="fade-up">
+              <p style="margin-top:2em !important;"><span class="sub-heading">Prioritizing Development </span></p>
+              <p style="margin-bottom:0 !important;"> <span class="sub-heading" style="color:#262626; font-size: 1em;">PHASE ONE: Intro, Learn, Search, Select </span></p>
+              <p style="margin-top:0 !important;">
+                For the purpose of this challenge, I first focused on welcoming users and helping them choose a recipe. In order to successfully do so, userd would first have to know what's in it, thus this would entail developing the Ingredients intent. Additionally, the ability to save and retrieve favourite recipes, as well as find one recently made, would help to provide an easier search pathway for returning users, thus building seemed necessary for a more contextually responsive skill.
+              </p>
+              <p style="margin-bottom:0 !important;"> <span class="sub-heading" style="color:#262626; font-size: 1em">PHASE TWO: Getting busy in the kitchen </span></p>
+              <p style="margin-top:0 !important;">
+                After building a pathway to access recipes, developing the Instruction intent is the next logical step. Indeed, this is the intent most compatible as a voice-only experience, considering that this is when the user's hands would be busy smoothie-ing away.
+              </p>
+              <p style="margin-bottom:0 !important;"> <span class="sub-heading" style="color:#262626; font-size: 1em">PHASE THREE: Helpful, non-essential features </span></p>
+              <p style="margin-top:0 !important;">
+                The 3rd tier of development would bee to work on additional features that would be beneficial, but not essential, to the skill. Therefore, considering resource and time constraints, this phase was not developed. Such features include <i>Create Profile</i>, which would be particfulalry helpful for multiple users in the same household. By having a profile for each user, their own unique dietary requirements and favourite recipes could be stored. Each individual's taste preferences could also be stored. Additionally, a <i>Shoppinf List</i> intent could also be helpful, in the case when a user has chosen a recipe but doesn't have the ingredients to make it.
+               </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="section" style="background-color:#ffffff;">
+        <div class="container full-container">
+          <div class="row">
+            <h2 class="center section_title" data-aos="fade-up" style="padding-top:0.5em;"> SCRIPTING</h2>
+            <div class="column col-md-8" data-aos="fade-up">
+              <p>
+                Having worked out the user flows, the next step was to develop the script. In the context of VUIs, the script is a database of sample utterances, along with system prompts and responses.
+              </p>
+              <p>
+                The script document is organized by intents, or states. For each intent, the script provides an exhaustive list of all the prompts and responses attached to that intent. It also documents the sample utterances a user can say to obtain those responses. Essentially, the script includes every line your system can read out to your user.
+              </p>
+              <p>
+                While the user flow reveals the complete navigation of logic within the application, as well as how the states of the application interact, the script forms the user-visible side of flows, taking abstract logic and turning it into a UI. The script and the flow, together, tell the full story of the experience.
+              </p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="hidden-text">
+              <div style="width:80%; float:right;">
+                <p>
+                 Writing scripts is very similar to going from low- and mid-fidelity wireframes (sample dialogues) to higher-fidelity mock-ups. It provides the chance to add variation, structure, and missing pieces to the sample dialogues and hence move the design from a happy path, to a complete experience. In fact, the script acts as the high-fidelity, pixel-perfect deliverable once it's fed it into the system.
+                </p>
+                <p>
+                  To design a voice system well and keep up the illusion that the system is smart, much like a human, the dialogue must replicate human conversation. Indeed, nothing breaks this illusion more than poorly-written and poorly-executed dialogue. Therefore, when writing the script, it's important to note that spoken speech is quite different from written speech.  As a result, there are several best practices that help with writing natural sounding dialogue. These are outline below:
+                </p>
+                <ul class="purple-bullets">
+                  <li><strong>Write for the ear, not the eye:</strong> <span> It’s more important for the script to sound natural when spoken out loud than it is for it to look like proper writing. So you can even use colloquialisms like “wanna” instead of “want to.”  Also, make syre every prompt can pass the single breath test - if you vcan't say it in one breath, it's probably too long.</span></li>
+                  <li><strong>Use contractions:</strong><span> e.g. "you'd" instead of "you would". They make the dialog sound more natural and fluid.</span></li>
+                  <li><strong>Use conversation markers:</strong> <span> Lead-in and transitional phrases such as first, second, okay, thanks, and got it are helpful in keeping the dialog fluid and moving forward. It's good to vary the conversation markers to keep the dialog from feeling stale.</span></li>
+                  <li><strong>Provide just enough information to maintain forward progress:</strong><span> To reduce cognitive load and attention fatigue, give the user adequate instructions for what to do at every step without overwhelming them. </span></li>
+                  <li><strong>Balance brevity with friendliness:</strong><span> Terse dialogue can feel abrupt and cold, which doesn’t lead to a good user experience, thus it's important to maintain the system persona even when keeping it short.</span></li>
+                  <li><strong>Echo user information:</strong><span> Unlike human conversation, where non-verbal cues such as head nodding, eye contact, and gestures can be used to clarify understanding, the only tools a voice designer has at their disposal are the words the system says. Therefore, it can be heelpful to the user to know they are on the right path if the system reads back dynamic information back to the user.</span></li>
+                  <li><strong>Create natural conversation with variety:</strong><span> Another great way to keep your dialog feeling fresh and natural is to write multiple prompts or responses for the same utterances as this can help make the dialog feel less robotic over multiple uses.</span></li>
+                  <li><strong>Avoid jargon and unusual phrases:</strong><span> These stick out and underscore that the machine isn’t real. Also note that phrases don’t need to be 100% grammatically correct to sound natural (and oftentimes, they sound better if they aren’t). </span></li>
+                </ul>
+              </div>
+            </div>
+              <a data-aos="fade-up" href="javasctipt:void();" class="collapsible">MORE ON SCRIPTS</a>
+          </div>
+          <div class="row">
+            <div class="column col-md-8" data-aos="fade-up">
+              <p>
+                The image below shows the script for the Choose Recipe Intent.
+              </p>
+            </div>
+          </div>
+          <div class="row" data-aos="fade-up">
+            <div class="scrollable-img">
+              <picture>
+                <source srcset="img/smoothie/choose_recipe_intent_script@1x.png" media="(max-width:767px)">
+                <img src="img/smoothie/choose_recipe_intent_script@2x.png" alt="Choose Recipe Intent Script">
+              </picture>
+            </div>
+          </div>
+          <div class="row">
+            <div class="column colr-md-8" data-aos="fade-up">
+              <p>
+                As mentioned above, in designing the script, the goal was to have the smoothest conversation possible, while acknowledging that the system is still a machine and not an actual human. To achieve this, aside from implementing best practices for writing dialogue, I also made sure the script incorporates the strategies of <strong>user surface data memory,proactive information</strong>, and <strong></strong>, as well as <strong>system logic</strong> from <strong>context inferencing and maintaining the state</strong>.
+              </p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="hidden-text">
+              <div class="column colr-md-8">
+                <p style="margin-top:0"><span class="sub-heading">Memory: </span>
+                <br>
+                  Using memory helps to make the interaction feel more personal for the user. This can be achieved through multiple techniques:
+                  <ul class="purple-bullets">
+                    <li><span>Use <strong>surface user data</strong> to personalize the experience in lightweight ways, such as greeting the user by name.</span>
+                    </li>
+                    <li><span>Create <strong>novice prompts</strong> for new users that quickly explains what the system is about explains and how to use it.</span>
+                    </li>
+                    <li><span>Create <strong>tapered prompts</strong> for regular users to ensure they don’t get annoyed with information they no longer need.</span>
+                    </li>
+                    <li><span>Use <strong>proactive information</strong>: i.e. off what th euser asked for previously. For example offering only recipes with the same dietary resquirements a useer had previously asked for. This provides a smoother and faster recipe search process, as it aims to avoid users having to declare their dietary requirements each time they use the skill. </span>
+                    </li>
+                  </ul>
+                </p>
+              </div>
+              <div class="column col-md-8">
+                <p style="margin-top:0;"><span class="sub-heading">Context: </span>
+                <br>
+                Like memory, context can make your voice experience feel more human. Some techniques that use context include:
+                  <ul class="purple-bullets">
+                    <li><span><strong>Maintaining the state:</strong> this entails the system being able to keep track of the turns during a multi-step interaction, so that when a new request is given by the user, the system is able to remember the current turn, and respond accordingly (see the multi-step dialogue below for an example). This helps to provide a more natural back-and-forth dialogue between the user and system.</span>
+                    </li>
+                    <li><span>Use <strong>inferences</strong>, which are a type of context that involve making an assumption or educated guess based on a user or other data, such as the time of day or past behaviour.</span>
+                    </li>
+                  </ul>
+                </p>
+              </div>
+            </div>
+              <a data-aos="fade-up" href="javasctipt:void();" class="collapsible">MORE ON MEMORY & CONTEXT IN VUI</a>
+          </div>
+          <div class="row">
+            <div class="column">
+              <div data-aos="fade-up">
+                <p style="margin-top: 2.5em !important;"><span class="sub-heading">Memory & Context in Action</span>
+                </p>
+                <div style="text-align: center">
+                  <picture>
+                    <source srcset="img/smoothie/novice_prompt@1x.png" media="(max-width:767px)">
+                    <img src="img/smoothie/novice_prompt@2x.png" alt="Novice prompt" style="max-width:700px; margin:1em auto;" data-aos="fade-up">
+                  </picture>
+                </div>
+              </div>
+              <div data-aos="fade-up">
+                <p style="margin-top:0;"> <span class="sub-heading" style="color:#262626;">Welcome to Oh So Smoothies</span></p>
+                <p style="margin-top:0; margin-bottom:2em; width:75%;">
+                  For new users, I wanted the introduction to feel like they had just walked into their favourite juice bar. If this were actually the case, the user could browse the signboard menu or ask for a recommendation. However, in a voice-only world, a new user - especially one new to smoothies - may not know where to begin. I therefore wanted to direct the user towards Oh So Smoothies' search options, as well as to provide them with sample popular categories to encoursge optimal phrasing.
+                </p>
+              </div>
+              <div data-aos="fade-up">
+                <div style="text-align: center">
+                  <picture>
+                    <source srcset="img/smoothie/tapered_prompt@1x.png" media="(max-width:767px)">
+                    <img src="img/smoothie/tapered_prompt@2x.png" alt="Tapered prompt" style="max-width:700px; margin:1em auto;" data-aos="fade-up">
+                  </picture>
+                </div>
+                <p style="margin-top:0;"> <span class="sub-heading" style="color:#262626;">With regulars, we are the ones being welcomed</span></p>
+                <p style="margin-top:0; margin-bottom:2em; width:75%;">
+                  There is a shift in perspective with power users. Once the user is comfortable using the skill, the interaction is more appropriately viewed as a smoothie expert being welcomed into their kitchen. Now we empower the user by directly asking them what smoothie they want to make.
+                </p>
+              </div>
+              <div data-aos="fade-up" >
+                <div style="text-align: center">
+                  <picture>
+                    <source srcset="img/smoothie/memory_context_dialogue@1x.png" media="(max-width:767px)">
+                    <img src="img/smoothie/memory_context_dialogue@2x.png" alt="Memory & context in dialogue" style="max-width:850px; margin:1em auto;" data-aos="fade-up">
+                  </picture>
+                </div>
+                <a href="https://docs.google.com/spreadsheets/d/1vU-KpJS5FH4lg14aJsUS9cXniRlOWvmGDlkschZBuvc/edit?usp=sharing" style="color: #932e26!important; font-weight: 600;" target="_blank" class="stopBarba" data-barba-prevent="self" data-aos="fade-up">View full script here</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <script>
+      var coll = document.getElementsByClassName("collapsible");
+      var i;
+      for (i = 0; i < coll.length; i++) {
+        coll[i].addEventListener("click", function() {
+      this.classList.toggle("active");
+      var content = this.previousElementSibling;
+      if (content.style.maxHeight){
+        content.style.maxHeight = null;
+      } else {
+        content.style.maxHeight = content.scrollHeight + "px";
+      }
+      if(this.classList.contains("active")){
+        var repMore = this.innerHTML.replace(/MORE/g, "LESS");
+        this.innerHTML=repMore;
+      } else{
+        var repLess = this.innerHTML.replace(/LESS/g, "MORE");
+        this.innerHTML=repLess;
+        }
+        });
+      }
+      </script>
+
+      <div class="section" style="background-color:#ffffff;">
+        <div class="container full-container">
+          <div class="row">
+            <h2 class="center section_title" data-aos="fade-up" style="padding-top:0.5em;"> USER TESTING</h2>
+            <div class="column col-md-7" data-aos="fade-up">
+              <p>
+                I conducted 5 usability tests with participants from the target demographic. The tests consisted of 4 scenario tasks in Wizard of Oz format in which I played the part of Alexa. The tests sought to assess the following:
+              </p>
+              <ul class="purple-bullets">
+                <li><span>Intuitiveness of navigation: can participants easily activate the skill (launch intent) and search for a recipe (choose recipe intent and ingredieents intent)?</span></li>
+                <li><span>Recipe discovery and preparation pathways: are participants able to easily choose, start, and progress through the various steps of a recipe (instructions intent) </span></li>
+                <li><span>Utterance accuracy/suitability</span></li>
+                <li><span>Fit of system personality</span></li>
+              </ul>
+            </div>
+            <div class="column colr-md-7" data-aos="fade-up">
+              <p> <span class="sub-heading">Testing Outcome </span> </p>
+              <p>
+                In general, the tests were successful in that users were able to effectively navigate to a recipe and follow the instructions flow without problems.
+              </p>
+              <p>
+                Analysis of the test, however, did reveal three prominent usability issues. I categorized them by severity (High, Medium & Low) and fix-ability (easy, moderate, difficult).
+              </p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="column center" data-aos="fade-up">
+              <div style="width:90%; text-align: left; margin: 0 auto;">
+                <p class="issue"><span>ISSUE ONE:</span> Unclear promt after being given first 3 popular smoothie options.
+                <p style="font-size: 1.2em; margin-top: 0 !important;">HIGH PRIORITY - Easy fix</p>
+              </div>
+              <picture>
+                <source srcset="img/smoothie/issue_1@1x.png" media="(max-width:767px)">
+                <img src="img/smoothie/issue_1@2x.png" alt="Issue 1" style="width: 80%; max-width:550px;">
+              </picture>
+              <div style="width:90%; text-align: left; margin: 0 auto;">
+                <p> The three testers that encountered this problem all ended up making a decision, however they reported not being confident about what would happen as a result. <br>
+                  <span style="color:#64a958; font-weight:500;">"Am I going to hear more recipe options or hear more about these options? What if I don't want to hear more and want to choose one?"</span>
+                </p>
+                <p>
+                  <i>SHORT and CLEAR is best, but LONGER and CLEAR is better than SHORT and UNCLEAR.</i>
+                </p>
+                <p>
+                  <strong>SUGGESTED CHANGE: Choose one or ask to hear more options.</strong>
+                </p>
+              </div>
+            </div>
+            <div class="column center" data-aos="fade-up" style="padding-top:2em;">
+              <div style="width:90%; text-align: left; margin: 0 auto;">
+                <p class="issue"><span>ISSUE TWO:</span> User barge-in, which is not being received by system
+                <p style="font-size: 1.2em; margin-top: 0 !important;">HIGH PRIORITY - Easy fix</p>
+              </div>
+              <picture>
+                <source srcset="img/smoothie/issue_2@1x.png" media="(max-width:767px)">
+                <img src="img/smoothie/issue_2@2x.png" alt="Issue 2" style="width: 80%; max-width:550px;">
+              </picture>
+              <div style="width:90%; text-align: left; margin: 0 auto;">
+                <p>
+                  Due to the way some promptes were phrased, four testers began to give their response before the prompt finished playing. However, since Alexa doesn't support barge-in, their responses were not being received by the system, leading to some frustration.  In general, users were able to recover from this with ease. <br>
+                </p>
+                <p>
+                  <strong>SUGGESTED CHANGE: Say "repeat" to repeat a step or "next" to move onto the next one. </strong>
+                </p>
+              </div>
+            </div>
+            <div class="column center" data-aos="fade-up" style="padding-top:2em;">
+              <div style="width:90%; text-align: left; margin: 0 auto;">
+                <p class="issue"><span>ISSUE THREE:</span> No indication of the number in a list  - specifically in relation to the total number of recipes found by the system and the number of ingredients in a recipe
+                <p style="font-size: 1.2em; margin-top: 0 !important;">MEDIUM PRIORITY - Easy fix</p>
+              </div>
+              <picture>
+                <source srcset="img/smoothie/issue_3@1x.png" media="(max-width:767px)">
+                <img src="img/smoothie/issue_3@2x.png" alt="Issue 3" style="width: 80%; max-width:550px;">
+              </picture>
+              <div style="width:90%; text-align: left; margin: 0 auto;">
+                <p>
+                  Some testers suggested it would be helpful to be informed them of the total number of recipes found in a search, as this would help them to gauge how long they want to spend listening to the results. Similarly, informing users of the total number of ingredients in a recipe could also help users keep track of whether they missed one out.
+                </p>
+                <p>
+                  <strong>SUGGESTED CHANGE: The Protein Golden Milk smoothie has [9] ingredients. The first three are: whole milk cottage cheese, coconut water or coconut milk, and Medjool dates. [br] Woud you like to hear the rest? </strong>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="section" style="background-color:#ffffff;">
+        <div class="container full-container">
+          <div class="row">
+            <h2 class="center section_title" data-aos="fade-up" style="padding-top:0.5em;"> VOICE-FIRST NOT VOICE-ONLY</h2>
+            <div class="column" data-aos="fade-up">
+              <p><span class="sub-heading">Multimodal interaction: playing to strengths</span> </p>
+              <div class="column col-md-7">
+                <p>
+                  Thus far we have been desiging a <strong> voice-only</strong> interaction - one which relies solely on audio for both input and output. This allows for a true hands-free operation.
+                </p>
+                <p>
+                  When actually busy making the smoothie, the voice interaction greatly increases flexibility and efficiency: the need to be able to freely move around the kitchen gathering ingredients and having occupied or messy hands makes interacting with a touchscreen problematic.
+                </p>
+              </div>
+            </div>
+            <div class="column colr-md-7" data-aos="fade-up">
+              <p>
+                However, the lack of graphic user interface screen can be a huge limitation: hearing a 15 recipe search results list can become tedious, with many users most likely forgetting what was recipe number 1 by the time they've heard recipe number 6.
+              </p>
+              <p>
+                By adding a display screen and turning the voice-only interaction into a <strong>voice-first</strong> interaction, the functionality of the voice speaker is expanded significantly. Now the system primarily accepts user input via voice commands, and augments audio output with a tightly integrated screen display, making the tasks of finding a recipe and remembering its ingredients much easier.
+              </p>
+              <p>
+                In such a system, the visual (GUI) and voice (VUI) work as a partnership - the interfaces must complement one another and present a <strong> unified experience for the user</strong>; they should not simply be duplicates of one another. Voice is suitable for giving quick, high-level information and providing more detail only when prompted. Visuals are suitable for displaying details, thereby giving users the ability to take what they want from it.
+              </p>
+            </div>
+            <div class="column col-md-7" data-aos="fade-up">
+              <p><span class="sub-heading">A picture's worth a thousand words</span> </p>
+              <p>
+                Users who don’t know exactly what they want may find searching via voice-only cumbersome to navigate or even deficient in information. Humans are visual creatures - they respond to, and process, visual data better than any other type. Indeed, the <strong>picture superiority effect</strong> refers to the phenomenon where people remember pictures better than they remember words.
+              </p>
+              <p>
+                As an example, the search process can be significantly enhanced by supporting the voice response with images: as many restaurant menus can attest to, pictures can be very helpful to the decision maker. In the case of the user asking what's in a recipe, the VUI will provide the list of ingredients, while the screen can be used to display the images of ingredients <i> with their measurements</i>. Thus, stacking verbal communication with a visual in this way, will greatly help to <strong>reduce cognitive load</strong>.
+              </p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="column center" data-aos="fade-up" style="margin-top: 2em;">
+              <picture>
+                <source srcset="img/smoothie/mulitmodal@1x.png" media="(max-width:767px)">
+                <img src="img/smoothie/mulitmodal@2x.png" alt="Screen design" style="width: 90%; max-width:900px; -webkit-box-shadow: 0px 0px 18px 6px rgba(61, 31, 55, 0.3);-moz-box-shadow: 0px 0px 18px 6px rgba(61, 31, 55, 0.3); box-shadow: 0px 0px 18px 6px rgba(61, 31, 55, 0.3);">
+              </picture>
+              <p style="margin-top:0.5 !important;">
+                <i>Example of screen design for recipe search</i>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="section" style="background-color:#ffffff;">
+        <div class="container full-container" style="padding-bottom:0;">
+          <div class="row">
+            <h2 class="center section_title" data-aos="fade-up" style="padding-top:0.5em;"> FUTURE DIRECTION</h2>
+            <div class="column col-md-8" data-aos="fade-up">
+              <p><span class="sub-heading">In-kitchen testing</span> </p>
+              <p>
+                Having only performed one round of initial testing, follow up tests remain outstanding. Refining the interaction model through additional, repeated testing, would be among the most immediate next steps. In particular, it would be beneficial to perform future tests in actual kitchens where environmental factors and constraints such as available ingredients and equipment are factored in.
+              </p>
+            </div>
+            <div class="column colr-md-8" data-aos="fade-up">
+              <p><span class="sub-heading">Skill Expansion</span> </p>
+              <p>
+                For the purpose of this project, I focused on the first two phases of skill development - building out the script for the Intro, Choose Recipe, Ingredients, and Instructions intents. I also made a start on the Dietary Requirements and Favourites intents however, there is yet room for improvement.
+              </p>
+              <p>
+                Beyond that, the skill's functionality has much room for expansion. Primarily, the skill could benefit greatly from regular addition of new recipes. The next phase of development would also be to build phase 3 features (Shopping list and Create Profile Intents). Other high utility features would be to allow users to direct the skill to recipes found online, as well as to design the multi-modal elements for the search, ingredients, and instrcutions intents.
+              </p>
+              <p>
+                Lastly, there are still some dialogue management issues which need attention.
+              </p>
+            </div>
+            <div class="column colr-md-8" data-aos="fade-up">
+              <p><span class="sub-heading">Final Thoughts</span> </p>
+              <p>
+                In summary, I consider this project a success. In working through the problems typical of a VUI design process, I further developed my skills as a UX designer, and added new ones which are specific to voice.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="section section_final">
+        <div class="non-parallax-img_final center" data-aos="fade-up">
+        </div>
+        <div class="parallax-img_final">
+        </div>
+      </div>
+    </main>
+    <!--footer section-->
+    <footer id="contact" class="project-page-footer"><span id="contact-anchor"></span>
+      <div style="max-width: 1200px; margin: auto; position: relative;">
+        <p class="sideways-text">
+          Get in touch.
+        </p>
+        <div class="container">
+          <h2>Like what you see? <span> Let's talk.</span></h2>
+          <p>
+            Contact me for full-time work, freelance projects, or simply to chat about design.
+          </p>
+          <p>
+            Just click on the link below to shoot me an email.
+          </p>
+          <div>
+            <a href="mailto:joanne.saad@gmail.com" class="button-contact mt-1 mb-1 stopBarba" data-barba-prevent="self">Email me</a>
+          </div>
+          <div>
+            <!--social media links-->
+            <a href="https://www.linkedin.com/in/joannesaad" target="_blank" class="social-link stopBarba" data-barba-prevent="self">
+              <svg height="50px" id="Layer_1" style="enable-background:new 0 0 67 67;" version="1.1" viewBox="0 0 67 67" width="67px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="#ffffff">
+                <path
+                  d="M50.837,48.137V36.425c0-6.275-3.35-9.195-7.816-9.195  c-3.604,0-5.219,1.983-6.119,3.374V27.71h-6.79c0.09,1.917,0,20.427,0,20.427h6.79V36.729c0-0.609,0.044-1.219,0.224-1.655  c0.49-1.22,1.607-2.483,3.482-2.483c2.458,0,3.44,1.873,3.44,4.618v10.929H50.837z M22.959,24.922c2.367,0,3.842-1.57,3.842-3.531  c-0.044-2.003-1.475-3.528-3.797-3.528s-3.841,1.524-3.841,3.528c0,1.961,1.474,3.531,3.753,3.531H22.959z M34,64  C17.432,64,4,50.568,4,34C4,17.431,17.432,4,34,4s30,13.431,30,30C64,50.568,50.568,64,34,64z M26.354,48.137V27.71h-6.789v20.427  H26.354z"
+                  style="fill-rule:evenodd;clip-rule:evenodd;" /></svg>
+            </a>
+          </div>
+          <div id="copyright">
+            <p>
+              Copyright © Joanne Saad 2020
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-lightbox/0.2.12/slick-lightbox.min.js"></script>
+    <script src="https://unpkg.com/@barba/core"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.4/gsap.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/rellax/1.11.0/rellax.min.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="js/scripts.js"></script>
+    <script src="js/scripts-overview-projects.js"></script>
+  </wrap>
+  <script>
+
+  var swiper = new Swiper('.swiper-container', {
+      autoHeight: true, //enable auto height
+      spaceBetween: 20,
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      },
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+    });
+  /*//Slick slider
+  $(document).ready(function(){
+    var slider = $('.slider').slick({
+      dots: true,
+      infinite: true,
+      speed: 500,
+      arrows : false,
+      slidesToShow: 1,
+      adaptiveHeight: true,
+      autoplay: false
+    });
+
+    //slider.on('afterChange', function(event, slick, currentSlide){
+    // slick - is a slider object with a lot of useful info
+    // currentSlide - is a current slide index (starts from 0)
+  //  if( slick.slideCount === currentSlide + 1 ){
+  //    slick.paused = true;
+  //  }
+//  });
+});
+*/
+  </script>
+
+
+
+
+</body>
+
+</html>

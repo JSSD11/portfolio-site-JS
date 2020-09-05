@@ -197,7 +197,7 @@ header {
   -moz-box-shadow: 0px 2px 4px 0px rgba(50, 50, 50, 0.3);
   box-shadow: 0px 2px 4px 0px rgba(50, 50, 50, 0.3);
   position: fixed;
-  width: 100%;
+  width: 100% !important;
   z-index: 999;
   /*  min-height: 65px;*/
   transition: top 0.3s ease-in-out;
@@ -205,7 +205,7 @@ header {
 
 .nav-container {
   min-height: 40px;
-  max-width: 1200px;
+  max-width: 1000px !important;
   /*width: calc(100vw - 4em);*/
   margin: auto;
 }
@@ -3178,6 +3178,248 @@ span.web-heading2:after {
 }
 
 /* =============================================================================
+   Oh So Smoothies
+==============================================================================*/
+/*#smoothies-project h3{
+  color: #932e26;
+}
+*/
+
+ body #smoothies-project{
+  background-color: #ffffff !important;
+}
+
+#smoothies-project .container{
+  padding-bottom: 0;
+}
+
+#smoothie-logo{
+  width: 50vw;
+  max-width: 320px;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: -30vw;
+}
+
+#smoothies-project .intro-container{
+  background-color: #ffffff;
+  color: #262626;
+  padding-top: 19vw;
+}
+
+.smoothie-grid{
+  width: 100%;
+  display: grid;
+  grid-gap: 0em;
+  margin: 1em auto;
+  text-align: left;
+  padding: 0.5em 2em 1em;
+  -webkit-box-shadow: 0px 0px 10px 0px rgba(50, 50, 50, 0.3);
+  -moz-box-shadow: 0px 0px 10px 0px rgba(50, 50, 50, 0.3);
+  box-shadow: 0px 0px 10px 0px rgba(50, 50, 50, 0.3);
+}
+
+.smoothie-grid h3{
+  color: #932e26 !important;
+  padding-top: 1em !important;
+}
+
+.smoothie-grid p{
+  margin-top: 0em !important;
+}
+
+.sub-heading{
+  font-size: 1.25em;
+  font-family: 'Montserrat', sans-serif;
+  color: #932e26;
+}
+
+.highlight-font{
+  font-size: 1em;
+  font-family: 'Montserrat', sans-serif;
+  color: #932e26;
+}
+
+#smoothies-project .non-parallax-img {
+  background-image: url("../img/smoothie/banana_1@1x.png");
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 60vw;
+}
+
+#smoothies-project .non-parallax-img_final {
+  background-image: url("../img/smoothie/final_strip@1x.png");
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 60vw;
+}
+
+.persona_img{
+  margin: 2em auto 1em;
+}
+
+.persona_img:hover{
+  -webkit-box-shadow: 0px 0px 12px 2px rgba(183, 83, 161, 0.8);
+  -moz-box-shadow: 0px 0px 12px 2px rgba(183, 83, 161, 0.8);
+  box-shadow: 0px 0px 12px 2px rgba(183, 83, 161, 0.8);
+}
+
+.hidden-text{
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+}
+
+#smoothies-project ol {
+  list-style: none;
+  counter-reset: new;
+}
+
+#smoothies-project ol li {
+  counter-increment: new;
+  /*color:#f78433;
+  font-weight: 500;
+  margin-bottom: 1em;
+  margin-right: 2em;*/
+}
+
+#smoothies-project ol li::before {
+  content: counter(new) ".";
+  color: #b753a1;
+  font-weight: 500;
+  display: inline-block;
+  width: 1em;
+  margin-left: -1em
+}
+
+#smoothies-project ol li{
+  margin: 1em 0;
+}
+
+#smoothies-project a,
+#smoothies-project a:visited,
+#smoothies-project a:active{
+  color: #b753a1;
+}
+
+#smoothies-project a:hover,
+#smoothies-project a:focus{
+  color: #846079;
+}
+
+.section_title{
+  padding-bottom: 5vw;
+}
+
+.border-rect{
+  border: 2px solid #b753a1;
+  padding: 1em 2em;
+  width: 80%;
+  margin: 1.5em auto 2.5em;
+  background-color: #f8f4f9;
+  color: #443140;
+}
+
+.border-rect p{
+  margin-top: 0.8em;
+  margin-bottom: 0.8em;
+}
+
+.border-rect p:first-of-type{
+  font-size:1.5em;
+  margin-bottom: 0;
+}
+
+.border-rect p:nth-of-type(2){
+  font-size:1.25em;
+  margin-top:0;
+}
+
+.purple-bullets{
+  color: #b753a1 !important;
+}
+
+.purple-bullets li{
+  margin-bottom: 0.5em;
+}
+
+.purple-bullets li span{
+  color: #262626 !important;
+}
+
+.purple-bullets li > ul > li {
+  color: #b753a1;
+}
+
+.purple-bullets li >ul >li span{
+  color: #262626;
+}
+
+#smoothies-project .slick-dots li button:before{
+  color: #7f1f1d !important;
+}
+
+.scrollable-img{
+  width: 100%;
+  max-width: 900px;
+  height: 400px;
+  overflow-y: scroll;
+  margin-bottom: 2em;
+}
+
+.issue {
+  font-size: 1.2em;
+  font-weight: 600;
+  margin-bottom: 0;
+}
+
+.issue span{
+  color: #932e26;
+}
+
+.swiper-container {
+  width: 100%;
+  height: auto;
+}
+
+.swiper-slide {
+  text-align: center;
+  background: #fff;
+}
+
+.swiper-wrapper{
+  margin-bottom: 2em;
+}
+
+.swiper-button-prev {
+    color: #932e26;
+}
+
+.swiper-button-next {
+    color: #932e26;
+}
+
+.swiper-pagination .swiper-pagination-bullet {
+    background-color: rgba(147,46, 38, 0.8);
+}
+
+.swiper-pagination .swiper-pagination-bullet-active {
+    background-color: #932e26;
+}
+
+.parallax-img_final {
+  display: none;
+}
+
+.section_final{
+  padding-bottom:25vw;
+  margin-top: 15vw;
+}
+
+/* =============================================================================
    Margins & paddings
 ==============================================================================*/
 .mt-1 {
@@ -3727,7 +3969,7 @@ span.web-heading2:after {
     Header styling
   -------------------------*/
   header {
-    max-width: 100vw;
+    width: 100% !important;
   }
 
   div.nav-container {
@@ -3901,34 +4143,6 @@ span.web-heading2:after {
     object-fit: cover;
   }
 
-  /*.project-card{
-  padding: 1em;
-  margin-top: 60px;
-}
-
-#projects img {
-  min-height: 350px;
-  object-fit: cover;
-  position: relative;
-  max-height: 450px;
-}
-
-#animations img {
-  object-fit: cover;
-  position: relative;
-  }*/
-  /*#work .colright{
-  position: absolute;
-  padding: 0 1em;
-  top: 50%;
-  -ms-transform: translateY(-50%);
-  transform: translateY(-50%);
-  left: 50%;
-  max-height: 350px;
-}*/
-  /*#anime-container{
-  margin-top: 0;
-}*/
   .card .overlay.not-touch {
     position: absolute;
     display: flex;
@@ -5098,6 +5312,62 @@ Personal website
   .md-mt {
     margin-top: 1em;
   }
+
+  /*---------------------------
+Oh So Smoothies
+----------------------------*/
+  #smoothies-project div.overview-grid-item.item--2 p{
+    margin-top: 0 !important;
+  }
+
+  .smoothie-grid{
+      width: 85%;
+      grid-template-columns: 130px auto;
+      grid-gap: 1.5em;
+      grid-template-rows: auto;
+  }
+
+  .smoothie-grid p{
+    margin-top: 1.5em !important;
+  }
+
+  .smoothie-grid h3{
+    padding-top: 1.5em !important;
+  }
+
+  .smoothie_md_pb{
+    padding-bottom: 80px;
+  }
+
+  .persona_img{
+    width: 100%;
+    margin-top: 3em;
+    margin-bottom: 2em;
+  }
+
+  .section_title{
+    padding-bottom: 1.5em;
+    margin-bottom: 0;
+    padding-top: 0 !important;
+  }
+
+  .scrollable-img{
+    height: 600px;
+    margin-top: 1em;
+  }
+
+  #smoothies-project p{
+    margin-top: 1em !important;
+  }
+
+  #smoothies-project .container{
+    padding-bottom: 1em;
+  }
+
+  #smoothies-project .full-container{
+    padding-top: 3em;
+  }
+
 }
 
 @media only screen and (min-width:690px) {
@@ -5695,6 +5965,35 @@ Personal website
   .md-mt {
     margin-top: 2em;
   }
+
+  /*------------------------
+  Oh So Smoothies
+-------------------------*/
+#smoothie-logo{
+  top: -20vw;
+}
+
+#smoothies-project .non-parallax-img {
+  background-image: url("../img/smoothie/banana_1@2x.png");
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 50vw;
+}
+
+#smoothies-project .non-parallax-img_final {
+  background-image: url("../img/smoothie/final_strip@2x.png");
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 50vw;
+}
+
+.section_final{
+  padding-bottom:20vw;
+  margin-top: 15vw;
+}
+
 }
 
 /* =============================================================================
@@ -5884,6 +6183,14 @@ Personal website
     grid-column: 3 / span 1;
     grid-row: 1 /span 1;
   }
+
+  /*---------------------------
+Oh So Smoothies
+----------------------------*/
+
+  .smoothie-grid{
+      grid-template-columns: 200px auto;
+  }
 }
 
 @media only screen and (min-width:900px) {
@@ -5898,6 +6205,7 @@ Personal website
   .graphic-projects .hero-section {
     padding-top: 2em;
   }
+
 }
 
 @media only screen and (min-width:950px) {
@@ -5948,6 +6256,11 @@ Personal website
     grid-template-columns: repeat(6, 1fr);
     grid-template-rows: repeat(16, 7.2vw);
   }
+
+  #smoothies-project .intro-container{
+    padding-top: 15vw;
+  }
+
 }
 
 /* =============================================================================
@@ -6341,48 +6654,6 @@ MP Summary page
     margin-top: 3em;
   }
 
-  /*.parallax-section{
-  perspective: 1px;
-  transform-style: preserve-3d;
-  overflow-y: scroll;
-  overflow-x: hidden;
-  height: 100vh;
-  -webkit-overflow-scrolling: touch;
-  min-height: 100%;
-}*/
-  /*.parallax-container {
-  position: relative;
-  width: 100vw;
-  height: 100vh;
-  overflow-x: hidden;
-  overflow-y: scroll;
-  padding-top: 150px;
-  perspective-origin: 0%;
-  display: flex;
-  -webkit-overflow-scrolling: touch;
-  transform-style: preserve-3d;
-}*/
-  /*#mp-overview .parallax-container::before{
-  content:"";
-width: 100vw;
-height: 650px;
-top:0;
-left:0;
-background-image: url("../img/mp_overview/mp_2@2x.png");
-position: absolute;
-background-position: center center;
-background-size: cover;
-background-repeat: no-repeat;
-z-index: -1;
-transform:translateZ(-1px) scale(2);
--ms-transform:translateZ(-1px) scale(2); /* IE 9 */
-  /*
--moz-transform:translateZ(-1px) scale(2); /* Firefox */
-  /*
--webkit-transform:translateZ(-1px) scale(2); /* Safari and Chrome */
-  /*
--o-transform:translateZ(-1px) scale(2);
-}*/
   .foreground {
     position: relative;
     z-index: 2;
@@ -6449,6 +6720,10 @@ transform:translateZ(-1px) scale(2);
   }
 
   .non-parallax-img {
+    display: none;
+  }
+
+  .non-parallax-img_final {
     display: none;
   }
 
@@ -6706,7 +6981,60 @@ Personal website
   #personal-website .pt-1-75 {
     padding-top: 105px;
   }
+
+  /*------------------------------------------------
+Oh So Smoothies styling
+--------------------------------------------------*/
+#smoothies-hero-img{
+  display:none;
 }
+
+#smoothie-speech {
+  display: block;
+  position: absolute;
+  width: 800px;
+  height: auto;
+  top: 15vh;
+  margin: 0 auto;
+}
+
+#smoothie-logo{
+  top: -15vw;
+}
+
+#smoothies-project .parallax-img {
+  display: block;
+  background-image: url("../img/smoothie/banana_parallax.png");
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 600px;
+  background-attachment: fixed;
+}
+
+#smoothies-project .parallax-img_final {
+  display: block;
+  background-image: url("../img/smoothie/final_parallax.png");
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 600px;
+  background-attachment: fixed;
+}
+
+#smoothies-project .intro-container{
+  padding-top: 180px;
+}
+
+.section_final{
+  padding-bottom:0;
+  margin-top: 150px;
+}
+
+
+}
+
+
 
 @media only screen and (min-width: 1025px) {
 
