@@ -267,26 +267,44 @@ if (main.id == "laja-london-page") {
   };
 } else {}
 
-/* var main = document.getElementsByTagName("main")[0];
+ var main = document.getElementsByTagName("main")[0];
 if (main.id == "smoothies-project") {
-  var slider = document.getElementsByClassName("slider")[0];
-  console.log(slider);
 
-  $(document).ready(function() {
+    var swiper = new Swiper('.swiper-container', {
+        autoHeight: true, //enable auto height
+        spaceBetween: 20,
+        pagination: {
+          el: '.swiper-pagination',
+          clickable: true,
+        },
+        navigation: {
+          nextEl: '.swiper-button-next',
+          prevEl: '.swiper-button-prev',
+        },
+      });
 
-    var slider = $('.slider').not('.slick-initialized').slick({
-      dots: true,
-      infinite: true,
-      speed: 500,
-      arrows: false,
-      slidesToShow: 1,
-      adaptiveHeight: true,
-      autoplay: false
-    });
-
-  });
+      var coll = document.getElementsByClassName("collapsible");
+      var i;
+      for (i = 0; i < coll.length; i++) {
+        coll[i].addEventListener("click", function() {
+      this.classList.toggle("active");
+      var content = this.previousElementSibling;
+      if (content.style.maxHeight){
+        content.style.maxHeight = null;
+      } else {
+        content.style.maxHeight = content.scrollHeight + "px";
+      }
+      if(this.classList.contains("active")){
+        var repMore = this.innerHTML.replace(/MORE/g, "LESS");
+        this.innerHTML=repMore;
+      } else{
+        var repLess = this.innerHTML.replace(/LESS/g, "MORE");
+        this.innerHTML=repLess;
+        }
+        });
+      }
 } else {}
-*/
+
 //change footer Colours
 
 var projectFooter = document.getElementsByClassName("project-page-footer")[0];
