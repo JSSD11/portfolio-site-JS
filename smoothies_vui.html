@@ -684,28 +684,6 @@
           </div>
         </div>
       </div>
-      <script>
-      var coll = document.getElementsByClassName("collapsible");
-      var i;
-      for (i = 0; i < coll.length; i++) {
-        coll[i].addEventListener("click", function() {
-      this.classList.toggle("active");
-      var content = this.previousElementSibling;
-      if (content.style.maxHeight){
-        content.style.maxHeight = null;
-      } else {
-        content.style.maxHeight = content.scrollHeight + "px";
-      }
-      if(this.classList.contains("active")){
-        var repMore = this.innerHTML.replace(/MORE/g, "LESS");
-        this.innerHTML=repMore;
-      } else{
-        var repLess = this.innerHTML.replace(/LESS/g, "MORE");
-        this.innerHTML=repLess;
-        }
-        });
-      }
-      </script>
 
       <div class="section" style="background-color:#ffffff;">
         <div class="container full-container">
@@ -965,6 +943,28 @@
 */
   </script>
 
+  <script>
+  var coll = document.getElementsByClassName("collapsible");
+  var i;
+  for (i = 0; i < coll.length; i++) {
+    coll[i].addEventListener("click", function() {
+  this.classList.toggle("active");
+  var content = this.previousElementSibling;
+  if (content.style.maxHeight){
+    content.style.maxHeight = null;
+  } else {
+    content.style.maxHeight = content.scrollHeight + "px";
+  }
+  if(this.classList.contains("active")){
+    var repMore = this.innerHTML.replace(/MORE/g, "LESS");
+    this.innerHTML=repMore;
+  } else{
+    var repLess = this.innerHTML.replace(/LESS/g, "MORE");
+    this.innerHTML=repLess;
+    }
+    });
+  }
+  </script>
 
 
 
